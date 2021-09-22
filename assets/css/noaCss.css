@@ -1,0 +1,37 @@
+/* TODO: elimina los margenes y espacios para todos los navegadores */
+*,
+::before,
+::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.primeraSeccion{
+    margin-top: -8px;
+  
+}
+/*NAV*/
+.container-fluid{
+    background-color:#79D0E4;
+}
+.nombrePágina{
+    width: 160px;
+    height: 60px;
+    display: flex;
+}
+/*nav logo*/
+.nombrePágina img{
+    margin-top: 8px;
+    width: 40px;
+    height: 40px;
+}
+.nombrePágina p{
+    margin-top: 13px;
+}
+/*Carousel*/
+.carousel-inner .carousel-item img{
+ height: 350px;
+ width: 350px !important;
+ margin-left: auto; 
+ margin-right: auto;
+}
