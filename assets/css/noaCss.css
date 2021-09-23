@@ -2,36 +2,47 @@
 *,
 ::before,
 ::after {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-.primeraSeccion{
+
+.primeraSeccion {
     margin-top: -8px;
-  
+
 }
+
 /*NAV*/
-.container-fluid{
-    background-color:#79D0E4;
+.container-fluid {
+    background-color: #79D0E4;
 }
-.nombrePágina{
-    width: 160px;
+
+.nombrePágina {
+    width: 180px;
     height: 60px;
     display: flex;
 }
+
 /*nav logo*/
-.nombrePágina img{
+.nombrePágina img {
     margin-top: 8px;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    box-shadow: 1px 2px 1px grey, 1px 2px 2px gray;
+    margin-right: 7px;
 }
-.nombrePágina p{
-    margin-top: 13px;
+
+.nombrePágina h1 {
+    margin-top: 24px;
+    font-family: "Sofia", sans-serif;
+    font-size: 15px;
 }
+
 /*Carousel*/
-.carousel-inner .carousel-item img{
- height: 350px;
- width: 350px !important;
- margin-left: auto; 
- margin-right: auto;
+.carousel-inner .carousel-item img {
+    height: 340px;
+    width: 508px !important;
+    margin-left: auto;
+    margin-right: auto;
 }
