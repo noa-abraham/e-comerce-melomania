@@ -1,0 +1,23 @@
+h1 {
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 0.9;
+    letter-spacing: 0.6em;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.6em;
+}
+
+header {
+    background-image: url(https://i.blogs.es/40adf8/viniloap/1366_521.jpg);
+    height: 150px;
+}
+
+.navBar {
+    margin-top: 50px;
+    margin-bottom: 12px;
+}
+
+.botones {
+    padding-right: 700px;
+}

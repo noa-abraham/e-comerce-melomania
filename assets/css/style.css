@@ -1,17 +1,8 @@
 .nombrePágina {
     font-size: 72px;
-    line-height: 108px;
-    letter-spacing: 0.335em;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.navStyleHome {
-    background-color: rgb(0, 0, 0);
-}
-
-.textoBlanco {
-    color: white !important;
+    line-height: 1.8;
+    letter-spacing: 0.218em;
+    font-weight: 600;
 }
 
 .textoCarrusel {

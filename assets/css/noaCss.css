@@ -1,4 +1,5 @@
 /* TODO: elimina los margenes y espacios para todos los navegadores */
+
 *,
 ::before,
 ::after {
@@ -7,42 +8,26 @@
     box-sizing: border-box;
 }
 
-.primeraSeccion {
-    margin-top: -8px;
-
+h1 {
+    font-size: 72px;
+    line-height: 1.6;
+    letter-spacing: 0.227em;
+    font-weight: 900;
+    font-style: normal;
+    color: crimson;
 }
 
-/*NAV*/
-.container-fluid {
-    background-color: #79D0E4;
+header {
+    background-image: url(https://img.freepik.com/foto-gratis/vista-superior-discos-vinilo_23-2148201671.jpg?size=626&ext=jpg);
+    height: 100px;
+    margin-bottom: 100px;
 }
 
-.nombrePágina {
-    width: 180px;
-    height: 60px;
-    display: flex;
+.navBar {
+    margin-top: 10px;
+    margin-bottom: 12px;
 }
 
-/*nav logo*/
-.nombrePágina img {
-    margin-top: 8px;
-    width: 45px;
-    height: 45px;
-    border-radius: 100%;
-    box-shadow: 1px 2px 1px grey, 1px 2px 2px gray;
-    margin-right: 7px;
-}
-
-.nombrePágina h1 {
-    margin-top: 24px;
-    font-family: "Sofia", sans-serif;
-    font-size: 15px;
-}
-
-/*Carousel*/
-.carousel-inner .carousel-item img {
-    height: 340px;
-    width: 508px !important;
-    margin-left: auto;
-    margin-right: auto;
+.botones {
+    padding-right: 700px;
 }
