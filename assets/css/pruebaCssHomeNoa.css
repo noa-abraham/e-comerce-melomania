@@ -6,6 +6,8 @@ h1 {
     font-style: italic;
     color: rgb(255, 255, 255);
     letter-spacing: 0.6em;
+    border-top-width: 50px;
+    line-height: 1.6;
 }
 
 header {
