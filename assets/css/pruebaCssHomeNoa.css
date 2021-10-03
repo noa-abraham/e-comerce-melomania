@@ -1,7 +1,7 @@
 h1 {
     font-style: italic;
     letter-spacing: 0.6em;
-    color: beige;
+    color: rgba(0, 0, 0, .85);
 }
 
 .fondo {
