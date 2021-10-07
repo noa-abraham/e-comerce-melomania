@@ -12,7 +12,6 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
 }
 /*
 header nav a {
@@ -65,7 +64,6 @@ main {
 .logueo-usuario span,
 .logueo-contrasenia span {
     width: 30px;
-
 }
 
 .logueo-usuario svg,
@@ -80,26 +78,24 @@ main {
 .logueo-usuario input,
 .logueo-contrasenia input {
     width: 80%;
-
     margin-left: 2%;
     margin-bottom: 5%;
 }
 
 .logueo-recordar {
     margin-top: 5%;
-    margin-left: 3%;
+    margin-left: 9%;
     margin-bottom: 5%;
-
 }
 
 .logueo-recordar span a {
     margin-left: 16%;
     text-decoration: none;
-    color: #8e8e8e;
+    color: #8e8e8e !important;
 }
 
 .logueo-recordar span a:hover {
-    color: #E2E3E5;
+    color: #E2E3E5 !important;
 }
 
 .logueo-recordar span a:visited {
@@ -111,4 +107,7 @@ main {
     margin-left: 20%;
     margin-bottom: 10%;
     width: 60%;
+}
+.carousel-tarjetas{
+    display: flex;
 }

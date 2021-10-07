@@ -1,0 +1,146 @@
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*
+rgba(0, 0, 0, .85)
+*/
+h1 {
+    font-style: italic;
+    letter-spacing: 0.6em;
+    color: rgba(0, 0, 0, .85);
+}
+
+.encabezado {
+    margin-top: 0;
+    background-color: rgba(0, 0, 0, .85);
+}
+
+.site-header a {
+    color: #8e8e8e;
+    transition: color .15s ease-in-out;
+}
+
+/*
+.navbar-listados{
+    height: 40px;
+}
+ 
+#form-buscador{
+   width: 40%;
+    margin-left: -18%;
+    margin-right: 5%;
+}*/
+nav .input-buscador {
+    height: 30px;
+
+}
+
+
+.input-buscador:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+}
+
+nav .btn-buscar {
+    height: 30px;
+    padding-top: 0;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 0;
+
+}
+
+.contenedor-carousel {
+    padding-left: 5%;
+}
+
+.carousel-inner {
+    height: 360px;
+}
+
+.contenedor-tarjetas-carusel {
+    display: flex;
+    align-items: center;
+}
+
+.tarjetas-carousel,
+.tarjetas-carousel-setbox {
+    width: 180px !important;
+    height: 325px;
+    align-items: center;
+    margin: .4%;
+    max-width: 185px !important;
+    background-color: rgba(0, 0, 0, .85);
+    color: #8e8e8e;
+    transition: color .15s ease-in-out;
+    box-shadow: 0 1px 2px gray, 0 1px 3px white, 1px 2px 4px grey;
+}
+
+.tarjetas-carousel:hover,
+.tarjetas-carousel-setbox:hover {
+    scale: 1.05;
+    margin: .4%;
+    color: #E2E3E5 !important;
+    box-shadow: 0 1px 2px gray, 0 1px 3px white, 1px 2px 4px grey, 1px 2px 5px rgba(0, 0, 0, .85);
+    transition: all .15s;
+
+}
+
+.tarjetas-carousel img,
+.tarjetas-carousel-setbox img {
+    margin-top: 5px;
+    width: 160px;
+    align-items: center;
+    border-radius: 100%;
+}
+
+.tarjetas-carousel h5,
+.tarjetas-carousel-setbox h5 {
+    height: 65px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.tarjetas-carousel-setbox a {
+    text-decoration: none !important;
+    color: #8e8e8e;
+}
+
+#carouselExampleControls {
+    display: flex;
+}
+
+.carousel-control-prev {
+    margin-left: -15%;
+}
+
+.carousel-control-next {
+    margin-right: -15%;
+}
+
+#icono-carousel-izq {
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, .85);
+    margin-left: 53%;
+}
+
+#icono-carousel-der {
+    height: 30px;
+    width: 30px;
+    margin-right: 53%;
+    background-color: rgba(0, 0, 0, .85);
+    border-radius: 100%;
+}
+
+#icono-carousel-izq:hover,
+#icono-carousel-der:hover {
+    scale: 1.2;
+}
