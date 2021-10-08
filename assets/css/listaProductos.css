@@ -9,6 +9,7 @@
 /*
 rgba(0, 0, 0, .85)
 */
+/* ======*Encabezado*=======*/
 h1 {
     font-style: italic;
     letter-spacing: 0.6em;
@@ -56,6 +57,40 @@ nav .btn-buscar {
 
 }
 
+/* ======*Liastado productos*=======*/
+.contenedor-listadoProductos {
+    display: flex;
+}
+.contenedor-catalogo{
+    margin: 0;
+}
+.contenedor-listadoProductos aside {
+    height: 800px;
+    width: 15%;
+    background: red;
+}
+
+.contenedor-listadoProductos main {
+
+    width: 85%;
+    background: blue;
+}
+
+.tarjeta-Listados {
+    width: 170px !important;
+
+    align-items: center;
+    margin: .4%;
+    max-width: 185px !important;
+    background-color: rgba(0, 0, 0, .85);
+    color: #8e8e8e;
+    transition: color .15s ease-in-out;
+    box-shadow: 0 1px 2px gray, 0 1px 3px white, 1px 2px 4px grey;
+    text-decoration: none;
+}
+
+
+/* ======*Carousel*=======*/
 .contenedor-carousel {
     padding-left: 5%;
 }
@@ -69,10 +104,9 @@ nav .btn-buscar {
     align-items: center;
 }
 
-.tarjetas-carousel,
-.tarjetas-carousel-setbox {
+.tarjetas-carousel {
     width: 180px !important;
-    height: 325px;
+
     align-items: center;
     margin: .4%;
     max-width: 185px !important;
@@ -80,36 +114,6 @@ nav .btn-buscar {
     color: #8e8e8e;
     transition: color .15s ease-in-out;
     box-shadow: 0 1px 2px gray, 0 1px 3px white, 1px 2px 4px grey;
-}
-
-.tarjetas-carousel:hover,
-.tarjetas-carousel-setbox:hover {
-    scale: 1.05;
-    margin: .4%;
-    color: #E2E3E5 !important;
-    box-shadow: 0 1px 2px gray, 0 1px 3px white, 1px 2px 4px grey, 1px 2px 5px rgba(0, 0, 0, .85);
-    transition: all .15s;
-
-}
-
-.tarjetas-carousel img,
-.tarjetas-carousel-setbox img {
-    margin-top: 5px;
-    width: 160px;
-    align-items: center;
-    border-radius: 100%;
-}
-
-.tarjetas-carousel h5,
-.tarjetas-carousel-setbox h5 {
-    height: 65px;
-    text-align: center;
-    font-size: 16px;
-}
-
-.tarjetas-carousel-setbox a {
-    text-decoration: none !important;
-    color: #8e8e8e;
 }
 
 #carouselExampleControls {
@@ -143,4 +147,53 @@ nav .btn-buscar {
 #icono-carousel-izq:hover,
 #icono-carousel-der:hover {
     scale: 1.2;
+}
+
+.tarjeta-Listados:hover,
+.tarjetas-carousel:hover,
+.tarjetas-carousel-setbox:hover {
+    scale: 1.05;
+    margin: .4%;
+    color: #E2E3E5 !important;
+    box-shadow: 0 1px 2px gray, 0 1px 3px white, 1px 2px 4px grey, 1px 2px 5px rgba(0, 0, 0, .85);
+    transition: all .15s;
+
+}
+.tarjeta-Listados img,
+.tarjetas-carousel img,
+.tarjetas-carousel-setbox img {
+    margin-top: 5px;
+    margin-left: 3%;
+    width: 160px;
+    align-items: center;
+    border-radius: 100%;
+}
+
+.tarjeta-Listados h5,
+.tarjetas-carousel h5,
+.tarjetas-carousel-setbox h5 {
+    height: 70px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.tarjetas-carousel-setbox {
+    width: 180px !important;
+    height: 325px;
+    align-items: center;
+    margin: .4%;
+    max-width: 185px !important;
+    background-color: rgba(0, 0, 0, .85);
+    color: #8e8e8e;
+    transition: color .15s ease-in-out;
+    box-shadow: 0 1px 2px gray, 0 1px 3px white, 1px 2px 4px grey;
+}
+
+.tarjeta-Listados a,.tarjetas-carousel-setbox a {
+    text-decoration: none !important;
+    color: #8e8e8e;
+}
+
+.tarjeta-Listados hr,.tarjetas-carousel-setbox hr{
+    background-color: #8e8e8e;
 }
