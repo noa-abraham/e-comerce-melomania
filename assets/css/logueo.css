@@ -107,7 +107,11 @@ main {
     margin-left: 20%;
     margin-bottom: 10%;
     width: 60%;
+    color: #8e8e8e;
+    background-color: transparent;
 }
-.carousel-tarjetas{
-    display: flex;
+.logueo-form button:hover {
+
+    color: #E2E3E5 ;
+    box-shadow:0 1px 2px rgb(121, 121, 121), 0 1px 3px white !important;
 }

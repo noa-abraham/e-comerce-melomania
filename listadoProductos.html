@@ -1,24 +1,22 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Melomania</title>
     <!-- CSS only -->
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../e-comerce-melomania/assets/css/listaProductos.css">
+    <link rel="stylesheet" href="assets/css/listaProductos.css">
     <link rel="shortcut icon" href="assets/img/Lp2.png" type="image/x-icon">
     <!-- Iconos -->
     <script src="https://kit.fontawesome.com/f209504417.js" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="../e-comerce-melomania/assets/css/listaProductos.css">
 </head>
 
 <body>
-
     <header class="site-header sticky-top ">
         <div class="site-header sticky-top py-1 encabezado">
             <nav class="container d-flex flex-column flex-md-row justify-content-between">
@@ -40,6 +38,7 @@
 
             </nav>
         </div>
+        <!--
         <div class="site-header sticky-top py-1 encabezado">
         <nav class="navbar navbar-expand-lg  navbar-listados">
             <div class="container-fluid">
@@ -55,22 +54,42 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Catalogo
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">Géneros Musicales
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                      <a class="nav-link active" href="#">Rock & Pop</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#">Metal</a>
+                                      </li>
+                                </ul>
+                              </a>
+                              <a>
+                                  
+                              </a>
+
+                              <a class="dropdown-item" href="#">Box Sets</a>
+                              <a class="dropdown-item" href="#">Orden alfabetico
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                      <a class="nav-link active" href="#">A</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#">B</a>
+                                      </li>
+                                </ul>
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Separated link</a>
+                            </div>
+                          </li>
+                        
+                          <li class="nav-item">
                             <a class="nav-link disabled">Link</a>
                         </li>
+
                     </ul>
                     <form class="d-flex " id="form-buscador">
                         <input class="form-control me-2 input-buscador" type="search" placeholder="Buscar..."
@@ -88,94 +107,200 @@
             </div>
         </nav>
     </div>
+     -->
     </header>
-    <section>
-        <div class="contenedor-listadoProductos">
-             
-            <aside>
-                <div class="categorias-lateral">
-    
-                </div>
-            </aside>
-             <main>
-                <div class="postion-relative overflow-hidden p-3 p-1 m-md-3 text center bg-light ">
-                    <h2>Catalogo</h2>
-                    <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo">
-                        <div class="card  tarjeta-Listados" style="width: 15rem;">
-                            <a href="">
-                                <img src="assets/img/Box-Set/GeorgeHarrison.jpg" class="card-img-top"
-                                    alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">George Harrison – All Things Must Pass</h5>
-                                    <hr>
-                                    <p>$00.00</p>
-                                </div>
-                            </a>
+  
+    <div class="container-fluid lateal-deracho">
+        <div class="row">
+            <div class="col-2 collapse show d-md-flex bg-light pt-2 pl-0 min-vh-100" id="sidebar">
+                <ul class="nav flex-column flex-nowrap overflow-hidden">
+                    <li class="nav-item">
+                        <a class="nav-link text-truncate" href="#"><i class="fa fa-home"></i> <span
+                                class="d-none d-sm-inline">Inicio</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-truncate" href="#"><i class="fa fa-user"></i> <span
+                                class="d-none d-sm-inline">Ingresar</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <form class="d-flex " id="form-buscador">
+                            <input class="form-control me-2 input-buscador" type="search" placeholder="Buscar..."
+                                aria-label="Search">
+                            <button class="btn btn-outline-secondary btn-buscar" type="submit"><i
+                                    class="fas fa-search"></i></button>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link collapsed text-truncate" href="#submenu1" data-toggle="collapse"
+                            data-target="#submenu1"><i class="fas fa-record-vinyl"></i> <span
+                                class="d-none d-sm-inline">Catalogo</span></a>
+                        <div class="collapse" id="submenu1" aria-expanded="false">
+                            <ul class="flex-column pl-2 nav">
+                                <li class="nav-item"><a class="nav-link py-0" href="#"><span>Set-box</span></a></li>
+                                <li class="nav-item"><a class="nav-link py-0" href="#"><span>Categorias/Generos</span></a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link  text-truncate collapsed py-1" href="#submenu1sub1"
+                                        data-toggle="collapse" data-target="#submenu1sub1"><span>Por Letras</span></a>
+                                    <div class="collapse" id="submenu1sub1" aria-expanded="false">
+                                        <ul class="flex-column nav pl-4">
+                                            <li class="nav-item">
+                                                <a class="nav-link p-1 text-truncate" href="#">A </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link p-1 text-truncate" href="#">B </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link p-1 text-truncate" href="#">C</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link p-1 text-truncate" href="#">D </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="card  tarjeta-Listados" style="width: 15rem;">
-                            <a href="">
-                                <img src="assets/img/Box-Set/GeorgeHarrison.jpg" class="card-img-top"
-                                    alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">George Harrison – All Things Must Pass</h5>
-                                    <hr>
-                                    <p>$00.00</p>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-truncate" href="#"><i class="far fa-star"></i>
+                            <span class="d-none d-sm-inline">Destacados</span></a></li>
+                    <li class="nav-item"><a class="nav-link text-truncate" href="#"><i class="fa fa-download"></i> <span
+                                class="d-none d-sm-inline">Demo</span></a></li>
+                </ul>
+            </div>
+            
+            <div class="col pt-2">
+                <main>
+                    <div class="postion-relative overflow-hidden p-3 p-1 m-md-3 text center bg-light ">
+                        <div class="tituloCatalogo d-flex">
+                            <h2>Catalogo</h2>
+                            <div class="ordenarPor">
+                                <div class="form-group col-md-10 d-flex">
+                                    <label for="inputState">Ordenar por</label>
+                                    <select id="inputState" class="form-control ">
+                                        <option selected>Más relevante</option>
+                                        <option>Menor precio</option>
+                                        <option>Mayor precio</option>
+                                        <option>A->Z</option>
+                                        <option>Z->A</option>
+                                    </select>
                                 </div>
-                            </a>
+                            </div>
                         </div>
-                        <div class="card  tarjeta-Listados" style="width: 15rem;">
-                            <a href="">
-                                <img src="assets/img/Box-Set/GeorgeHarrison.jpg" class="card-img-top"
-                                    alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">George Harrison – All Things Must Pass</h5>
-                                    <hr>
-                                    <p>$00.00</p>
+                        <div class="destacados">
+                            <h4>Destacados</h4>
+                            <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo">
+                                <div class="card  tarjeta-Listados" style="width: 15rem;">
+                                    <a href="">
+                                        <img src="assets/img/Box-Set/GeorgeHarrison.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">George Harrison – All Things Must Pass</h5>
+                                            <hr>
+                                            <p>$00.00</p>
+                                        </div>
+                                    </a>
                                 </div>
-                            </a>
+                                <div class="card  tarjeta-Listados" style="width: 15rem;">
+                                    <a href="">
+                                        <img src="assets/img/Box-Set/GeorgeHarrison.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">George Harrison – All Things Must Pass</h5>
+                                            <hr>
+                                            <p>$00.00</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card  tarjeta-Listados" style="width: 15rem;">
+                                    <a href="">
+                                        <img src="assets/img/Box-Set/GeorgeHarrison.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">George Harrison – All Things Must Pass</h5>
+                                            <hr>
+                                            <p>$00.00</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card  tarjeta-Listados" style="width: 15rem;">
+                                    <a href="">
+                                        <img src="assets/img/Box-Set/GeorgeHarrison.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">George Harrison – All Things Must Pass</h5>
+                                            <hr>
+                                            <p>$00.00</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card  tarjeta-Listados" style="width: 15rem;">
+                                    <a href="">
+                                        <img src="assets/img/Box-Set/GeorgeHarrison.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">George Harrison – All Things Must Pass</h5>
+                                            <hr>
+                                            <p>$00.00</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card  tarjeta-Listados" style="width: 15rem;">
-                            <a href="">
-                                <img src="assets/img/Box-Set/GeorgeHarrison.jpg" class="card-img-top"
-                                    alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">George Harrison – All Things Must Pass</h5>
-                                    <hr>
-                                    <p>$00.00</p>
+                        <div class="catalogo ">
+                            <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo">
+                                <div class="card  tarjeta-Listados" style="width: 15rem;">
+                                    <a href="">
+                                        <img src="assets/img/Box-Set/GeorgeHarrison.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">George Harrison – All Things Must Pass</h5>
+                                            <hr>
+                                            <p>$00.00</p>
+                                        </div>
+                                    </a>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="card  tarjeta-Listados" style="width: 15rem;">
-                            <a href="">
-                                <img src="assets/img/Box-Set/GeorgeHarrison.jpg" class="card-img-top"
-                                    alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">George Harrison – All Things Must Pass</h5>
-                                    <hr>
-                                    <p>$00.00</p>
+                                <div class="card  tarjeta-Listados" style="width: 15rem;">
+                                    <a href="">
+                                        <img src="assets/img/Box-Set/GeorgeHarrison.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">George Harrison – All Things Must Pass</h5>
+                                            <hr>
+                                            <p>$00.00</p>
+                                        </div>
+                                    </a>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="card  tarjeta-Listados " style="width: 15rem;">
-                            <a href="">
-                                <img src="assets/img/Box-Set/GeorgeHarrison.jpg" class="card-img-top"
-                                    alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">George Harrison – All Things Must Pass</h5>
-                                    <hr>
-                                    <p>$00.00</p>
+                                <div class="card  tarjeta-Listados" style="width: 15rem;">
+                                    <a href="">
+                                        <img src="assets/img/Box-Set/GeorgeHarrison.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">George Harrison – All Things Must Pass</h5>
+                                            <hr>
+                                            <p>$00.00</p>
+                                        </div>
+                                    </a>
                                 </div>
-                            </a>
+                                <div class="card  tarjeta-Listados" style="width: 15rem;">
+                                    <a href="">
+                                        <img src="assets/img/Box-Set/GeorgeHarrison.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">George Harrison – All Things Must Pass</h5>
+                                            <hr>
+                                            <p>$00.00</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card  tarjeta-Listados" style="width: 15rem;">
+                                    <a href="">
+                                        <img src="assets/img/Box-Set/GeorgeHarrison.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">George Harrison – All Things Must Pass</h5>
+                                            <hr>
+                                            <p>$00.00</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-             
-             </main>
+                </main>
+            </div>
         </div>
+    </div>
 
-       
-
-    </section>
     <section>
         <main>
             <div class="postion-relative overflow-hidden p-3 p-md-5 m-md-3 text center bg-light ">
@@ -191,7 +316,7 @@
                                         <img src="assets/img/Categoria/Rock-324x324.jpg" class="card-img-top" alt="...">
                                         <div class="card-body">
                                             <h5 class="card-title">Rock & Pop</h5>
-                                            <a href="#" class="btn btn-secondary">Ver categoría</a>
+                                            <a href="#" class="btn border-secondary">Ver categoría</a>
                                         </div>
                                     </div>
                                     <div class="card tarjetas-carousel" style="width: 15rem;">
@@ -199,14 +324,14 @@
                                             alt="...">
                                         <div class="card-body">
                                             <h5 class="card-title">Metal</h5>
-                                            <a href="#" class="btn btn-secondary">Ver categoría</a>
+                                            <a href="#" class="btn border-secondary">Ver categoría</a>
                                         </div>
                                     </div>
                                     <div class="card tarjetas-carousel" style="width: 15rem;">
                                         <img src="assets/img/Categoria/Punk-324x324.jpg" class="card-img-top" alt="...">
                                         <div class="card-body">
                                             <h5 class="card-title">Punk & Hardcore</h5>
-                                            <a href="#" class="btn btn-secondary">Ver categoría</a>
+                                            <a href="#" class="btn border-secondary">Ver categoría</a>
                                         </div>
                                     </div>
                                     <div class="card tarjetas-carousel" style="width: 15rem;">
@@ -214,7 +339,7 @@
                                             alt="...">
                                         <div class="card-body">
                                             <h5 class="card-title">Reggae & Ska</h5>
-                                            <a href="#" class="btn btn-secondary">Ver categoría</a>
+                                            <a href="#" class="btn border-secondary">Ver categoría</a>
                                         </div>
                                     </div>
                                     <div class="card tarjetas-carousel" style="width: 15rem;">
@@ -222,14 +347,14 @@
                                             alt="...">
                                         <div class="card-body">
                                             <h5 class="card-title">Blues</h5>
-                                            <a href="#" class="btn btn-secondary">Ver categoría</a>
+                                            <a href="#" class="btn border-secondary">Ver categoría</a>
                                         </div>
                                     </div>
                                     <div class="card tarjetas-carousel" style="width: 15rem;">
                                         <img src="assets/img/Categoria/Jazz-324x324.jpg" class="card-img-top" alt="...">
                                         <div class="card-body">
                                             <h5 class="card-title">Jazz</h5>
-                                            <a href="#" class="btn btn-secondary">Ver categoría</a>
+                                            <a href="#" class="btn border-secondary">Ver categoría</a>
                                         </div>
                                     </div>
                                 </div>
@@ -242,14 +367,14 @@
                                         <img src="assets/img/Categoria/Soul-324x324.jpg" class="card-img-top" alt="...">
                                         <div class="card-body">
                                             <h5 class="card-title">Funk & Soul</h5>
-                                            <a href="#" class="btn btn-secondary">Ver categoría</a>
+                                            <a href="#" class="btn border-secondary">Ver categoría</a>
                                         </div>
                                     </div>
                                     <div class="card tarjetas-carousel" style="width: 15rem;">
                                         <img src="assets/img/Categoria/Rap-324x324.jpg" class="card-img-top" alt="...">
                                         <div class="card-body">
                                             <h5 class="card-title">Rap & Hip-Hop</h5>
-                                            <a href="#" class="btn btn-secondary">Ver categoría</a>
+                                            <a href="#" class="btn border-secondary">Ver categoría</a>
                                         </div>
                                     </div>
                                     <div class="card tarjetas-carousel" style="width: 15rem;">
@@ -257,7 +382,7 @@
                                             alt="...">
                                         <div class="card-body">
                                             <h5 class="card-title">Rock Nacional</h5>
-                                            <a href="#" class="btn btn-secondary">Ver categoría</a>
+                                            <a href="#" class="btn border-secondary">Ver categoría</a>
                                         </div>
                                     </div>
                                     <div class="card tarjetas-carousel" style="width: 15rem;">
@@ -265,14 +390,14 @@
                                             alt="...">
                                         <div class="card-body">
                                             <h5 class="card-title">Tango</h5>
-                                            <a href="#" class="btn btn-secondary">Ver categoría</a>
+                                            <a href="#" class="btn border-secondary">Ver categoría</a>
                                         </div>
                                     </div>
                                     <div class="card tarjetas-carousel" style="width: 15rem;">
                                         <img src="assets/img/Categoria/BSO-324x324.jpg" class="card-img-top" alt="...">
                                         <div class="card-body">
                                             <h5 class="card-title">Bandas Sonora</h5>
-                                            <a href="#" class="btn btn-secondary">Ver categoría</a>
+                                            <a href="#" class="btn border-secondary">Ver categoría</a>
                                         </div>
                                     </div>
                                     <div class="card tarjetas-carousel" style="width: 15rem;">
@@ -280,7 +405,7 @@
                                             alt="...">
                                         <div class="card-body">
                                             <h5 class="card-title">Music World</h5>
-                                            <a href="#" class="btn btn-secondary">Ver categoría</a>
+                                            <a href="#" class="btn border-secondary">Ver categoría</a>
                                         </div>
                                     </div>
                                 </div>
@@ -318,7 +443,7 @@
                                             <img src="assets/img/Box-Set/Who.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
                                                 <h5 class="card-title">Who – The Studio Albums</h5>
-                                                <hr> 
+                                                <hr>
                                                 <p>$00.00</p>
                                             </div>
                                         </a>
@@ -420,8 +545,8 @@
                                             <img src="assets/img/Box-Set/BonJovi.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
                                                 <h5 class="card-title">Bon Jovi – The Albums</h5>
-                                                    <hr>
-                                                    <p>$00.00</p>
+                                                <hr>
+                                                <p>$00.00</p>
                                             </div>
                                         </a>
                                     </div>
@@ -431,8 +556,8 @@
                                             <div class="card-body">
                                                 <h5 class="card-title">Frank Zappa – Zappa (Original Motion Picture
                                                     Soundtrack)</h5>
-                                                    <hr>
-                                                    <p>$00.00</p>
+                                                <hr>
+                                                <p>$00.00</p>
                                             </div>
                                         </a>
                                     </div>
@@ -469,12 +594,19 @@
         </main>
     </section>
 
+    <footer>
+        
+    </footer>
     <!-- Bootstrap Bundle with Popper -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
 
 </body>

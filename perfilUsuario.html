@@ -1,1 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melomania</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/perfilUsuario.css">
+    <link rel="shortcut icon" href="assets/img/Lp2.png" type="image/x-icon">
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/f209504417.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../e-comerce-melomania/assets/css/listaProductos.css">
+</head>
+
+<body>
+    <header class="site-header sticky-top ">
+        <div class="site-header sticky-top py-1 encabezado">
+            <nav class="container d-flex flex-column flex-md-row justify-content-between">
+                <a class="py-2" href="#" aria-label="Product">
+                    <svg xmlns="https://cdn-icons-png.flaticon.com/128/4497/4497587.png" width="24" height="24"
+                        fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24">
+                        <title>Product</title>
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path
+                            d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94">
+                        </path>
+                    </svg>
+                </a>
+                <a class="py-2 d-none d-md-inline-block" href="#">MELOMANÍA</a>
+                <a class="py-2 d-none d-md-inline-block" href="#">Productos</a>
+                <a class="py-2 d-none d-md-inline-block" href="#">Contacto</a>
+                <a class="py-2 d-none d-md-inline-block" href="#">Preguntas</a>
+
+            </nav>
+        </div>
+    </header>
+  
+    <div class="container-fluid lateal-deracho">
+        <div class="row">
+            <div class="col-2 collapse show d-md-flex bg-light pt-2 pl-0 min-vh-100" id="sidebar">
+                <ul class="nav flex-column flex-nowrap overflow-hidden">
+                    <li class="nav-item">
+                        <a class="nav-link text-truncate" href="#"><i class="fa fa-home"></i> <span
+                                class="d-none d-sm-inline">Inicio</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-truncate" href="#"><i class="fa fa-user"></i> <span
+                                class="d-none d-sm-inline">Ingresar</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <form class="d-flex " id="form-buscador">
+                            <input class="form-control me-2 input-buscador" type="search" placeholder="Buscar..."
+                                aria-label="Search">
+                            <button class="btn btn-outline-secondary btn-buscar" type="submit"><i
+                                    class="fas fa-search"></i></button>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link collapsed text-truncate" href="#submenu1" data-toggle="collapse"
+                            data-target="#submenu1"><i class="fas fa-record-vinyl"></i> <span
+                                class="d-none d-sm-inline">Catalogo</span></a>
+                        <div class="collapse" id="submenu1" aria-expanded="false">
+                            <ul class="flex-column pl-2 nav">
+                                <li class="nav-item"><a class="nav-link py-0" href="#"><span>Set-box</span></a></li>
+                                <li class="nav-item"><a class="nav-link py-0" href="#"><span>Categorias/Generos</span></a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link  text-truncate collapsed py-1" href="#submenu1sub1"
+                                        data-toggle="collapse" data-target="#submenu1sub1"><span>Por Letras</span></a>
+                                    <div class="collapse" id="submenu1sub1" aria-expanded="false">
+                                        <ul class="flex-column nav pl-4">
+                                            <li class="nav-item">
+                                                <a class="nav-link p-1 text-truncate" href="#">A </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link p-1 text-truncate" href="#">B </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link p-1 text-truncate" href="#">C</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link p-1 text-truncate" href="#">D </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-truncate" href="#"><i class="far fa-star"></i>
+                            <span class="d-none d-sm-inline">Destacados</span></a></li>
+                    <li class="nav-item"><a class="nav-link text-truncate" href="#"><i class="fa fa-download"></i> <span
+                                class="d-none d-sm-inline">Demo</span></a></li>
+                </ul>
+            </div>
+            
+            <div class="col pt-2">
+                <main>
+                    <div class="postion-relative overflow-hidden p-3 p-1 m-md-3 text center bg-light ">
+                        <div class="tituloCatalogo d-flex">
+                            <h2>Titulo</h2>
+                            <div class="ordenarPor">
+                                <div class="form-group col-md-10 d-flex">
+                                    <label for="inputState">Ordenar por</label>
+                                    <select id="inputState" class="form-control ">
+                                        <option selected>Más relevante</option>
+                                        <option>Menor precio</option>
+                                        <option>Mayor precio</option>
+                                        <option>A->Z</option>
+                                        <option>Z->A</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="destacados">
+                            <h4>Subtitulo</h4>
+                            <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo">
+                                
+                            </div>
+                        </div>
+                       
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        
+    </footer>
+    <!-- Bootstrap Bundle with Popper -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
