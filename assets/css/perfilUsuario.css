@@ -89,12 +89,127 @@ nav .btn-buscar {
 
 
 
-footer{
-    height: 300px;
+
+/*FOOTER*/
+footer {
     width: 100%;
+    height: 500px;
     background-color: rgba(0, 0, 0, .85);
     color: #8e8e8e;
+    overflow: hidden;
+    /*para que los objetos no se salgan*/
+    
 }
+
+#footer .wrap>div {
+    float: left;
+    width: 320px;
+    height: 370px;
+    margin: 40px;
+    text-align: center;
+    color: #8e8e8e;
+ }
+
+footer a {
+    text-decoration: none;
+    color: #8e8e8e;
+    transition: all 300ms;
+    text-transform: uppercase;
+    transition: color .15s ease-in-out;
+}
+
+footer h5 {
+    display: block;
+    background: url(../img/Footer/pxgray.png)white;
+    letter-spacing: 2px;
+    text-align: center;
+    font-style: italic;
+    font-size: 35px;
+    line-height: 55px;
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#footer ul {
+    text-align: left;
+    margin: 20px;
+    font-size: 25px;
+}
+
+#footer ul li {
+    width: 361px;
+    margin-top: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    
+}
+
+#footer ul li a {
+    display: block;
+    height: 40px;
+    transition: all 300ms;
+}
+#footer ul li a:hover{
+    width: 361px !important;
+}
+#footer ul li:hover a {
+    padding-left: 40px;
+    color: #f4f7fe;
+    width: 100%;
+}
+
+#footer iframe {
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 5px solid white;
+    box-shadow: 0px 0px 5px gray;
+}
+
+#footer img {
+    margin-bottom: 15px;
+}
+
+#footer #browser img {
+    width: 45px;
+}
+#social-footer {
+display: flex;
+margin-left: 20%;
+
+}
+#social-footer i{
+    color: #8e8e8e;
+    font-size: 30px;
+}
+#social-footer .twitter{
+    margin-right: 5%;
+}
+#social-footer .youtube{
+    margin-right: 5%;
+}
+#social-footer .facebook{
+    margin-right: 5%;
+}
+
+#social-footer .twitter:hover a i,
+#social-footer .twitter:hover p {
+    color: #1DA1F2;
+}#social-footer .youtube:hover a i,
+#social-footer .youtube:hover p {
+    color: #FF0000;
+}  
+#social-footer .facebook:hover a i,
+#social-footer .facebook:hover p {
+    color: #3B5998;
+}
+
+#desarrolladores p{
+  margin-top: -15px;
+}
+
 /*
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { ... }
