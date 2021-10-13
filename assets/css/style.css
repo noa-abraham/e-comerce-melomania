@@ -18,3 +18,8 @@ header {
     color: #8e8e8e;
     transition: color .15s ease-in-out;
 }
+
+.destacados {
+    padding: 20px;
+    margin-top: 20px;
+}
