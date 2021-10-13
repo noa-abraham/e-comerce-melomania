@@ -120,7 +120,9 @@ margin-left: 20%;
 #social-footer .facebook:hover p {
     color: #3B5998;
 }
-
+#location, #locacion{
+    margin-left: 8%;
+}
 #desarrolladores p{
   margin-top: -15px;
 }
