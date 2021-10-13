@@ -423,9 +423,3 @@ margin-left: 20%;
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 */
-.nav-link[data-toggle].collapsed:after {
-    content: " ▾";
-}
-.nav-link[data-toggle]:not(.collapsed):after {
-    content: " ▴";
-}
