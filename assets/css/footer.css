@@ -1,15 +1,8 @@
-*,
-::before,
-::after {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 /*FOOTER*/
 footer {
     width: 100%;
     height: 500px;
-    background-color: rgba(41, 40, 40, 0.85);
+    background-color:  rgba(41, 40, 40, 0.85);
     color: #8e8e8e;
     overflow: hidden;
     /*para que los objetos no se salgan*/
@@ -111,8 +104,9 @@ margin-left: 20%;
 
 #social-footer .twitter:hover a i,
 #social-footer .twitter:hover p {
-    color: #1DA1F2;
-}#social-footer .youtube:hover a i,
+    color: #1DA1F2;;
+}
+#social-footer .youtube:hover a i,
 #social-footer .youtube:hover p {
     color: #FF0000;
 }  
@@ -120,7 +114,10 @@ margin-left: 20%;
 #social-footer .facebook:hover p {
     color: #3B5998;
 }
-
+#locacion{
+    margin-left: 10%;
+}
 #desarrolladores p{
   margin-top: -15px;
 }
+
