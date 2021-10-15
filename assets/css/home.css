@@ -4,12 +4,6 @@ h1 {
     color: rgba(0, 0, 0, .85);
 }
 
-.fondo {
-    background-image: url(https://jaranarecords.com.ar/catalogo/wp-content/uploads/2019/03/local.jpg);
-    width: 1920px;
-    margin-left: -419.5px;
-}
-
 header {
     background-color: rgba(0, 0, 0, .85);
 }
@@ -23,4 +17,3 @@ header {
     padding: 20px;
     margin-top: 20px;
 }
-
