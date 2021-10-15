@@ -16,4 +16,6 @@ header {
 .destacados {
     padding: 20px;
     margin-top: 20px;
+    background-color: cadetblue;
+    margin-bottom: 50px;
 }
