@@ -1,12 +1,12 @@
 /*FOOTER*/
+
 footer {
     width: 100%;
     height: 500px;
-    background-color:  rgba(41, 40, 40, 0.85);
+    background-color: rgba(0, 0, 0, .85);
     color: #8e8e8e;
     overflow: hidden;
     /*para que los objetos no se salgan*/
-    
 }
 
 #footer .wrap>div {
@@ -16,7 +16,7 @@ footer {
     margin: 40px;
     text-align: center;
     color: #8e8e8e;
- }
+}
 
 footer a {
     text-decoration: none;
@@ -31,8 +31,7 @@ footer h5 {
     background: url(../img/Footer/pxgray.png)white;
     letter-spacing: 2px;
     text-align: center;
-    font-style: italic;
-    font-size: 35px;
+    font-size: 20px;
     line-height: 55px;
     color: black;
     border-radius: 5px;
@@ -42,7 +41,7 @@ footer h5 {
 #footer ul {
     text-align: left;
     margin: 20px;
-    font-size: 25px;
+    font-size: 15px;
 }
 
 #footer ul li {
@@ -50,7 +49,6 @@ footer h5 {
     margin-top: 10px;
     padding: 5px;
     border-bottom: 1px solid #ccc;
-    
 }
 
 #footer ul li a {
@@ -58,9 +56,11 @@ footer h5 {
     height: 40px;
     transition: all 300ms;
 }
-#footer ul li a:hover{
+
+#footer ul li a:hover {
     width: 361px !important;
 }
+
 #footer ul li:hover a {
     padding-left: 40px;
     color: #f4f7fe;
@@ -83,41 +83,49 @@ footer h5 {
 #footer #browser img {
     width: 45px;
 }
-#social-footer {
-display: flex;
-margin-left: 20%;
 
+#social-footer {
+    display: flex;
+    margin-left: 20%;
 }
-#social-footer i{
+
+#social-footer i {
     color: #8e8e8e;
     font-size: 30px;
 }
-#social-footer .twitter{
+
+#social-footer .twitter {
     margin-right: 5%;
 }
-#social-footer .youtube{
+
+#social-footer .youtube {
     margin-right: 5%;
 }
-#social-footer .facebook{
+
+#social-footer .facebook {
     margin-right: 5%;
 }
 
 #social-footer .twitter:hover a i,
 #social-footer .twitter:hover p {
-    color: #1DA1F2;;
+    color: #1DA1F2;
+    ;
 }
+
 #social-footer .youtube:hover a i,
 #social-footer .youtube:hover p {
     color: #FF0000;
-}  
+}
+
 #social-footer .facebook:hover a i,
 #social-footer .facebook:hover p {
     color: #3B5998;
 }
-#locacion{
+
+#locacion {
     margin-left: 10% !important;
 }
-#desarrolladores p{
-  margin-top: -15px;
-}
 
+#desarrolladores p {
+    margin-top: -15px;
+}
