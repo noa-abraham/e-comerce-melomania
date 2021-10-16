@@ -1,0 +1,30 @@
+body {
+    background: url(../img/VUCPtX.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.conteinerd {
+    position: static;
+    margin: 50px 10%;
+}
+
+.descripcion {
+    position: absolute;
+    margin-left: 600px;
+    background: #f4f7fe;
+    border-radius: 5px;
+    border: 5px solid white;
+}
+
+.miniatura {
+    margin: 20px;
+    width: 120px;
+    height: 120px;
+}
+
+.cont-comment {
+    margin: auto;
+}
