@@ -32,3 +32,22 @@ body {
 .cont-comment {
     margin: auto;
 }
+
+.cont-masdetalles {
+    margin: auto;
+    background: #f4f7fe;
+    border-radius: 5px;
+    border: 5px solid white;
+}
+
+.text-masdetalles {
+    padding: 10px;
+}
+
+.btn-nav {
+    color: dimgrey;
+}
+
+.btn-nav:hover {
+    color: darkgray;
+}
