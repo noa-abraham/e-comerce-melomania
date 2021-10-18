@@ -25,6 +25,10 @@ body {
     height: 120px;
 }
 
+.miniatura:hover {
+    border: solid 3px dimgrey;
+}
+
 .cont-comment {
     margin: auto;
 }
