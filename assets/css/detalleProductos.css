@@ -6,6 +6,14 @@ body {
     background-size: cover;
 }
 
+.nombre-del-disco {
+    text-shadow: 2px 2px 3px whitesmoke;
+}
+
+.banda {
+    text-shadow: 1px 1px 2px whitesmoke;
+}
+
 .conteiner-imagen-descripcion {
     position: static;
     margin: 50px 10%;
@@ -17,7 +25,7 @@ body {
 
 .descripcion {
     display: inline-block;
-    margin-left: 300px;
+    margin-left: 15%;
     background: #f4f7fe;
     border-radius: 5px;
     border: 5px solid white;
@@ -34,7 +42,7 @@ body {
 }
 
 .cont-comment {
-    margin: auto;
+    margin: 5% auto;
     border-radius: 5px;
     border: 5px solid darkgrey;
     padding: 3%;
@@ -46,7 +54,7 @@ body {
 }
 
 .cont-masdetalles {
-    margin: auto;
+    margin: 5% auto;
     background: #f4f7fe;
     border-radius: 5px;
     border: 5px solid white;
