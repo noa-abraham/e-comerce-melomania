@@ -6,14 +6,18 @@ body {
     background-size: cover;
 }
 
-.conteinerd {
+.conteiner-imagen-descripcion {
     position: static;
     margin: 50px 10%;
 }
 
+.imagen {
+    display: inline-block;
+}
+
 .descripcion {
-    position: absolute;
-    margin-left: 600px;
+    display: inline-block;
+    margin-left: 300px;
     background: #f4f7fe;
     border-radius: 5px;
     border: 5px solid white;
@@ -31,6 +35,14 @@ body {
 
 .cont-comment {
     margin: auto;
+    border-radius: 5px;
+    border: 5px solid darkgrey;
+    padding: 3%;
+    background: black;
+}
+
+.form-label {
+    color: #f4f7fe;
 }
 
 .cont-masdetalles {
