@@ -20,6 +20,17 @@
         margin-bottom: 50px;
     }
     
+    .section-title {
+        text-align: center;
+        margin-bottom: 1em;
+        font-weight: 600;
+        letter-spacing: 0.6em;
+    }
+    
+    .ranking {
+        margin-bottom: 150px;
+    }
+    
     .btn-outline-secondary {
         color: #000000;
         border-color: #14ce3c;
