@@ -31,6 +31,11 @@ body {
     border: 5px solid white;
 }
 
+.precio {
+    text-align: center;
+    height: 150%;
+}
+
 .miniatura {
     margin: 20px;
     width: 120px;
@@ -70,4 +75,24 @@ body {
 
 .btn-nav:hover {
     color: darkgray;
+}
+
+.tarjetas-carousel {
+    width: 180px !important;
+    align-items: center;
+    margin: .4%;
+    max-width: 185px !important;
+    background-color: rgba(0, 0, 0, .85);
+    color: #8e8e8e;
+    transition: color .15s ease-in-out;
+    box-shadow: 0 1px 2px rgb(121, 121, 121), 0 1px 3px white, 1px 2px 4px grey;
+}
+
+.carousel-inner {
+    align-items: center;
+    margin-left: 13%;
+}
+
+.carousel-control-next {
+    margin-right: 0%;
 }
