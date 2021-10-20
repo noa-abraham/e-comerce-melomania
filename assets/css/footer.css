@@ -129,3 +129,42 @@ footer h5 {
 #desarrolladores p {
     margin-top: -15px;
 }
+
+
+@media(max-width:970px) {
+    #footer .wrap>div {
+        width: 25%;
+        margin: 20px;
+    }
+
+    #footer h5 {
+        font-size: 22px;
+    }
+}
+
+@media(max-width:799px) {
+    #footer img {
+        margin-bottom: 15px;
+        max-width: 100%;
+    }
+}
+
+
+@media(max-width:660px) {
+    #footer {
+        height: 1200px;
+        padding-bottom: 10px;
+    }
+
+    #footer .wrap>div {
+        width: 100%;
+        margin: 0px auto;
+        margin-top: 20px;
+
+        height: auto;
+    }
+
+    #footer h5 {
+        font-size: 25px;
+    }
+}
