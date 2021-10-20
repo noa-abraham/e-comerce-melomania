@@ -69,6 +69,27 @@ body {
     padding: 10px;
 }
 
+.valoraciones-realizadas {
+    margin: 5% auto;
+    border-radius: 5px;
+    border: 5px solid darkgrey;
+}
+
+.titulo-comentario {
+    position: relative;
+}
+
+.titulo-comentario .autor-del-comentario {
+    color: black;
+    display: inline-block;
+}
+
+.valoracion {
+    display: inline-block;
+    right: 0;
+    position: absolute;
+}
+
 .btn-nav {
     color: dimgrey;
 }
