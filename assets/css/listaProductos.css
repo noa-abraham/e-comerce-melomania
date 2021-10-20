@@ -66,19 +66,19 @@ nav .btn-buscar {
 .lateral-derecho{
     margin-top: 10px;
 }
-.lateral-derecho .nav-link a{
-    color: #8e8e8e;
+.nav-link a{
+    color: #8e8e8e !important;
 }
-.lateral-derecho .nav-link a:hover{
-    color: #8e8e8e;
-    text-shadow: 0 1px 2px black
+.nav-link a:hover{
+    color: #8e8e8e !important;
+    text-shadow: 0 1px 2px black !important;
 }
 .lateral-derecho span{
     color: black;
 }
 .lateral-derecho a:hover{
     color: #8e8e8e;
-    text-shadow: 0 1px 2px black
+    text-shadow: 0 1px 2px black;
 }
 .lateral-derecho i{
     color: #8e8e8e;
