@@ -35,6 +35,9 @@ body {
     text-align: center;
     height: 150%;
 }
+/*.btn-comprar {
+    display: block;
+}*/
 
 .miniatura {
     margin: 20px;
