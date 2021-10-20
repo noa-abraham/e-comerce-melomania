@@ -66,6 +66,13 @@ nav .btn-buscar {
 .lateral-derecho{
     margin-top: 10px;
 }
+.lateral-derecho .nav-link a{
+    color: #8e8e8e;
+}
+.lateral-derecho .nav-link a:hover{
+    color: #8e8e8e;
+    text-shadow: 0 1px 2px black
+}
 .lateral-derecho span{
     color: black;
 }
