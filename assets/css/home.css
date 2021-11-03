@@ -32,12 +32,25 @@
     }
     
     .btn-outline-secondary {
-        color: #000000;
-        border-color: #14ce3c;
+        color: #21d192;
+        border-color: #21d192;
     }
     
     .btn-outline-secondary:hover {
         color: #fbfbfb;
         background-color: #151515;
         border-color: #6c757d;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: #21d192;
+        text-decoration: none;
+    }
+    
+    .styleBarraVerde {
+        background-color: #21d192;
     }
