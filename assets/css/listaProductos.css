@@ -49,6 +49,21 @@ nav .input-buscador {
 
 }
 
+element.style {
+}
+.text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.nav-link {
+	color: #8e8e8e !important;
+    font-size: 25px;
+}
+.nav-link:hover{
+    color: #8e8e8e;
+    text-shadow: 0 1px 2px black
+}
 .input-buscador:focus {
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -65,23 +80,22 @@ nav .btn-buscar {
 }
 .lateral-derecho{
     margin-top: 10px;
+    height: 800px !important;
 }
-.nav-link a{
-    color: #8e8e8e !important;
-}
-.nav-link a:hover{
-    color: #8e8e8e !important;
-    text-shadow: 0 1px 2px black !important;
+.min-vh-100 {
+    min-height: 50vh !important;
 }
 .lateral-derecho span{
     color: black;
+   
 }
 .lateral-derecho a:hover{
     color: #8e8e8e;
-    text-shadow: 0 1px 2px black;
+    text-shadow: 0 1px 2px black
 }
 .lateral-derecho i{
     color: #8e8e8e;
+    font-size: 50px;
 }
 
 /*Redes Sociales*/
@@ -96,7 +110,7 @@ nav .btn-buscar {
     font-size: 30px;
     margin-left: 20px;
     margin-top: 10px;
-    margin-bottom: 20;
+    margin-bottom: 20px;
 }
 
 #social-lateral div .overlay{
@@ -163,19 +177,24 @@ transform: translateX(0%);
 
 
 .tarjeta-Listados {
-    width: 184px !important;
+    width: 250px !important;
     align-items: center;
     margin-left: 1% !important;
     margin: .4%;
-    max-width: 185px !important;
+    max-width: 300px !important;
     background-color: rgba(0, 0, 0, .85);
     color: #8e8e8e;
     transition: color .15s ease-in-out;
     box-shadow: 0 1px 2px gray, 0 1px 3px white, 1px 2px 4px grey;
     text-decoration: none;
 }
-
-
+.tarjeta-Listados p{
+    font-size: 25px;
+}
+.tarjeta-Listados img{
+    margin-top: 7px;
+    margin-left: 19% !important;
+}
 /* ======*Carousel*=======*/
 .contenedor-carousel {
     padding-left: 5%;
@@ -201,23 +220,26 @@ transform: translateX(0%);
     box-shadow: 0 1px 2px rgb(121, 121, 121), 0 1px 3px white, 1px 2px 4px grey;
 }*/
 .tarjetas-carousel {
-    width: 180px !important;
+    width: 200px !important;
     align-items: center;
     margin: .4%;
-    max-width: 185px !important;
+    max-width: 300px !important;
     background-color: rgba(0, 0, 0, .85);
     color: #8e8e8e;
     transition: color .15s ease-in-out;
     box-shadow: 0 1px 2px rgb(121, 121, 121), 0 1px 3px white, 1px 2px 4px grey;
 }
-
+.tarjetas-carousel img{
+    margin-left: 9% !important;
+}
 .carousel-inner {
     align-items: center;
-    margin-left: 13%;
+    height: 348px;
+    margin-left: 19%;
 }
 
 .carousel-control-next {
-    margin-right: -36%;
+    margin-right: -46%;
 }
 .tarjetas-carousel .btn{
     color: #8e8e8e;   
@@ -272,7 +294,7 @@ box-shadow:0 1px 2px rgb(121, 121, 121), 0 1px 3px white
 .tarjetas-carousel img,
 .tarjetas-carousel-setbox img {
     margin-top: 5px;
-    margin-left: 3%;
+    margin-left: 9%;
     width: 160px;
     align-items: center;
     border-radius: 100%;
@@ -293,16 +315,20 @@ box-shadow:0 1px 2px rgb(121, 121, 121), 0 1px 3px white
     color: #E2E3E5;
 }
 .tarjetas-carousel-setbox {
-    width: 180px !important;
-    height: 325px;
+    width: 200px !important;
+    height: 330px;
     align-items: center;
     margin: .4%;
-    max-width: 185px !important;
+    max-width: 300px !important;
     background-color: rgba(0, 0, 0, .85);
     color: #8e8e8e;
     transition: color .15s ease-in-out;
     box-shadow: 0 1px 2px gray, 0 1px 3px white, 1px 2px 4px grey;
 }
+.tarjetas-carousel-setbox p{
+    font-size: 25px;
+}
+
 .tarjetas-carousel-setbox .btn{
  background-color: transparent;
 }
@@ -434,48 +460,15 @@ margin-left: 20%;
 #social-footer .facebook:hover p {
     color: #3B5998;
 }
-#locacion{
-    margin-left: 10% !important;
+#menu_footer{
+    margin-left: 5% !important;
+}
+#location{
+    margin-left: 15% !important;
+}
+#information{
+    margin-left: 15% !important; 
 }
 #desarrolladores p{
   margin-top: -15px;
-}
-
-
-@media(max-width:970px) {
-    #footer .wrap>div {
-        width: 25%;
-        margin: 20px;
-    }
-
-    #footer h5 {
-        font-size: 22px;
-    }
-}
-
-@media(max-width:799px) {
-    #footer img {
-        margin-bottom: 15px;
-        max-width: 100%;
-    }
-}
-
-
-@media(max-width:660px) {
-    #footer {
-        height: 1200px;
-        padding-bottom: 10px;
-    }
-
-    #footer .wrap>div {
-        width: 100%;
-        margin: 0px auto;
-        margin-top: 20px;
-
-        height: auto;
-    }
-
-    #footer h5 {
-        font-size: 25px;
-    }
 }
