@@ -45,11 +45,12 @@ header nav img {
 }
 
 main {
-    margin-top: 20% !important;
+    margin-top: 15% !important;
 }
 
 .logueo-form {
-    max-width: 350px;
+    max-width: 450px;
+    max-heigt:450px;
     margin: 200px auto 0;
     background-color: rgba(0, 0, 0, .85);
     color: #8e8e8e;
