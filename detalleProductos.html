@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/css/detalleProductos.css">
     <!-- Iconos -->
     <script src="https://kit.fontawesome.com/f209504417.js" crossorigin="anonymous"></script>
+    <script src="./js/detalleProductos.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
 </head>
 
@@ -45,7 +46,7 @@
         <h1 class="nombre-del-disco">Revolver</h1>
         <h2 class="banda">The beatles</h2>
         <div class="imagen">
-            <img src="./assets/img/Revolver.jpg" class="img-fluid rounded-start" alt="Tapa del disco">
+            <img src="./assets/img/Revolver.jpg" class="img-fluid rounded-start" id="foto-principal" alt="Tapa del disco">
         </div>
         <div class="col-md-4 descripcion">
             <div class="card-body">
@@ -53,16 +54,18 @@
                 <p class="card-text"> DETALLES <br> Género: ROCK & POP <br> Presentación: GATEFOLD <br> Código:094638241713 <br> Formato: VINILO <br> Origen: PRODUCTO IMPORTADO </p>
                 <b class="card-title1">Precio</b>
                 <b class="Precio">$3000</b>
+                <!--
                 <button href="#" type="button" class="btn btn-secondary btn-comprar">Comprar</button>
+                -->
             </div>
         </div>
         <div class="tapa-contratapa">
             <ul class="preview-thumbnail nav nav-tabs">
                 <li class="active">
-                    <a data-target="#pic-1" data-toggle="tab"><img class="miniatura tapa" src="./assets/img/Revolver.jpg" /></a>
+                    <a data-target="#pic-1" data-toggle="tab" onclick="cambiarImagenATapa();"><img class="miniatura tapa" src="./assets/img/Revolver.jpg" /></a>
                 </li>
                 <li>
-                    <a data-target="#pic-2" data-toggle="tab"><img class="miniatura contratapa" src="./assets/img/beat_revolver2.jpg" /></a>
+                    <a data-target="#pic-2" data-toggle="tab" onclick="cambiarImagenAContratapa();"><img class="miniatura contratapa" src="./assets/img/beat_revolver2.jpg" /></a>
                 </li>
             </ul>
         </div>
