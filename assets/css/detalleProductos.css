@@ -35,6 +35,8 @@ body {
     text-align: center;
     height: 150%;
 }
+
+
 /*.btn-comprar {
     display: block;
 }*/
@@ -77,22 +79,34 @@ body {
     color: blanchedalmond;
 }
 
+
+/*.valoraciones-realizadas*/
+
 .valoraciones-realizadas {
     margin: 2% auto;
     border-radius: 5px;
     border: 5px solid darkgrey;
 }
 
+
+/*.titulo-comentario*/
+
 .titulo-comentario {
     position: relative;
 }
 
-.titulo-comentario .autor-del-comentario {
+
+/*autor-del-comentario*/
+
+.autor-del-comentario {
     color: black;
     display: inline-block;
 }
 
-.valoracion {
+
+/*.valoracion*/
+
+.conteiner-comentarios div div div {
     display: inline-block;
     right: 0;
     position: absolute;

@@ -93,47 +93,49 @@
     </div>
     <!--Comentarios-->
     <h1 class="titulo-comentarios-destacados">Comentarios</h1>
-    <div class="card col-md-5 conteiner-lg valoraciones-realizadas">
-        <div class="card-header titulo-comentario">
-            <h6 class="autor-del-comentario">Ignacio Gonzalez</h6>
-            <div class="valoracion">
-                <i class="bi bi-star"></i>
-                <i class="bi bi-star"></i>
-                <i class="bi bi-star"></i>
+    <div class="conteiner-comentarios">
+        <div class="card col-md-5 conteiner-lg valoraciones-realizadas">
+            <div class="card-header titulo-comentario">
+                <h6 class="autor-del-comentario">Ignacio Gonzalez</h6>
+                <div class="valoracion">
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                </div>
+            </div>
+            <div class="card-body">
+                <p class="card-text">El sonido por momentos no es muy claro.</p>
             </div>
         </div>
-        <div class="card-body">
-            <p class="card-text">El sonido por momentos no es muy claro.</p>
-        </div>
-    </div>
-    <div class="card col-md-5 conteiner-lg valoraciones-realizadas">
-        <div class="card-header titulo-comentario">
-            <h6 class="autor-del-comentario">Ignacio Gonzalez</h6>
-            <div class="valoracion">
-                <i class="bi bi-star"></i>
-                <i class="bi bi-star"></i>
-                <i class="bi bi-star"></i>
-                <i class="bi bi-star"></i>
-                <i class="bi bi-star"></i>
+        <div class="card col-md-5 conteiner-lg valoraciones-realizadas">
+            <div class="card-header titulo-comentario">
+                <h6 class="autor-del-comentario">Ignacio Gonzalez</h6>
+                <div class="valoracion">
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                </div>
             </div>
-        </div>
-        <div class="card-body">
-            <p class="card-text">Este disco me cambio la vida.</p>
+            <div class="card-body">
+                <p class="card-text">Este disco me cambio la vida.</p>
+            </div>
         </div>
     </div>
     <!--formulario para agregar comentarios-->
     <div class="conteiner-lg col-md-4 cont-comment">
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su nombre">
+            <input type="email" class="form-control" id="nombreComentario" placeholder="Ingrese su nombre">
         </div>
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Email</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su email">
+            <input type="email" class="form-control" id="emailComentario" placeholder="Ingrese su email">
         </div>
         <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Ingrese su comentario"></textarea>
+            <textarea class="form-control" id="textAreaComentario" rows="3" placeholder="Ingrese su comentario"></textarea>
         </div>
         <!--estrellas-->
 
@@ -171,7 +173,7 @@
         </div>
         <!--fin de estrellas-->
         <div class="boton-comentario">
-            <button type="button" class="btn btn-light">enviar</button>
+            <button type="button" class="btn btn-light" onclick="crearComentario()">enviar</button>
         </div>
     </div>
     <!--Categorias-->
