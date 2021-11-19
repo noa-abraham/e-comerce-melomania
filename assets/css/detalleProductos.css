@@ -36,11 +36,6 @@ body {
     height: 150%;
 }
 
-
-/*.btn-comprar {
-    display: block;
-}*/
-
 .miniatura {
     margin: 20px;
     width: 120px;
@@ -106,10 +101,14 @@ body {
 
 /*.valoracion*/
 
-.conteiner-comentarios div div div {
-    display: inline-block;
+.valoracion {
+    display: inline-flex;
     right: 0;
     position: absolute;
+}
+
+.valoracion i {
+    margin: 2px;
 }
 
 .btn-nav {

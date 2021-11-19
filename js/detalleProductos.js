@@ -32,6 +32,15 @@ function crearComentario() {
     myH6Autor.classList.add("autor-del-comentario");
     myH6Autor.textContent = nombre.value;
     myDivCommentTittle.appendChild(myH6Autor);
+    let myDivStar = document.createElement('div');
+    myDivStar.classList.add("valoracion");
+    for (z = 0; z < cantidadEstrellas; z++) {
+        let iconosEstrellas = document.createElement('i');
+        iconosEstrellas.classList.add("bi", "bi-star");
+        myDivStar.appendChild(iconosEstrellas);
+    }
+
+    myDivCommentTittle.appendChild(myDivStar);
     myDivComment.appendChild(myDivCommentTittle);
     let myDivCommentText = document.createElement('div');
     myDivCommentText.classList.add("card-body");
