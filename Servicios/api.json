@@ -1,0 +1,84 @@
+{
+    "genero1": "ROCK & POP",
+    "discos1": [{
+            "id": 1,
+            "titulo": "Revolver",
+            "artista": "The Beatles",
+            "sello": "Stereo",
+            "año de lanzamiento": "1966",
+            "precio": "$2000",
+            "formato": "Vinilo",
+            "origen": "Importado",
+            "condicion": "Nuevo/Sellado",
+            "tapa": "revolver.jpg",
+            "contratapa": "revolver_contratapa.jpg"
+        },
+        {
+            "id": 2,
+            "titulo": "Bocanada",
+            "artista": "Gustavo Ceratti",
+            "sello": "Stereo",
+            "precio": "$2000",
+            "formato": "Vinilo",
+            "origen": "Nacional",
+            "tapa": "ceratti.jpg",
+            "contratapa": "ceratti_contratapa.jpg"
+        }
+    ],
+
+    "genero2": "JAZZ",
+    "discos2": [{
+            "id": 3,
+            "titulo": "Sunday At The Village Vanguardar",
+            "artista": "Bill Evans",
+            "sello": "Stereo Riverside",
+            "año de lanzamiento": "1961",
+            "precio": "$6000",
+            "formato": "Vinilo",
+            "origen": "Importado",
+            "condicion": "Nuevo/Sellado",
+            "tapa": "billevans.jpg",
+            "contratapa": "billevans_contratapa.jpg"
+        },
+        {
+            "id": 4,
+            "titulo": "Begin Again",
+            "artista": "Norah Jones",
+            "sello": "Blue Note Records",
+            "precio": "$5000",
+            "formato": "Vinilo",
+            "origen": "Importado",
+            "tapa": "norah.jpg",
+            "contratapa": "norah_contratapa.jpg"
+        }
+    ],
+    "genero3": "ROCK/METAL",
+    "discos3": [{
+            "id": 5,
+            "titulo": "Heaven Upside Down",
+            "artista": "Marilyn Manson",
+            "sello": "Loma Vista Recordings",
+            "año de lanzamiento": "2017",
+            "precio": "$6000",
+            "formato": "Vinilo",
+            "origen": "Importado",
+            "condicion": "Nuevo/Sellado",
+            "tapa": "marilyn.jpg",
+            "contratapa": "marilyn_contratapa.jpg"
+        },
+        {
+            "id": 6,
+            "titulo": "Never Mind The Bollocks",
+            "artista": "The Sex Pistols",
+            "sello": "Mad Kat Records",
+            "precio": "$5000",
+            "formato": "Vinilo",
+            "origen": "Importado",
+            "tapa": "sexpis.jpg",
+            "contratapa": "sexpis_contratapa.jpg"
+        }
+    ],
+
+    "destacado": true
+
+}
