@@ -28,10 +28,27 @@ function chequearDatosComentario() {
     console.log("cantidad de estrellas: " + cantidadEstrellas);
     if (cantidadEstrellas > 0 && emailCorrecto && nombreCorrecto && comentarioConContenido) {
         crearComentario();
+    } else {
+        mostrarError();
     }
 }
 
-
+function mostrarError() {
+    let error = "Error al enviar comentario:";
+    if (nombreCorrecto == false) {
+        error += " \n El nombre es invalido"
+    }
+    if (emailCorrecto == false) {
+        error += " \n El email es invalido"
+    }
+    if (comentarioConContenido == false) {
+        error += " \n El comentario no puede estar vacio"
+    }
+    if (cantidadEstrellas == 0) {
+        error += " \n No se tildo ninguna estrella"
+    }
+    alert(error);
+}
 
 
 
