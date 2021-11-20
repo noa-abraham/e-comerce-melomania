@@ -4,6 +4,10 @@
         color: rgba(0, 0, 0, .85);
     }
     
+    .font-weight-bold {
+        font-weight: 700 !important;
+    }
+    
     header {
         background-color: rgba(0, 0, 0, .85);
     }
@@ -50,7 +54,4 @@
         color: #21d192;
         text-decoration: none;
     }
-    
-    .styleBarraVerde {
-        background-color: #21d192;
-    }
+    /*FOOTER*/
