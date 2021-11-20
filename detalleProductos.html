@@ -61,10 +61,10 @@
         <div class="tapa-contratapa">
             <ul class="preview-thumbnail nav nav-tabs">
                 <li class="active">
-                    <a data-target="#pic-1" data-toggle="tab" onclick="cambiarImagenATapa();"><img class="miniatura tapa" src="./assets/img/Revolver.jpg" /></a>
+                    <a data-target="#pic-1" data-toggle="tab"><img class="miniatura tapa" src="./assets/img/Revolver.jpg" onclick="cambiarImagen(this);" /></a>
                 </li>
                 <li>
-                    <a data-target="#pic-2" data-toggle="tab" onclick="cambiarImagenAContratapa();"><img class="miniatura contratapa" src="./assets/img/beat_revolver2.jpg" /></a>
+                    <a data-target="#pic-2" data-toggle="tab"><img class="miniatura contratapa" src="./assets/img/revolver_contratapa.jpg" onclick="cambiarImagen(this);" /></a>
                 </li>
             </ul>
         </div>
@@ -126,7 +126,7 @@
     <div class="conteiner-lg col-md-4 cont-comment">
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="nombreComentario" pattern="^[A-Za-z]+$" required placeholder="Ingrese su nombre">
+            <input type="text" class="form-control" id="nombreComentario" pattern="^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$" required placeholder="Ingrese su nombre">
         </div>
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Email</label>
@@ -165,7 +165,7 @@
 
         <!--fin de estrellas-->
         <div class="boton-comentario">
-            <button type="button" class="btn btn-light" onclick="crearComentario()">enviar</button>
+            <button type="button" class="btn btn-light" onclick="chequearDatosComentario()">enviar</button>
         </div>
     </div>
     <!--Categorias-->
