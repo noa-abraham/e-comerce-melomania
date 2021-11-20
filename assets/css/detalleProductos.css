@@ -1,3 +1,21 @@
+/*.Efecto gris-verde barra de navegacioón*/
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #21d192;
+    text-decoration: none;
+}
+
+.site-header a {
+    transition: color .15s ease-in-out;
+}
+
+
+/*.Fin Efecto gris-verde barra de navegacioón*/
+
 body {
     background: url(../img/VUCPtX.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
