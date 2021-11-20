@@ -22,10 +22,6 @@ function chequearDatosComentario() {
     } else {
         comentarioConContenido = true;
     }
-    console.log("email correcto: " + emailCorrecto);
-    console.log("nombre correcto: " + nombreCorrecto);
-    console.log("comentario con conrenido: " + comentarioConContenido);
-    console.log("cantidad de estrellas: " + cantidadEstrellas);
     if (cantidadEstrellas > 0 && emailCorrecto && nombreCorrecto && comentarioConContenido) {
         crearComentario();
     } else {
@@ -36,16 +32,16 @@ function chequearDatosComentario() {
 function mostrarError() {
     let error = "Error al enviar comentario:";
     if (nombreCorrecto == false) {
-        error += " \n El nombre es invalido"
+        error += " \n- El nombre es invalido"
     }
     if (emailCorrecto == false) {
-        error += " \n El email es invalido"
+        error += " \n- El email es invalido"
     }
     if (comentarioConContenido == false) {
-        error += " \n El comentario no puede estar vacio"
+        error += " \n- El campo del comentario no puede estar vacio"
     }
     if (cantidadEstrellas == 0) {
-        error += " \n No se tildo ninguna estrella"
+        error += " \n- No se tildo ninguna estrella"
     }
     alert(error);
 }
