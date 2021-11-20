@@ -1,28 +1,41 @@
-function cambiarImagenAContratapa() {
+function cambiarImagen(fuenteDeImagen) {
     var fotoPrincipal = document.getElementById("foto-principal");
-    fotoPrincipal.src = "./assets/img/beat_revolver2.jpg";
+    fotoPrincipal.src = fuenteDeImagen.src;
 }
 
-function cambiarImagenATapa() {
-    var fotoPrincipal = document.getElementById("foto-principal");
-    fotoPrincipal.src = "./assets/img/Revolver.jpg";
-}
+
 let cantidadEstrellas = 0;
-let emailCorrecto = 0;
+let emailCorrecto = false;
+let nombreCorrecto = false;
+let comentarioConContenido = false;
+let comentario = document.getElementById("textAreaComentario");
+let email = document.getElementById("emailComentario");
+let nombre = document.getElementById("nombreComentario");
+
+function chequearDatosComentario() {
+    chequearMail(email.value);
+    if (nombre.checkValidity()) {
+        nombreCorrecto = true;
+    }
+    if (comentario.value === "") {
+        comentarioConContenido = false;
+    } else {
+        comentarioConContenido = true;
+    }
+    console.log("email correcto: " + emailCorrecto);
+    console.log("nombre correcto: " + nombreCorrecto);
+    console.log("comentario con conrenido: " + comentarioConContenido);
+    console.log("cantidad de estrellas: " + cantidadEstrellas);
+    if (cantidadEstrellas > 0 && emailCorrecto && nombreCorrecto && comentarioConContenido) {
+        crearComentario();
+    }
+}
+
+
+
+
 
 function crearComentario() {
-    let comentario = document.getElementById("textAreaComentario").value;
-    let email = document.getElementById("emailComentario").value;
-    let nombre = document.getElementById("nombreComentario");
-    chequearMail(email);
-    if (!nombre.checkValidity()) {
-        alert('El campo no es válido.');
-    } else {
-        alert('El campo es válido.');
-    }
-    console.log(comentario);
-    console.log(email);
-    console.log(nombre);
     const divisionComment = document.querySelector('.conteiner-comentarios');
     let myDivComment = document.createElement('div');
     myDivComment.classList.add("card", "col-md-5", "conteiner-lg", "valoraciones-realizadas");
@@ -46,7 +59,7 @@ function crearComentario() {
     myDivCommentText.classList.add("card-body");
     let myPText = document.createElement('p');
     myPText.classList.add("card-text");
-    myPText.textContent = comentario + cantidadEstrellas;
+    myPText.textContent = comentario.value + cantidadEstrellas;
     myDivCommentText.appendChild(myPText);
     myDivComment.appendChild(myDivCommentText);
     divisionComment.appendChild(myDivComment);
@@ -60,6 +73,6 @@ function chequearMail(string) {
     let posicionDelArroba = string.indexOf("@");
     let posicionDelPunto = string.lastIndexOf(".");
     if (posicionDelPunto > posicionDelArroba) {
-        emailCorrecto = 1;
+        emailCorrecto = true;
     }
 }
