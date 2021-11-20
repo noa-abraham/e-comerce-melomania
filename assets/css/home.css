@@ -34,17 +34,19 @@
     .ranking {
         margin-bottom: 150px;
     }
+    /*Borde verde de botones*/
     
     .btn-outline-secondary {
-        color: #21d192;
         border-color: #21d192;
     }
+    /*Color button cabecera*/
     
     .btn-outline-secondary:hover {
         color: #fbfbfb;
-        background-color: #151515;
+        background-color: #21d192;
         border-color: #6c757d;
     }
+    /*Fin Color button cabecera*/
     
     a {
         text-decoration: none;
@@ -53,4 +55,8 @@
     a:hover {
         color: #21d192;
         text-decoration: none;
+    }
+    
+    header {
+        background-color: rgba(0, 0, 0, .85);
     }
