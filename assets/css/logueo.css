@@ -10,10 +10,25 @@ header {
     background-color: rgba(0, 0, 0, .85);
 }
 
+
+/*.Efecto gris-verde barra de navegacioón*/
+
+a {
+    text-decoration: none;
+}
+
 .site-header a {
     color: #8e8e8e;
     transition: color .15s ease-in-out;
 }
+
+a:hover {
+    color: #21d192;
+    text-decoration: none;
+}
+
+
+/*.Fin Efecto gris-verde barra de navegacioón*/
 
 body {
     background: url(../img/VUCPtX.jpg) no-repeat center center fixed;
@@ -50,7 +65,7 @@ main {
 
 .logueo-form {
     max-width: 450px;
-    max-heigt:450px;
+    max-heigt: 450px;
     margin: 200px auto 0;
     background-color: rgba(0, 0, 0, .85);
     color: #8e8e8e;

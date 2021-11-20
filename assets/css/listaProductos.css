@@ -24,10 +24,25 @@ h1 {
     background-color: rgba(0, 0, 0, .85);
 }
 
+
+/*.Efecto gris-verde barra de navegación*/
+
+a {
+    text-decoration: none;
+}
+
 .site-header a {
     color: #8e8e8e;
     transition: color .15s ease-in-out;
 }
+
+a:hover {
+    color: #21d192;
+    text-decoration: none;
+}
+
+
+/*.Fin Efecto gris-verde barra de navegación*/
 
 
 /*

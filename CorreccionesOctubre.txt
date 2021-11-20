@@ -6,9 +6,10 @@ Barra de navegación:
 -Linkear loguito de la barra de navegación: ok! (hecho en todas las páginas)
 -Sacar botón "comentario" de cards: ok!
 
+
 FOOTER:
 
--Faltan links a las redes sociales.
+-Nuevo footer ok. Copié el código en cada página y armé un archivo footer.css (ya linkeado tb). 
 -
 
 DETALLE PRODUCTOS:
@@ -25,7 +26,7 @@ Menú derecho: sacar los botones (o tal vez la barra)
 *Demo (no tiene uso)
 *Redes sociales (ya están en el footer)
 
-Carrusel Categorías y Carrusel Set-Box: hacerlo con bootstrap para que sea responsive, o ponerlo en un <comnteiner>
+Carrusel Categorías y Carrusel Set-Box: hacerlo con bootstrap para que sea responsive, o ponerlo en un <conteiner>
 
 LOGUEO: 
 
