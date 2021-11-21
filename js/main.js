@@ -1,27 +1,13 @@
-//Cargando las librerias Http... requets con Jquey
+console.log("Hola mundo");
 
-function getData() {
-    let url = "ajax/api.json";
-    $.getJSON(url, function(data) { //procesa el data y devuelve la info que sigue
-                setDataJson(data);
+const url = 'discos.json';
+const request = new XMLHttpRequest();
+request.open('GET', url); // setean el método, la url de api
+request.responseType = 'json'; //definen el tipo de dato que les devuelve
+request.send(); //envían la solicitud
+var discos = '';
 
-                .done(function() { //validaciones para ver si se cargo
-                    console.log("second success";)
-                })
-
-                .fail(function() {
-                    console.log(" error");
-                })
-            }
-
-            function setDataJson(data) {
-                var items = [];
-                $.each(data, fuction(key, val) {
-                    items.push("<li id ='" + key + "'>" + val + "</li>");
-                });
-
-                $("<ul/", {
-                    "class": "my-new-lits",
-                    html: items.join("")
-                }).appendTo("body");
-            }
+request.onload = fuction(); { //espera la respuesta
+    console.log(request.response);
+    discos = request.response; //recibe la respuesta
+}
