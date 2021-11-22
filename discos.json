@@ -187,6 +187,7 @@
             "precio": "$7000",
             "formato": "Vinilo",
             "origen": "Importado",
+            "condicion": "Nuevo/Sellado",
             "tapa": "https://img.discogs.com/8X0hSdqsT41rVT9FO9TDbaWE8M4=/fit-in/600x603/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1146503-1528033152-2599.jpeg.jpg",
             "contratapa": "https://img.discogs.com/Q1elTlX7gJbHJxn47Gk9KLW9eoU=/fit-in/600x598/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1146503-1528033152-6807.jpeg.jpg",
             "descripcion": "Lucille is the fifteenth album by blues artist B. B. King. It is named for his famous succession of Gibson guitars, currently the Signature ES-355."
@@ -248,7 +249,7 @@
             "condicion": "Nuevo/Sellado",
             "tapa": "assets/img/Catalogo/marilyn.jpg",
             "contratapa": "assets/img/Catalogo/marilyn_contratapa.jpg"
-        }
+        },
         {
             "id": 11,
             "destacado": false,
