@@ -100,8 +100,8 @@
             "formato": "Vinilo",
             "origen": "Importado",
             "condicion": "Nuevo/Sellado",
-            "tapa": "assets/img/catalogo/Revolver.jpg",
-            "contratapa": "assets/img/revolver_contratapa.jpg"
+            "tapa": "assets/img/Catalogo/Revolver.jpg",
+            "contratapa": "assets/img/Catalogo/revolver_contratapa.jpg"
         },
         {
             "id": 2,
@@ -114,8 +114,8 @@
             "formato": "Vinilo",
             "origen": "Nacional",
             "condicion": "Nuevo/Sellado",
-            "tapa": "assets/img/ceratti.jpg",
-            "contratapa": "assets/img/ceratti_contratapa.jpg"
+            "tapa": "assets/img/Catalogo/ceratti.jpg",
+            "contratapa": "assets/img/Catalogo/ceratti_contratapa.jpg"
         },
         {
             "id": 3,
@@ -129,8 +129,8 @@
             "formato": "Vinilo",
             "origen": "Importado",
             "condicion": "Nuevo/Sellado",
-            "tapa": "assets/img/billevans.jpg",
-            "contratapa": "assets/img/billevans_contratapa.jpg"
+            "tapa": "assets/img/Catalogo/billevans.jpg",
+            "contratapa": "assets/img/Catalogo/billevans_contratapa.jpg"
         },
         {
             "id": 4,
@@ -143,8 +143,8 @@
             "formato": "Vinilo",
             "origen": "Importado",
             "condicion": "Nuevo/Sellado",
-            "tapa": "assets/img/norah.jpg",
-            "contratapa": "assets/img/norah_contratapa.jpg"
+            "tapa": "assets/img/Catalogo/norah.jpg",
+            "contratapa": "assets/img/Catalogo/norah_contratapa.jpg"
         },
         {
             "id": 5,
@@ -158,8 +158,8 @@
             "formato": "Vinilo",
             "origen": "Importado",
             "condicion": "Nuevo/Sellado",
-            "tapa": "assets/img/marilyn.jpg",
-            "contratapa": "assets/img/marilyn_contratapa.jpg"
+            "tapa": "assets/img/Catalogo/marilyn.jpg",
+            "contratapa": "assets/img/Catalogo/marilyn_contratapa.jpg"
         },
         {
             "id": 6,
@@ -172,8 +172,8 @@
             "formato": "Vinilo",
             "origen": "Importado",
             "condicion": "Nuevo/Sellado",
-            "tapa": "assets/img/sexpis.jpg",
-            "contratapa": "assets/img/sexpis_contratapa.jpg"
+            "tapa": "assets/img/Catalogo/sexpis.jpg",
+            "contratapa": "assets/img/Catalogo/sexpis_contratapa.jpg"
         },
         {
             "id": 7,
