@@ -44,7 +44,7 @@ function setCatalogo(){
     catalogo.forEach(element => {
         
            let elementCatalogo = '<div class="card  tarjeta-Listados" style="width: 15rem;">';
-           elementCatalogo += '<a href="detalleProductos.html">';
+           elementCatalogo += '<a href="detalleProductos.html?prodId='+ element.id+'">';
            elementCatalogo += '<img src="'+element.tapa+'" class="card-img-top" alt="...">';
            elementCatalogo += '<div class="card-body">';
            elementCatalogo += '<h5 class="card-text">' + element.titulo + ' </h5>';
