@@ -20,7 +20,7 @@ function setTablaDestacados() {
 
         
            let elementCard = '<div class="card  tarjeta-Listados" style="width: 15rem;">';
-           elementCard += '<a href="detalleProductos.html">';
+           elementCard += '<a href="detalleProductos.html?prodId='+ element.id+'">';
            elementCard += '<img src="'+element.tapa+'" class="card-img-top" alt="...">';
            elementCard += '<div class="card-body">';
            elementCard += '<h5 class="card-text">' + element.titulo + ' </h5>';
