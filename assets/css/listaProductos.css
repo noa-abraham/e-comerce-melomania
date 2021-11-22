@@ -7,7 +7,12 @@
 }
 
 body {
-    background: #FFFFFF;
+    /*background: #FFFFFF;*/
+    background: url(../img/VUCPtX.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 
@@ -58,6 +63,9 @@ a:hover {
 
 
 /* ======*Liastado productos*=======*/
+.container {
+    max-width: 1340px;
+}
 
 .contenedor-listadoProductos {
     display: flex;
@@ -193,12 +201,14 @@ nav .btn-buscar {
 }
 
 .destacados {
-    margin-left: 2%;
+    width: 1300px !important;
+    margin-left: 8%;
     margin-bottom: 5%;
 }
 
 .catalogo {
-    margin-left: 2%;
+    width: 1300px !important;
+    margin-left: 8%;
 }
 
 #inputState {
@@ -213,25 +223,32 @@ nav .btn-buscar {
 }
 
 .tarjeta-Listados {
-    width: 250px !important;
+    width: 400px !important;
     align-items: center;
     margin-left: 1% !important;
     margin: .4%;
-    max-width: 300px !important;
+    max-width: 500px !important;
     background-color: rgba(0, 0, 0, .85);
     color: #8e8e8e;
     transition: color .15s ease-in-out;
     box-shadow: 0 1px 2px gray, 0 1px 3px white, 1px 2px 4px grey;
     text-decoration: none;
+    margin-top: 2%;
+    text-align: center;
+}
+
+.card-title {
+    color: #21d192;
 }
 
 .tarjeta-Listados p {
-    font-size: 25px;
+    font-size: 45px;
 }
 
 .tarjeta-Listados img {
-    margin-top: 7px;
-    margin-left: 19% !important;
+    margin-top: 24px !important;
+    margin-left: 8% !important;
+
 }
 
 
@@ -282,7 +299,7 @@ nav .btn-buscar {
 
 .carousel-inner {
     align-items: center;
-    height: 348px;
+    height: 400px;
     margin-left: 19%;
 }
 
@@ -295,7 +312,7 @@ nav .btn-buscar {
 }
 
 .tarjetas-carousel .btn:hover {
-    box-shadow: 0 1px 2px rgb(121, 121, 121), 0 1px 3px white
+    box-shadow: 0 1px 2px rgb(121, 121, 121), 0 1px 3px white, 1px 2px 5px #21d192;
 }
 
 #carouselExampleControls {
@@ -341,11 +358,18 @@ nav .btn-buscar {
     /*scale: 1.05;*/
     margin: .4%;
     color: #E2E3E5 !important;
-    box-shadow: 0 1px 2px gray, 0 1px 3px white, 1px 2px 4px grey, 1px 2px 5px rgba(0, 0, 0, .85);
+    box-shadow: 0 1px 2px gray, 0 1px 3px white, 1px 2px 4px grey, 1px 2px 5px rgba(0, 0, 0, .85), 1px 2px 6px #21d192;
     transition: all .15s;
+    margin-top: 2%;
 }
 
-.tarjeta-Listados img,
+.tarjeta-Listados img {
+    margin-top: 5px;
+    width: 200px;
+    align-items: center;
+    border-radius: 100%;
+}
+
 .tarjetas-carousel img,
 .tarjetas-carousel-setbox img {
     margin-top: 5px;
@@ -355,7 +379,13 @@ nav .btn-buscar {
     border-radius: 100%;
 }
 
-.tarjeta-Listados h5,
+.tarjeta-Listados h5 {
+    height: 70px;
+    text-align: center;
+    font-size: 30px;
+}
+
+
 .tarjetas-carousel h5,
 .tarjetas-carousel-setbox h5 {
     height: 70px;
@@ -378,7 +408,7 @@ nav .btn-buscar {
     background-color: rgba(0, 0, 0, .85);
     color: #8e8e8e;
     transition: color .15s ease-in-out;
-    box-shadow: 0 1px 2px gray, 0 1px 3px white, 1px 2px 4px grey;
+    box-shadow: 0 1px 2px gray, 0 1px 3px white, 1px 2px 4px grey, 1px 2px 5px #21d192;
 }
 
 .tarjetas-carousel-setbox p {
