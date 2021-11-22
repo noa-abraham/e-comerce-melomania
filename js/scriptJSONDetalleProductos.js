@@ -1,4 +1,4 @@
-var urlEnString = window.location.href; 
+var urlEnString = window.location.href;
 var urlDireccion = new URL(urlEnString);
 var productId = urlDireccion.searchParams.get("prodId");
 console.log("productID: " + productId);
@@ -19,10 +19,10 @@ request.onload = function() {
 }
 
 function buscarElDisco() {
-    let productos = discos.productos;
+    let productos = discos.catalogos;
     productos.forEach(element => {
-        
-        if(element.id == productId){
+
+        if (element.id == productId) {
             console.log(element);
             setDataDisc(element);
         }
@@ -48,5 +48,5 @@ function setDataDisc(discinfo) {
     formato.innerHTML = discinfo.formato;
     precio.innerHTML = discinfo.precio;
     genero.innerHTML = discinfo.genero;
-    origen.innerHTML =discinfo.origen;
+    origen.innerHTML = discinfo.origen;
 }
