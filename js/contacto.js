@@ -21,6 +21,6 @@ function mostrarMensaje() {
         estado = false;
     }
     if (estado == true) {
-        alert("¿Está segurx que quiere enviar el formulario?")
+        alert("¿Está seguro que quiere enviar el formulario?")
     }
 }
