@@ -24,7 +24,7 @@ function setTablaDestacados() {
         elementGalery += '<p class="card-text"><b> GÉNERO: </b>' + element.genero + ' </p>';
         elementGalery += '<div class="d-flex justify-content-between align-items-center">';
         elementGalery += '<div class="btn-group">';
-        elementGalery += '<button type="button" class="btn btn-sm btn-outline-secondary"> <a href="detalleProductos.html"> Detalle</a></button>';
+        elementGalery += '<button type="button" class="btn btn-sm btn-outline-secondary"> <a href="detalleProductos.html?prodId='+ element.id+'"> Detalle</a></button>';
         elementGalery += '</div><small class="text-muted">9 mins</small></div></div></div></div>';
 
         let gallery = document.getElementById('gallery_view');
