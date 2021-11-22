@@ -12,7 +12,7 @@
             "formato": "Vinilo",
             "origen": "Importado",
             "condicion": "Nuevo/Sellado",
-            "tapa": "assets/img/Revolver.jpg",
+            "tapa": "assets/img/revolver.jpg",
             "contratapa": "assets/img/revolver_contratapa.jpg"
         },
         {
@@ -161,7 +161,7 @@
             "condicion": "Nuevo/Sellado",
             "tapa": "assets/img/Catalogo/billevans.jpg",
             "contratapa": "assets/img/Catalogo/billevans_contratapa.jpg"
-        },         
+        },
         {
             "id": 6,
             "destacado": false,
@@ -205,7 +205,7 @@
             "condicion": "Nuevo/Sellado",
             "tapa": "assets/img/Catalogo/norah.jpg",
             "contratapa": "assets/img/Catalogo/norah_contratapa.jpg"
-        },         
+        },
         {
             "id": 9,
             "destacado": true,
@@ -221,7 +221,7 @@
             "tapa": "assets/img/Catalogo/Revolver.jpg",
             "contratapa": "assets/img/Catalogo/revolver_contratapa.jpg"
         },
-         {
+        {
             "id": 10,
             "destacado": true,
             "titulo": "Bocanada",
@@ -235,7 +235,7 @@
             "tapa": "assets/img/Catalogo/ceratti.jpg",
             "contratapa": "assets/img/Catalogo/ceratti_contratapa.jpg"
         },
-         {
+        {
             "id": 11,
             "destacado": true,
             "titulo": "Heaven Upside Down",
