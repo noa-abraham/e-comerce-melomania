@@ -34,7 +34,19 @@ function setDataDisc(discinfo) {
     let titulo = document.getElementById("disc-name");
     let banda = document.getElementById("band");
     let foto = document.getElementById("foto-principal");
+    let tapa = document.getElementById("boton-tapa");
+    let contratapa = document.getElementById("boton-contratapa");
+    let formato = document.getElementById("formato");
+    let precio = document.getElementById("precio");
+    let genero = document.getElementById("genero");
+    let origen = document.getElementById("origen");
     titulo.innerHTML = discinfo.titulo;
     banda.innerHTML = discinfo.artista;
     foto.src = discinfo.tapa;
+    tapa.src = discinfo.tapa;
+    contratapa.src = discinfo.contratapa;
+    formato.innerHTML = discinfo.formato;
+    precio.innerHTML = discinfo.precio;
+    genero.innerHTML = discinfo.genero;
+    origen.innerHTML =discinfo.origen;
 }
