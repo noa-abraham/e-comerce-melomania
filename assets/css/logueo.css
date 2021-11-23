@@ -64,9 +64,9 @@ main {
 }
 
 .logueo-form {
-    max-width: 450px;
-    max-heigt: 450px;
-    margin: 200px auto 0;
+    max-width: 650px;
+    max-heigt: 650px;
+    margin: 500px auto 0;
     background-color: rgba(0, 0, 0, .85);
     color: #8e8e8e;
     transition: color .15s ease-in-out;
@@ -74,7 +74,7 @@ main {
 }
 
 .icono-logueo svg {
-    width: 60px;
+    width: 90px;
     color: #8e8e8e;
     margin-left: 40%;
     margin-top: 10%;
@@ -89,12 +89,12 @@ main {
 
 .logueo-usuario span,
 .logueo-contrasenia span {
-    width: 30px;
+    width: 50px;
 }
 
 .logueo-usuario svg,
 .logueo-contrasenia svg {
-    width: 25px;
+    width: 45px;
     margin-top: 9%;
     margin-left: 5%;
     margin-right: 2%;
@@ -105,6 +105,7 @@ main {
     width: 80%;
     margin-left: 2%;
     margin-bottom: 5%;
+	font-size:30px;
 }
 
 .logueo-recordar {
@@ -128,15 +129,17 @@ main {
 }
 
 .logueo-form button {
+	height: 60px;
     margin-top: 5%;
     margin-left: 20%;
     margin-bottom: 10%;
     width: 60%;
-    color: #8e8e8e;
+    color: #21d192;
     background-color: transparent;
+	font-size:30px;
 }
 
 .logueo-form button:hover {
     color: #E2E3E5;
-    box-shadow: 0 1px 2px rgb(121, 121, 121), 0 1px 3px white !important;
+    box-shadow: 0 1px 2px rgb(121, 121, 121), 0 1px 3px white, 1px 2px 5px #21d192 !important;
 }
