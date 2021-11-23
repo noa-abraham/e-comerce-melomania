@@ -31,7 +31,8 @@ function setTablaDestacados(data) {
     let productos = discos.productos;
     productos.forEach(element => {
 
-        let elementGalery = '<div class="col"><div class="card shadow-sm" id="card' + element.id + '">';
+        let elementGalery = '<div class="col">';
+        elementGalery += '<div class="card shadow-sm" id="card' + element.id + '">';
         elementGalery += '<title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect>';
         elementGalery += '<img src="' + element.tapa + '" class="card-img-top" alt="...">';
         elementGalery += '<div class="card-body">';
