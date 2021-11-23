@@ -43,6 +43,7 @@ function setDataDisc(discinfo) {
     let autor = document.getElementById("author");
     let descripcion = document.getElementById("descripciondisco");
     let listaDeCanciones = document.getElementById("songs");
+    let codigo = document.getElementById("codigo");
     console.log(listaDeCanciones);
     banda.innerHTML = discinfo.artista;
     titulo.innerHTML = discinfo.titulo;
