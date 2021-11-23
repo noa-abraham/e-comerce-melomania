@@ -57,4 +57,5 @@ function setDataDisc(discinfo) {
     origen.innerHTML = discinfo.origen;
     autor.innerHTML = discinfo.artista;
     descripcion.innerHTML = discinfo.descripcion;
+    codigo.innerHTML = discinfo.id;
 }
