@@ -19,7 +19,7 @@ request.onload = function() {
 }
 
 function buscarElDisco() {
-    let productos = discos.catalogos;
+    let productos = discos.catalogo;
     productos.forEach(element => {
 
         if (element.id == productId) {
