@@ -40,8 +40,10 @@ function setDataDisc(discinfo) {
     let precio = document.getElementById("precio");
     let genero = document.getElementById("genero");
     let origen = document.getElementById("origen");
+    let autor = document.getElementById("author");
     let descripcion = document.getElementById("descripciondisco");
     let listaDeCanciones = document.getElementById("songs");
+    console.log(listaDeCanciones);
     banda.innerHTML = discinfo.artista;
     titulo.innerHTML = discinfo.titulo;
     banda.innerHTML = discinfo.artista;
