@@ -27,14 +27,15 @@ request.onload = function() {
     });
 }*/
 
-function setTablaDestacados(data) {
+
+function setTablaDestacados() {
     let productos = discos.productos;
     productos.forEach(element => {
 
         let elementGalery = '<div class="col">';
         elementGalery += '<div class="card shadow-sm" id="card' + element.id + '">';
         elementGalery += '<title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect>';
-        elementGalery += '<img src="' + element.tapa + '" class="card-img-top" alt="...">';
+        elementGalery += '<img src="'+element.tapa+'" class="card-img-top" alt="...">';
         elementGalery += '<div class="card-body">';
         elementGalery += '<p class="card-text"><b> ARTISTA: </b>' + element.artista + ' </p>';
         elementGalery += '<p class="card-text"><b> GÉNERO: </b>' + element.genero + ' </p>';
