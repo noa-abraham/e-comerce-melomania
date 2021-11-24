@@ -42,10 +42,9 @@ function setDataDisc(discinfo) {
     let origen = document.getElementById("origen");
     let autor = document.getElementById("author");
     let descripcion = document.getElementById("descripciondisco");
-    let listaDeCanciones = document.getElementById("songs");
     let codigo = document.getElementById("codigo");
     let presentacion = document.getElementById("formato-presentacion");
-    console.log(listaDeCanciones);
+    imprimirCanciones(discinfo.canciones);
     banda.innerHTML = discinfo.artista;
     titulo.innerHTML = discinfo.titulo;
     banda.innerHTML = discinfo.artista;
@@ -60,4 +59,16 @@ function setDataDisc(discinfo) {
     descripcion.innerHTML = discinfo.descripcion;
     codigo.innerHTML = discinfo.id;
     presentacion.innerHTML = discinfo.presentacion;
+}
+
+function imprimirCanciones(canciones) {
+
+    let elementList = '<ol>';
+    canciones.forEach(element => {
+        console.log(element);
+        elementList += '<li>' + element + '</li>';
+    });
+    elementList += '</ol>'
+        //let listaDeCanciones = document.getElementById('songs');
+    $('#songs').append(elementList);
 }
