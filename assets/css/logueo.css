@@ -65,7 +65,7 @@ main {
 
 .logueo-form {
     max-width: 650px;
-    max-heigt: 650px;
+    max-height: 650px;
     margin: 500px auto 0;
     background-color: rgba(0, 0, 0, .85);
     color: #8e8e8e;
@@ -105,7 +105,7 @@ main {
     width: 80%;
     margin-left: 2%;
     margin-bottom: 5%;
-	font-size:30px;
+    font-size: 30px;
 }
 
 .logueo-recordar {
@@ -129,14 +129,14 @@ main {
 }
 
 .logueo-form button {
-	height: 60px;
+    height: 60px;
     margin-top: 5%;
     margin-left: 20%;
     margin-bottom: 10%;
     width: 60%;
     color: #21d192;
     background-color: transparent;
-	font-size:30px;
+    font-size: 30px;
 }
 
 .logueo-form button:hover {
