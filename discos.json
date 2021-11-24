@@ -167,7 +167,22 @@
             "condicion": "Nuevo/Sellado",
             "tapa": "assets/img/billevans.jpg",
             "contratapa": "assets/img/billevans_contratapa.jpg",
-            "descripcion": " Esta es una descripcion del producto"
+            "descripcion": " Esta es una descripcion del producto",
+            "canciones": [
+                " cancion 1",
+                " cancion",
+                " cancion",
+                " cancion",
+                " cancion",
+                " cancion",
+                " cancion",
+                " cancion",
+                " cancion",
+                " cancionvvvvvvvvvvvvvvv",
+                " cancion",
+                " cancionvvvvvvvvvv",
+                " cancion "
+            ]
         },
         {
             "id": 4,
