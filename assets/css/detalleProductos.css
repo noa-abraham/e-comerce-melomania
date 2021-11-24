@@ -39,6 +39,9 @@ body {
 
 .imagen {
     display: inline-block;
+}
+
+#foto-principal {
     width: 500px;
     height: 500px;
 }
