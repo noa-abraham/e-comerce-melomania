@@ -118,7 +118,7 @@
             "origen": "Nacional",
             "tapa": "assets/img/ceratti.jpg",
             "contratapa": "assets/img/ceratti_contratapa.jpg",
-            "descripcion": " Esta es una descripcion del producto"
+            "descripcion": " Esta es una \ndescripcion del producto"
         },
         {
             "id": 3,
