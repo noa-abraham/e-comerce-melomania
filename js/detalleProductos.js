@@ -83,9 +83,12 @@ function estrellas(element) {
 }
 
 function chequearMail(string) {
-    let posicionDelArroba = string.indexOf("@");
+    let posicionDelPrimerArroba = string.indexOf("@");
+    let posicionDelUltimoArroba = string.lastIndexOf("@");
     let posicionDelPunto = string.lastIndexOf(".");
-    if (posicionDelPunto > posicionDelArroba) {
-        emailCorrecto = true;
+    if (posicionDelPrimerArroba == posicionDelUltimoArroba) {
+        if (posicionDelPunto > posicionDelPrimerArroba) {
+            emailCorrecto = true;
+        }
     }
 }
