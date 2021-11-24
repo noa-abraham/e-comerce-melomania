@@ -167,7 +167,19 @@
             "condicion": "Nuevo/Sellado",
             "tapa": "assets/img/billevans.jpg",
             "contratapa": "assets/img/billevans_contratapa.jpg",
-            "descripcion": " Esta es una descripcion del producto"
+            "descripcion": " Esta es una descripcion del producto",
+            "canciones": [
+                " Gloria's Step (take 2)",
+                " Gloria's Step (take 3)",
+                " My Man's Gone Now",
+                " Solar",
+                " Alice In Wonderland (take 2)",
+                " Alice In Wonderland (take 1)",
+                " All Of You (take 2)",
+                " All Of You (take 3)",
+                " Jade Visions (take 2)",
+                " Jade Visions (take 1)"
+            ]
         },
         {
             "id": 4,
@@ -184,19 +196,13 @@
             "contratapa": "assets/img/norah_contratapa.jpg",
             "descripcion": " Esta es una descripcion del producto",
             "canciones": [
-                " cancion 1",
-                " cancion",
-                " cancion",
-                " cancion",
-                " cancion",
-                " cancion",
-                " cancion",
-                " cancion",
-                " cancion",
-                " cancionvvvvvvvvvvvvvvv",
-                " cancion",
-                " cancionvvvvvvvvvv",
-                " cancion "
+                " My Heart Is Full",
+                " Begin Again",
+                " It Was You",
+                " A Song Whit No Name",
+                " Uh Oh",
+                " Wintertime",
+                " Just A Little Bit"
             ]
         },
         {
@@ -216,19 +222,16 @@
             "contratapa": "assets/img/marilyn_contratapa.jpg",
             "descripcion": " Esta es una descripcion del producto",
             "canciones": [
-                " cancion 1",
-                " cancion",
-                " cancion",
-                " cancion",
-                " cancion",
-                " cancion",
-                " cancion",
-                " cancion",
-                " cancion",
-                " cancionvvvvvvvvvvvvvvv",
-                " cancion",
-                " cancionvvvvvvvvvv",
-                " cancion "
+                " Revelation #12",
+                " Tattoed in Reverse",
+                " WE KNOW WHERE YOU FUCKING LIVE",
+                " SAY10",
+                " KILL4ME",
+                " Saturnalia",
+                " JE$U$ CRI$I$",
+                " Blood Honey",
+                " Heaven Upside Down",
+                " Threats of Romance"
             ]
         },
         {
@@ -246,20 +249,19 @@
             "contratapa": "assets/img/sexpis_contratapa.jpg",
             "descripcion": " Esta es una descripcion del producto",
             "canciones": [
-                " cancion 1",
-                " cancion",
-                " cancion",
-                " cancion",
-                " cancion",
-                " cancion",
-                " cancion",
-                " cancion",
-                " cancion",
-                " cancionvvvvvvvvvvvvvvv",
-                " cancion",
-                " cancionvvvvvvvvvv",
-                " cancion "
-            ]
+                " Holidays in the Sun",
+                " Bodies",
+                " No Feelings",
+                " Liar",
+                " Problems",
+                " God Save the Queen",
+                " Seventeen",
+                " Anarchy in the U.K.",
+                " Sub-Mission",
+                " Pretty Vacant",
+                " New York",
+                " EMI"
+            ] 
         },
         {
             "id": 7,
