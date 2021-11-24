@@ -31,6 +31,7 @@ function buscarElDisco() {
 }
 
 function setDataDisc(discinfo) {
+    console.log("se ejecuto el setDataDisc");
     let titulo = document.getElementById("disc-name");
     let banda = document.getElementById("band");
     let foto = document.getElementById("foto-principal");
