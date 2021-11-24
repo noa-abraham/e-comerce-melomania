@@ -44,7 +44,7 @@ function setDataDisc(discinfo) {
     let descripcion = document.getElementById("descripciondisco");
     let listaDeCanciones = document.getElementById("songs");
     let codigo = document.getElementById("codigo");
-    let formato = document.getElementById("formato-presentacion");
+    let presentacion = document.getElementById("formato-presentacion");
     console.log(listaDeCanciones);
     banda.innerHTML = discinfo.artista;
     titulo.innerHTML = discinfo.titulo;
@@ -59,5 +59,5 @@ function setDataDisc(discinfo) {
     autor.innerHTML = discinfo.artista;
     descripcion.innerHTML = discinfo.descripcion;
     codigo.innerHTML = discinfo.id;
-    formato.innerHTML = discinfo.formato;
+    presentacion.innerHTML = discinfo.presentacion;
 }
