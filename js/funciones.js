@@ -16,6 +16,6 @@ sha256("test");
 
 
 function getParametroByName(name) {
-    name = name.replace(/[])
-        var regex = new RegExp
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[)
     }
