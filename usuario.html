@@ -20,7 +20,7 @@
 <body class="text-center">
 
     <main class="form-signin">
-        <form id="login-fomr">
+        <form id="login-fomr" method="get" action="panel.html">
 
             <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
@@ -33,11 +33,17 @@
                 <label for="floatingPassword">Contraseña</label>
             </div>
 
-            </div>
+
             <button class="w-100 btn btn-lg btn-primary" type="button" onclick="checkUserLoguin();">Enviar</button>
             <p class="mt-5 mb-3 text-muted">© 2017–2021</p>
         </form>
     </main>
+    </div>
+
+    <form id="loguin_form" action=panel.html>
+        input type="hidden" id="idUsuario">
+    </form>
+
 
 
     <!-- JavaScript Bundle with Popper -->

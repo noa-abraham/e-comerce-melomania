@@ -1,16 +1,3 @@
-async function sha256(message) {
-    const msgBuffer = new TextEnconder('uft-8').encode(message);
-
-    const hashBuffer = await crypto.subtle.digest('SHA-256, msgBuffer');
-
-    const hashArray = Array.form(new Uint8Array(hashBuffer));
-
-    const hashHex = hashArray.map(b('00 + b.toString (16).slice (-2)')).join('');
-    console.log(hashHex);
-    return hashHex;
-
-}
-
 function checkUserLoguin() {
     let usuario = $('#usuario').val();
     let contraseña = $('#contraseña').val();
@@ -22,6 +9,7 @@ function checkUserLoguin() {
         $.getJSON(url, function(data) {
                 sha256(contraseña).then(function(respuestaHash) {
                     checkUser(data, usuario, respuestaHash);
+                    console.log('Resultado: ')
 
                 });
 
@@ -33,6 +21,7 @@ function checkUserLoguin() {
 }
 
 function checkUser(data, usuario, contraeña) {
+    var estadoUsuario = false;
 
     $.each(data.usuario, function(key, val) {
 
@@ -40,20 +29,29 @@ function checkUser(data, usuario, contraeña) {
         val = JSON.parse(val);
 
         if (usuario === val.usuario) {
+            estadoUsuario = true;
 
             console.log('Pass ' + contraseña);
-
             console.log('Pass json ' + val.contraseña);
 
             if (contraseña == val.contraseña) {
-                alert("El usuario existe");
-            } else {
-                alert("La contraseña no existe")
-            }
+                console.log("Contraseña correcta");
+                $('#idUsuario').val(idUsuario);
+                $('#login_form').submit();
+                return false;
 
+            } else {
+                alert("contraseña incorrecta");
+                return false;
+            }
         } else {
-            alert('El usuario no existe')
+            console.log("Usuario no coincide");
         }
+
     })
+
+    if (estadoUsuario == false) {
+        console.log("Usuario no registrado");
+    }
 
 }
