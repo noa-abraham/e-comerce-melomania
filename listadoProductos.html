@@ -66,24 +66,45 @@
                                 class="d-none d-sm-inline">Catálogo</span></a>
                         <div class="collapse" id="submenu1" aria-expanded="false">
                             <ul class="flex-column pl-2 nav">
-                                <li class="nav-item"><a class="nav-link py-0" href="#"><span>Set-box</span></a></li>
-                                <li class="nav-item"><a class="nav-link py-0" href="#"><span>Categorias/Generos</span></a></li>
-                                <li class="nav-item">
-                                    <a class="nav-link  text-truncate collapsed py-1" href="#submenu1sub1" data-toggle="collapse" data-target="#submenu1sub1"><span>Por Letras</span></a>
+                                <li class="nav-item"><a class="nav-link py-0" onclick="mostrarSetBox()" href="#"><span>Set-box</span></a></li>
+                                    <a class="nav-link  text-truncate collapsed py-1" href="#submenu1sub1" data-toggle="collapse" data-target="#submenu1sub1"><span>Categorias/Generos</span></a>
                                     <div class="collapse" id="submenu1sub1" aria-expanded="false">
                                         <ul class="flex-column nav pl-4">
                                             <li class="nav-item">
-                                                <a class="nav-link p-1 text-truncate" href="#">A </a>
+                                                <a class="nav-link p-1 text-truncate" onclick="mostrarBandaSonora()"  href="#">Bandas Sonora</a>
+                                            </li>
+                                             <li class="nav-item">
+                                                <a class="nav-link p-1 text-truncate" onclick="mostrarBlues()" href="#">Blues</a>
+                                            </li>  
+                                              <li class="nav-item">
+                                                <a class="nav-link p-1 text-truncate" onclick="mostrarFunkySoul()" href="#">Funk & Soul</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link p-1 text-truncate" href="#">B </a>
+                                                <a class="nav-link p-1 text-truncate" onclick="mostrarJazz()" href="#">Jazz</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link p-1 text-truncate" href="#">C</a>
+                                                <a class="nav-link p-1 text-truncate" onclick="mostrarMetal()" href="#">Metal</a>
+                                            </li>
+                                             <li class="nav-item">
+                                                <a class="nav-link p-1 text-truncate" onclick="mostrarMusicWorld() "href="#">Music World</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link p-1 text-truncate" href="#">D </a>
+                                                <a class="nav-link p-1 text-truncate" onclick="mostrarPunkyHardcore()" href="#">Punk & Hardcore</a>
                                             </li>
+                                             <li class="nav-item">
+                                                <a class="nav-link p-1 text-truncate" onclick="mostrarRapyHipHop()" href="#">Rap & Hip-Hop</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link p-1 text-truncate" onclick="mostrarReggaeySka()" href="#">Reggae & Ska</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link p-1 text-truncate" onclick="mostrarRockyPop()" href="#">Rock & Pop</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link p-1 text-truncate" onclick="mostrarRockNacional()" href="#">Rock Nacional</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link p-1 text-truncate" onclick="mostrarTango()" href="#">Tango</a>
                                         </ul>
                                     </div>
                                 </li>
@@ -91,7 +112,7 @@
                         </div>
                     </li>
                     <li class="nav-item"><a class="nav-link text-truncate" href="#"><i class="far fa-star"></i>
-                            <span class="d-none d-sm-inline">Destacados</span></a></li>
+                            <span class="d-none d-sm-inline" onclick="mostrarDestacados()" >Destacados</span></a></li>
                     <!--
                     <li class="nav-item"><a class="nav-link text-truncate" href="#"><i class="fa fa-download"></i> <span
                                 class="d-none d-sm-inline">Demo</span></a></li>
@@ -119,6 +140,10 @@
                 </ul>
             </div>
 
+                             
+                         
+
+
             <div class="col pt-2">
                 <main>
                     <div class="postion-relative overflow-hidden p-3 p-1 m-md-3 text center bg-light ">
@@ -137,8 +162,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="destacados container">
-                            <h4>Destacados</h4>
+
+                        <div class="destacados container"  id="mostrarOcultarDestacados">
+                            <h4><i class="far fa-star"></i> Destacados</h4>
                             <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="Destacados">
                                 <!--
                                 <div class="card  tarjeta-Listados" style="width: 15rem;">
@@ -194,9 +220,85 @@
                                  -->
                             </div>
                         </div>
+                                
+								<div class="Set-Box container"  id="mostrarOcultarSetBox">
+                            <h4><i class="far fa-star"></i> Set-Box</h4>
+                            <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="SetBox">
+                            </div>
+                        </div>
+                            
+                              <div class="Banda-Sonora container"  id="mostrarOcultarBandaSonora">
+                            <h4><i class="far fa-star"></i> Banda Sonora</h4>
+                            <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="BandaSonora">
+                            </div>
+                        </div>
+                        
+                           <div class="BLUES container"  id="mostrarOcultarBlues">
+                            <h4><i class="far fa-star"></i> Blues</h4>
+                            <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="Blues">
+                            </div>
+                        </div>
+						
+						 <div class="Funk-Soul container"  id="mostrarOcultarFunkySoul">
+                            <h4><i class="far fa-star"></i> Funk & Soul</h4>
+                            <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="FunkySoul">
+                            </div>
+                        </div>
+                          
+                        <div class="Punk-Hardcore container"  id="mostrarOcultarPunkyHardcore">
+                            <h4><i class="far fa-star"></i> Punk & Hardcore</h4>
+                            <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="PunkyHardcore">
+                            </div>
+                        </div>
+                        
+
+                           <div class="JAZZ container"  id="mostrarOcultarJazz">
+                            <h4><i class="far fa-star"></i> Jazz</h4>
+                            <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="Jazz">
+                            </div>
+                        </div>
+                        
+
+                           <div class="METAL container"  id="mostrarOcultarMetal">
+                            <h4><i class="far fa-star"></i> Metal</h4>
+                            <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="Metal">
+                            </div>
+                        </div>
+
+                        <div class="Music-World container"  id="mostrarOcultarMusicWorld">
+                            <h4><i class="far fa-star"></i> Music World</h4>
+                            <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="MusicWorld">
+                            </div>
+                        </div>
+                        <div class="Rapy-HipHop container"  id="mostrarOcultarRapyHipHop">
+                            <h4><i class="far fa-star"></i> Rap & Hip-Hop</h4>
+                            <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="RapyHipHop">
+                            </div>
+                        </div>
+                        <div class="Reggae-Ska container"  id="mostrarOcultarReggaeySka">
+                            <h4><i class="far fa-star"></i> Reggae & Ska</h4>
+                            <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="ReggaeySka">
+                            </div>
+                        </div>
+                        <div class="Rock-Pop container"  id="mostrarOcultarRockyPop">
+                            <h4><i class="far fa-star"></i> Rock & Pop</h4>
+                            <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="RockyPop">
+                            </div>
+                        </div>
+                        <div class="Rock-Nacional container"  id="mostrarOcultarRockNacional">
+                            <h4><i class="far fa-star"></i> Rock Nacional</h4>
+                            <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="RockNacional">
+                            </div>
+                        </div>
+                          
+                        <div class="TANGO container"  id="mostrarOcultarTango">
+                            <h4><i class="far fa-star"></i> Tango</h4>
+                            <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="Tango">
+                            </div>
+                        </div>
 
                         <div class="catalogo">
-                            <h4>Catálogo</h4>
+                            <h4><i class="fas fa-record-vinyl"></i> Catálogo</h4>
                             <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="catalogo">
 
                                 <!--
@@ -277,42 +379,42 @@
                                             <img src="assets/img/Categoria/Rock-324x324.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
                                                 <h5 class="card-title">Rock & Pop</h5>
-                                                <a href="#" class="btn border-secondary">Ver categoría</a>
+                                                <a href="#" onclick="mostrarRockyPop()"  class="btn border-secondary">Ver categoría</a>
                                             </div>
                                         </div>
                                         <div class="card tarjetas-carousel" style="width: 15rem;">
                                             <img src="assets/img/Categoria/Metal-324x324.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
                                                 <h5 class="card-title">Metal</h5>
-                                                <a href="#" class="btn border-secondary">Ver categoría</a>
+                                                <a href="#" onclick="mostrarMetal()" class="btn border-secondary">Ver categoría</a>
                                             </div>
                                         </div>
                                         <div class="card tarjetas-carousel" style="width: 15rem;">
                                             <img src="assets/img/Categoria/Punk-324x324.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
                                                 <h5 class="card-title">Punk & Hardcore</h5>
-                                                <a href="#" class="btn border-secondary">Ver categoría</a>
+                                                <a href="#" onclick="mostrarPunkyHardcore()" class="btn border-secondary">Ver categoría</a>
                                             </div>
                                         </div>
                                         <div class="card tarjetas-carousel" style="width: 15rem;">
                                             <img src="assets/img/Categoria/Reggae-324x324.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
                                                 <h5 class="card-title">Reggae & Ska</h5>
-                                                <a href="#" class="btn border-secondary">Ver categoría</a>
+                                                <a href="#" onclick="mostrarReggaeySka()" class="btn border-secondary">Ver categoría</a>
                                             </div>
                                         </div>
                                         <div class="card tarjetas-carousel" style="width: 15rem;">
                                             <img src="assets/img/Categoria/Blues-324x324.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
                                                 <h5 class="card-title">Blues</h5>
-                                                <a href="#" class="btn border-secondary">Ver categoría</a>
+                                                <a href="#" onclick="mostrarBlues()" class="btn border-secondary">Ver categoría</a>
                                             </div>
                                         </div>
                                         <div class="card tarjetas-carousel" style="width: 15rem;">
                                             <img src="assets/img/Categoria/Jazz-324x324.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
                                                 <h5 class="card-title">Jazz</h5>
-                                                <a href="#" class="btn border-secondary">Ver categoría</a>
+                                                <a href="#" onclick="mostrarJazz()" class="btn border-secondary">Ver categoría</a>
                                             </div>
                                         </div>
                                     </div>
@@ -325,42 +427,42 @@
                                             <img src="assets/img/Categoria/Soul-324x324.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
                                                 <h5 class="card-title">Funk & Soul</h5>
-                                                <a href="#" class="btn border-secondary">Ver categoría</a>
+                                                <a href="#" onclick="mostrarFunkySoul()" class="btn border-secondary">Ver categoría</a>
                                             </div>
                                         </div>
                                         <div class="card tarjetas-carousel" style="width: 15rem;">
                                             <img src="assets/img/Categoria/Rap-324x324.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
                                                 <h5 class="card-title">Rap & Hip-Hop</h5>
-                                                <a href="#" class="btn border-secondary">Ver categoría</a>
+                                                <a href="#"  onclick="mostrarRapyHipHop()"  class="btn border-secondary">Ver categoría</a>
                                             </div>
                                         </div>
                                         <div class="card tarjetas-carousel" style="width: 15rem;">
                                             <img src="assets/img/Categoria/Rock-Nacional-324x324.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
                                                 <h5 class="card-title">Rock Nacional</h5>
-                                                <a href="#" class="btn border-secondary">Ver categoría</a>
+                                                <a href="#" onclick="mostrarRockNacional()" class="btn border-secondary">Ver categoría</a>
                                             </div>
                                         </div>
                                         <div class="card tarjetas-carousel" style="width: 15rem;">
                                             <img src="assets/img/Categoria/TANGO1-324x324.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
                                                 <h5 class="card-title">Tango</h5>
-                                                <a href="#" class="btn border-secondary">Ver categoría</a>
+                                                <a href="#" onclick="mostrarTango()" class="btn border-secondary">Ver categoría</a>
                                             </div>
                                         </div>
                                         <div class="card tarjetas-carousel" style="width: 15rem;">
                                             <img src="assets/img/Categoria/BSO-324x324.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
                                                 <h5 class="card-title">Bandas Sonora</h5>
-                                                <a href="#" class="btn border-secondary">Ver categoría</a>
+                                                <a href="#" onclick="mostrarBandaSonora()" class="btn border-secondary">Ver categoría</a>
                                             </div>
                                         </div>
                                         <div class="card tarjetas-carousel" style="width: 15rem;">
                                             <img src="assets/img/Categoria/World-Music-324x324.jpg" class="card-img-top" alt="...">
                                             <div class="card-body">
                                                 <h5 class="card-title">Music World</h5>
-                                                <a href="#" class="btn border-secondary">Ver categoría</a>
+                                                <a href="#" onclick="MusicWorld()" class="btn border-secondary">Ver categoría</a>
                                             </div>
                                         </div>
                                     </div>

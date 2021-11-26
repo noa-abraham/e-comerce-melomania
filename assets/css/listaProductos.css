@@ -63,6 +63,7 @@ a:hover {
 
 
 /* ======*Liastado productos*=======*/
+
 .container {
     max-width: 1340px;
 }
@@ -79,7 +80,7 @@ nav .input-buscador {
     height: 30px;
 }
 
-element.style {}
+
 
 .text-truncate {
     overflow: hidden;
@@ -93,8 +94,14 @@ element.style {}
 }
 
 .nav-link:hover {
-    color: #8e8e8e;
+    color: #21d192 !important;
     text-shadow: 0 1px 2px black
+}
+.nav-link .fa-record-vinyl{
+	 color: black !important;
+ }
+.nav-link .fa-star{
+    color: gold !important;
 }
 
 .input-buscador:focus {
@@ -281,7 +288,7 @@ nav .btn-buscar {
     transition: color .15s ease-in-out;
     box-shadow: 0 1px 2px rgb(121, 121, 121), 0 1px 3px white, 1px 2px 4px grey;
 }*/
-
+/*
 .tarjetas-carousel {
     width: 200px !important;
     align-items: center;
@@ -291,13 +298,7 @@ nav .btn-buscar {
     color: #8e8e8e;
     transition: color .15s ease-in-out;
     box-shadow: 0 1px 2px rgb(121, 121, 121), 0 1px 3px white, 1px 2px 4px grey;
-}
-
-.tarjetas-carousel img {
-    margin-left: 9% !important;
-}
-
-.carousel-inner {
+	.carousel-inner {
     align-items: center;
     height: 400px;
     margin-left: 19%;
@@ -306,6 +307,34 @@ nav .btn-buscar {
 .carousel-control-next {
     margin-right: -46%;
 }
+}*/
+
+
+.tarjetas-carousel {
+    width: 180px !important;
+    align-items: center;
+    margin: .4%;
+    max-width: 185px !important;
+    background-color: rgba(0, 0, 0, .85);
+    color: #8e8e8e;
+    transition: color .15s ease-in-out;
+    box-shadow: 0 1px 2px rgb(121, 121, 121), 0 1px 3px white, 1px 2px 4px grey;
+}
+
+.carousel-inner {
+    align-items: center;
+    margin-left: 13%;
+}
+
+.carousel-control-next {
+    margin-right: 0%;
+}
+
+.tarjetas-carousel img {
+    margin-left: 9% !important;
+}
+
+
 
 .tarjetas-carousel .btn {
     color: #8e8e8e;
