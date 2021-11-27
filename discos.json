@@ -404,7 +404,7 @@
             ]
         },
         {
-            "id": 113,
+            "id": 1130,
             "destacado": false,
             "titulo": "",
             "artista": "",
@@ -421,6 +421,140 @@
             ]
         }
 
-    ]
+    ],
+    "setbox": [{
+        "id": 100,
+        "destacado": false,
+        "titulo": "MUSIC, MESSAGE AND THE MOMENT",
+        "artista": "VARIOUS ",
+        "genero": "JAZZ",
+        "sello": "Impulse Records",
+		"año de lanzamiento": "2021",
+        "precio": "$22000",
+        "formato": "Vinilo",
+        "origen": "Nacional",
+        "condicion": "Nuevo/Sellado",
+        "tapa": "https://jaranarecords.com.ar/catalogo/wp-content/uploads/2021/06/602435671871.jpg",
+        "contratapa": "https://jaranarecords.com.ar/catalogo/wp-content/uploads/2021/06/602435671871.jpg",
+        "descripcion": "Various “Impulse Records: Music, Message And The Moment” (USA, 2021), Sello: Impulse, Formato: BOX, Observaciones: Cofre, Deluxe Edition, Limited Edition, Numbered",
+        "canciones": [
+            " cancion"
+        ]
+    },
+    {
+        "id": 101,
+        "destacado": false,
+        "titulo": "THE STUDIO ALBUMS",
+        "artista": "THE WHO",
+        "genero": "ROCK & POP",
+        "sello": "Polydor Records",
+		"año de lanzamiento": "2012",
+        "precio": "$45000",
+        "formato": "Vinilo",
+        "origen": "Importado",
+        "condicion": "Nuevo/Sellado",
+        "tapa": "https://jaranarecords.com.ar/catalogo/wp-content/uploads/2021/06/602537155736.jpg",
+        "contratapa": "https://jaranarecords.com.ar/catalogo/wp-content/uploads/2021/06/602537155736.jpg",
+        "descripcion": "Who “The Studio Albums” (USA, 2012), Sello: Polydor, Formato: 14 LP",
+        "canciones": [
+            " cancion"
+        ]
+    },
+    {
+        "id": 102,
+        "destacado": false,
+        "titulo": "THE COMPLETE LIVE AT THE LIGHTHOUSE",
+        "artista": "LEE MORGAN",
+        "genero": "JAZZ",
+        "sello": "Blue Note",
+        "año de lanzamiento": "2018",
+        "precio": "$45000",
+        "formato": "Vinilo",
+        "origen": "Importado",
+        "condicion": "Nuevo/Sellado",
+        "tapa": "https://jaranarecords.com.ar/catalogo/wp-content/uploads/2021/06/602508839344.jpg",
+        "contratapa": "https://jaranarecords.com.ar/catalogo/wp-content/uploads/2021/06/602508839344.jpg",
+        "descripcion": "Lee Morgan “The Complete Live At The Lighthouse” (S/D, S/D), Sello: Blue Note,Formato: BOX, Observaciones: Remastered – Stereo",
+        "canciones": [
+            " cancion"
+        ]
+    },
+    {
+        "id": 103,
+        "destacado": false,
+        "titulo": "THE ORIGINAL MONO RECORDINGS",
+        "artista": "BOB DYLAN ",
+        "genero": "ROCK & POP",
+        "sello": "Mad Kat Records",
+        "año de lanzamiento": "2010",
+        "precio": "$45000",
+        "formato": "Vinilo",
+        "origen": "Importado",
+        "condicion": "Nuevo/Sellado",
+        "tapa": "https://jaranarecords.com.ar/catalogo/wp-content/uploads/2021/06/886977610516.jpg",
+        "contratapa": "https://jaranarecords.com.ar/catalogo/wp-content/uploads/2021/06/886977610516.jpg",
+        "descripcion": "Bob Dylan “The Original Mono Recordings” (USA, 2010), Sello: Columbia, Formato: BOX, Observaciones: Mono 8xLP Compilation",
+        "canciones": [
+            " cancion"
+        ]
+    },
+    {
+        "id": 104,
+        "destacado": false,
+        "titulo": "SONGS OF FREEDOM – THE ISLAND YEARS",
+        "artista": "BOB MARLEY",
+        "genero": "Reggae & Ska",
+        "sello": "Tuff Gong Records",
+        "año de lanzamiento": "2021",
+        "precio": "$45000",
+        "formato": "Vinilo",
+        "origen": "Importado",
+        "condicion": "Nuevo/Sellado",
+        "tapa": "https://jaranarecords.com.ar/catalogo/wp-content/uploads/2021/06/600753931325.jpg",
+        "contratapa": "https://jaranarecords.com.ar/catalogo/wp-content/uploads/2021/06/600753931325.jpg",
+        "descripcion": "Bob Marley “Songs Of Freedom – The Island Years” (UK, 2021),Sello: Tuff Gong, Formato: 6 Vinilos",
+        "canciones": [
+            " cancion"
+        ]
+    },
+    {
+        "id": 105,
+        "destacado": false,
+        "titulo": "PRINCE – SIGN “O” THE TIMES (DELUXE EDITION)",
+        "artista": "PRINCE",
+        "genero": "Funk & Soul",
+        "sello": "NPG Records",
+        "año de lanzamiento": "2020",
+        "precio": "$95000",
+        "formato": "Vinilo",
+        "origen": "Importado",
+        "condicion": "Nuevo/Sellado",
+        "tapa": "https://jaranarecords.com.ar/catalogo/wp-content/uploads/2021/09/603497846559.jpg",
+        "contratapa": "https://jaranarecords.com.ar/catalogo/wp-content/uploads/2021/09/603497846559.jpg",
+        "descripcion": "Prince “Sign “O” The Times (4LP, Deluxe Edition)” (USA & EU, 2020), Sello: NPG Records, Formato 4 LP",
+        "canciones": [
+            " cancion"
+        ]
+    },
+    {
+        "id": 106,
+        "destacado": false,
+        "titulo": "ALL THINGS MUST PASS (SUPER DELUXE)",
+        "artista": "GEORGE HARRISON",
+        "genero": "ROCK & POP",
+        "sello": "Capitol Records",
+        "año de lanzamiento": "2021",
+        "precio": "$35000",
+        "formato": "Vinilo",
+        "origen": "Importado",
+        "condicion": "Nuevo/Sellado",
+        "tapa": "https://jaranarecords.com.ar/catalogo/wp-content/uploads/2021/06/602435652375.jpg",
+        "contratapa": "https://jaranarecords.com.ar/catalogo/wp-content/uploads/2021/06/602435652375.jpg",
+        "descripcion": "George Harrison “All Things Must Pass (Super Deluxe 8LP + Book Set)” (S/D, 2021), Sello: Capitol, Formato: BOX, Observaciones: Remastered, Super Deluxe 8LP",
+        "canciones": [
+            " cancion"
+        ]
+    }
+]
 
 }

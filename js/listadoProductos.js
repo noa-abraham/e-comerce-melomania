@@ -32,6 +32,67 @@ request.onload = function () {
 } 
 
 
+
+function setCatalogo() {
+    let catalogo = discos.catalogo;
+    catalogo.forEach(element => {
+
+        let elementCatalogo = '<div class="card  tarjeta-Listados" style="width: 15rem; border:2px solid #21d192;">';
+        elementCatalogo += '<a href="detalleProductos.html?prodId=' + element.id + '">';
+        elementCatalogo += '<img src="' + element.tapa + '" class="card-img-top" alt="...">';
+        elementCatalogo += '<div class="card-body">';
+        elementCatalogo += '<h5 class="card-text">' + element.titulo + ' </h5>';
+        elementCatalogo += '<h4 class="card-title">' + element.artista + '</h4>';
+        elementCatalogo += '<p>' + element.precio + '</p>';
+        elementCatalogo += '</div></a></div>';
+        let gallery = document.getElementById('catalogo');
+        $('#catalogo').append(elementCatalogo);
+
+        console.log(element);
+    });
+}
+
+
+function mostrarCatalogo() {
+    var x = document.getElementById("Catalogo");
+
+    if (x.style.display != "none") {
+        x.style.display = "none";
+		ocultarDestacados();
+		ocultarSetBox();
+        ocultarBlues();
+        ocultarBandaSonora();
+		ocultarFunkySoul();
+        ocultarPunkyHardcore();
+        ocultarJazz();
+        ocultarMetal();
+        ocultarMusicWorld();
+        ocultarRapyHipHop();
+        ocultarReggaeySka();
+        ocultarRockyPop();
+        ocultarRockNacional();
+        ocultarTango();
+    } else {
+        x.style.display = "block";
+		ocultarDestacados();
+		ocultarSetBox();
+        ocultarBlues();
+        ocultarPunkyHardcore() ;
+        ocultarBandaSonora();
+		ocultarFunkySoul();
+        ocultarJazz();
+        ocultarMetal();
+        ocultarMusicWorld();
+        ocultarRapyHipHop();
+        ocultarReggaeySka();
+        ocultarRockyPop();
+        ocultarRockNacional();
+        ocultarTango();
+    }
+}
+
+
+
 function setTablaDestacados() {
     let productos = discos.productos;
     productos.forEach(element => {
@@ -55,25 +116,6 @@ function setTablaDestacados() {
     });
 }
 
-
-function setCatalogo() {
-    let catalogo = discos.catalogo;
-    catalogo.forEach(element => {
-
-        let elementCatalogo = '<div class="card  tarjeta-Listados" style="width: 15rem; border:2px solid #21d192;">';
-        elementCatalogo += '<a href="detalleProductos.html?prodId=' + element.id + '">';
-        elementCatalogo += '<img src="' + element.tapa + '" class="card-img-top" alt="...">';
-        elementCatalogo += '<div class="card-body">';
-        elementCatalogo += '<h5 class="card-text">' + element.titulo + ' </h5>';
-        elementCatalogo += '<h4 class="card-title">' + element.artista + '</h4>';
-        elementCatalogo += '<p>' + element.precio + '</p>';
-        elementCatalogo += '</div></a></div>';
-        let gallery = document.getElementById('catalogo');
-        $('#catalogo').append(elementCatalogo);
-
-        console.log(element);
-    });
-}
 
 function ocultarDestacados() {
     var DestacadosNone = document.getElementById("mostrarOcultarDestacados");
@@ -915,9 +957,9 @@ function ocultarSetBox() {
 ocultarSetBox();
 
 function setCategoriaSetBox() {
-       let productos = discos.catalogo;
+       let productos = discos.setbox;
     productos.forEach(element => {
- if(element.formato=="Set-Box" ){
+ //if(element.formato=="Set-Box" ){
         
          
         let elementCard = '<div class="card  tarjeta-Listados" style="width: 15rem;  border:5px solid gold;">';
@@ -931,7 +973,7 @@ function setCategoriaSetBox() {
 
         let gallery = document.getElementById('SetBox');
         $('#SetBox').append(elementCard);
-}
+//}
         console.log(element);
     });
 }
