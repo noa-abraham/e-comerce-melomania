@@ -957,7 +957,7 @@ function ocultarSetBox() {
 ocultarSetBox();
 
 function setCategoriaSetBox() {
-       let productos = discos.setbox;
+       let productos = discos.Catalogo;
     productos.forEach(element => {
  if(element.etiqueta=="BoxSet" ){
         
