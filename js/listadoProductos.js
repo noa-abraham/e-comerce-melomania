@@ -872,7 +872,7 @@ function mostrarTango() {
 		 ocultarSetBox();
          ocultarBlues();
          ocultarBandaSonora();
-		 ocultarFunkySoul();
+        ocultarFunkySoul();
          ocultarJazz();
          ocultarMetal();
          ocultarMusicWorld();
@@ -959,7 +959,7 @@ ocultarSetBox();
 function setCategoriaSetBox() {
        let productos = discos.setbox;
     productos.forEach(element => {
- //if(element.formato=="Set-Box" ){
+ if(element.etiqueta=="BoxSet" ){
         
          
         let elementCard = '<div class="card  tarjeta-Listados" style="width: 15rem;  border:5px solid gold;">';
@@ -973,7 +973,7 @@ function setCategoriaSetBox() {
 
         let gallery = document.getElementById('SetBox');
         $('#SetBox').append(elementCard);
-//}
+}
         console.log(element);
     });
 }
