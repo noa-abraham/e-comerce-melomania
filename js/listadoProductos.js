@@ -949,6 +949,7 @@ function mostrarPunkyHardcore() {
 }
 
 
+
 function ocultarSetBox() {
     var SetBoxNone = document.getElementById("mostrarOcultarSetBox");
    SetBoxNone.style.display = "none";
@@ -957,13 +958,12 @@ function ocultarSetBox() {
 ocultarSetBox();
 
 function setCategoriaSetBox() {
-       let productos = discos.Catalogo;
+     let productos = discos.catalogo;
     productos.forEach(element => {
  if(element.etiqueta=="BoxSet" ){
-        
          
         let elementCard = '<div class="card  tarjeta-Listados" style="width: 15rem;  border:5px solid gold;">';
-        elementCard += '<a href="detalleProductos.html?prodId=Blues' + element.id + '">';
+        elementCard += '<a href="detalleProductos.html?prodId=SetBox' + element.id + '">';
         elementCard += '<img src="' + element.tapa + '" class="card-img-top" alt="...">';
         elementCard += '<div class="card-body">';
         elementCard += '<h5 class="card-text">' + element.titulo + ' </h5>';
@@ -1010,4 +1010,3 @@ function mostrarSetBox() {
         ocultarTango();
     }
 }
-
