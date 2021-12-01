@@ -43,20 +43,14 @@
         <div class="row">
             <div class="col-2 collapse show d-md-flex bg-light pt-2 pl-0 min-vh-100" id="sidebar">
                 <ul class="nav flex-column flex-nowrap overflow-hidden">
-                    <li class="nav-item">
-                        <a class="nav-link text-truncate" href="#"><i class="fa fa-home"></i> <span
-                                class="d-none d-sm-inline">Inicio</span></a>
-                    </li>
+                   
                     <li class="nav-item">
                         <a class="nav-link text-truncate" href="index.html"><i class="fa fa-user"></i> <span
                                 class="d-none d-sm-inline">Salir</span></a>
                     </li>
-                    <li class="nav-item">
-                        <form class="d-flex " id="form-buscador">
-                            <input class="form-control me-2 input-buscador" type="search" placeholder="Buscar..." aria-label="Search">
-                            <button class="btn btn-outline-secondary btn-buscar" type="submit"><i
-                                    class="fas fa-search"></i></button>
-                        </form>
+                 <li class="nav-item">
+                        <a class="nav-link text-truncate" href="#"> <span
+                                class="d-none d-sm-inline">Servicios</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link collapsed text-truncate" href="#submenu1" data-toggle="collapse" data-target="#submenu1"><i class="fas fa-wallet"></i> <span
@@ -118,29 +112,25 @@
             <div class="col pt-2">
                 <main>
                     <div class="postion-relative overflow-hidden p-6 p-1 m-md-3 text center bg-light ">
-                        <div class="tituloCatalogo d-flex">
-                            <h2>Titulo</h2>
-                            <!--
-                                <div class="ordenarPor">
-                                    <div class="form-group col-md-10 d-flex">
-                                        <label for="inputState">Ordenar por</label>
-                                        <select id="inputState" class="form-control ">
-                                        <option selected>Más relevante</option>
-                                        <option>Menor precio</option>
-                                        <option>Mayor precio</option>
-                                        <option>A->Z</option>
-                                        <option>Z->A</option>
-                                    </select>
-                                    </div>
-                                </div>
-                             
-                            </div>
-                            <div class="destacados">
-                                <h4>Subtitulo</h4>
-                                <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo">
+                        <div class="servicios">
+                            <h2>Servicios</h2>
+                           <p>Para conectarse al servicio de JSON debe implemntarlo  como: <b>discos.json</b> </p> 
+                           <h4 style="color:#21d192;">Estructura JSON</h4>
+                            <p>El json esta dividido en <b>"productos"</b> para los 6 primeros Destacados y en <b>"catalogo"</b>, en catalogo podras encontrar todos los productos.
+                            <br> 
+                            La informacion que podras obtener del json es:
+                            <br>
+                            "id", "destacado", "titulo", "artista", "genero", "sello", "precio","etiqueta", "formato", "origen", "condicion", "tapa", "contratapa", "descripcion", "canciones".
+                             </p>
+                                                    
+                            <h5 style="color:#21d192;">JSON:</h5>
+                           <iframe src="discos.json" height="300" width="500" title="Json">
+                               
 
-                                </div>
-                             -->
+                           </iframe>
+
+
+
                         </div>
 
                     </div>
@@ -149,62 +139,83 @@
         </div>
     </div>
 
-    <footer>
-        <footer id="footer">
-            <div class="wrap">
-
-                <div id="menu_footer">
-                    <h5>MENU</h5>
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="logueo.html">Logueo</a></li>
-                        <li><a href="listadoProductos.html">Listado de Productos</a></li>
-                        <li><a href="contacto.html">Contáctenos</a></li>
-                    </ul>
-                </div>
-                <div id="location">
-                    <h5>¿DONDE ESTAMOS?</h5>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.013482992268!2d-58.385084685095336!3d-34.60382056500981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDM2JzEzLjgiUyA1OMKwMjInNTguNCJX!5e0!3m2!1ses!2sar!4v1634151524495!5m2!1ses!2sar"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-                <div class="information">
-                    <h5>Nuestras redes</h5>
-                    <div class="redesSociales-footer ">
-                        <div id="social-footer" class="aside-box">
-                            <div class="twitter">
-                                <a href="" class="icon"><i class="fab fa-twitter-square"></i></a>
-                                <P class="overlay">twitter</P>
-                            </div>
-                            <div class="youtube">
-                                <a href="" class="icon"><i class="fab fa-youtube"></i></a>
-                                <P class="overlay">YouTube</P>
-                            </div>
-                            <div class="facebook">
-                                <a href="" class="icon"><i class="fab fa-facebook-square"></i></a>
-                                <p class="overlay">facebook</p>
-                            </div>
-                        </div>
-                        <h5>Optimizado para</h5>
-                        <p id="browser">
-                            <img src="assets/img/Footer/firefox-icon.png" alt="Firefox" title="Firefox">
-                            <img src="assets/img/Footer/chrome.png" alt="Chrome" title="Chrome">
-                            <img src="assets/img/Footer/Opera_256x256.png" alt="Operas" title="Opera">
-                            <img src="assets/img/Footer/safari.png" alt="Safari" title="Safari">
-                            <img src="assets/img/Footer/ios.png" alt="Ios" title="Ios">
-                            <img src="assets/img/Footer/android.png" alt="Android" title="Android">
-                        </p>
-                        <h5>Desarrollado por</h5>
-                        <div id="desarrolladores">
-                            <p>&copy; Jesús Arias</p>
-                            <p>&copy; Noelia Abraham</p>
-                            <p>&copy; Igmacio Gonzaléz Escalada</p>
-                            <p>&copy; Belén Barba Garbellano</p>
-                        </div>
-                    </div>
+   
+    <!-- Footer -->
+    <footer class="page-footer font-small blue-grey lighten-5">
+        <div class="styleBarraVerde">
+            <div class="container">
+                <div class="row py-4 d-flex align-items-center">
                 </div>
             </div>
-            <br>
-        </footer>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left mt-5">
+
+            <!-- Grid row -->
+            <div class="row mt-3 dark-grey-text">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+
+                    <!-- Content -->
+                    <h6 class="text-uppercase font-weight-bold">MELOMANÍA</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>Somos la disquería más grande de Buenos Aires. Desde hace 20 años rescatamos la mejor tradición con todo lo nuevo. La música que suena está en Melomanía, locxs por la música.</p>
+
+                </div>
+                <!-- Grid column -->
+
+
+                <!-- Grid column -->
+                <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">CONTACTO</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <i class="fas fa-home mr-3"></i> Av. Corrientes 2020, CABA, AR</p>
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i> contacto@melomania.com</p>
+                    <p>
+                        <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                    <p>
+                        <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">DESARROLLO</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a>Jesús Arias</a>
+                    </p>
+                    <p>
+                        <a>Noelia Abraham</a>
+                    </p>
+                    <p>
+                        <a>Ignacio Gonzaléz Escalada</a>
+                    </p>
+                    <p>
+                        <a>Belén Barba Garbellano</a>
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+    </footer>
+    <!-- Footer -->
         <!-- Bootstrap Bundle with Popper -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
