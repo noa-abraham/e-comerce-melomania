@@ -2,18 +2,14 @@
     "usuario": [{
             "idUsuario": 1,
             "usuario": "melomania",
-            "temp": "contraseña123",
-            "contraseña": "8d09aa4539e72aef66341426e527148807160d2986aa21e0ad0ed0877ee3724a",
-            "salt": "cosa",
+            "contraseña": "a8020eba53e523ee8e3dd8681f9bea6d3762ed0bdf3b0a81db6307ab8142a25c",
             "perfil": "admin",
             "status": true
         },
         {
             "idUsuario": 2,
-            "usuario": "noeliaAbraham",
-            "temp": "contraseñaDos",
-            "contraseña": "ee560ec0b655b6ff429d8fea44ebbf9385eb209c4a43239a441f70a73d86e6e6",
-            "salt": "cosa",
+            "usuario": "taller1",
+            "contraseña": "170d7da00258e4d6ce28eb4c47874be69a497fdab736e08fc3163126b0d51a19",
             "perfil": "admin",
             "status": true
 
