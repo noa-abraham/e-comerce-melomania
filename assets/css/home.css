@@ -50,6 +50,7 @@
     
     a {
         text-decoration: none;
+        color: #21d192 !important
     }
     
     a:hover {
@@ -59,4 +60,8 @@
     
     header {
         background-color: rgba(0, 0, 0, .85);
+    }
+    
+    .colorVerdeBoton {
+        color: #21d192 !important;
     }
