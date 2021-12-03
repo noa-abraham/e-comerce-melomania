@@ -38,10 +38,16 @@ body {
     background-size: cover;
 }
 
-.login-fomr {
-    border-top-style: solid;
+.formatoCaja {
     border-top-width: 0px;
+    border-top-style: solid;
     margin-top: 200px;
-    margin-right: 400px;
-    margin-left: 400px;
+    padding-left: 600px;
+    padding-right: 600px;
+    border-bottom-style: none;
+    margin-bottom: 200px;
+}
+
+.colorVerdeBoton {
+    color: #21d192 !important;
 }
