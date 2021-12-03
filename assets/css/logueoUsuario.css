@@ -1,0 +1,47 @@
+*,
+::before,
+::after {
+    padding: 35;
+    margin: 35;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgba(0, 0, 0, .85);
+}
+
+
+/*.Efecto gris-verde barra de navegación*/
+
+a {
+    text-decoration: none;
+}
+
+.site-header a {
+    color: #8e8e8e;
+    transition: color .15s ease-in-out;
+}
+
+a:hover {
+    color: #21d192;
+    text-decoration: none;
+}
+
+
+/*.Fin Efecto gris-verde barra de navegación*/
+
+body {
+    background: url(../img/VUCPtX.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.login-fomr {
+    border-top-style: solid;
+    border-top-width: 0px;
+    margin-top: 200px;
+    margin-right: 400px;
+    margin-left: 400px;
+}
