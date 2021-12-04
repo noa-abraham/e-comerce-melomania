@@ -39,13 +39,14 @@
 <body>
     <main>
         <div class="container-fluid formulario">
-            <form>
+            <form method="get" action="contacto.html">
                 <h2>Contáctenos</h2>
                 <input id="nombre" type="text" name="Nombre" placeholder="Nombre y Apellido">
                 <input id="email" type="text" name="Correo" placeholder="Email">
                 <input id="telefono" type="text" name="Teléfono" placeholder="Teléfono">
-                <textarea id="info" name="info" cols="30" rows="10" placeholder="Ingrese su comentario"></textarea>
-                <div class="col-md-12" style="margin-bottom: 250px;"><button class="btn btn-success" onclick="mostrarMensaje();">ENVIAR</button>
+                <textarea id="comentario" name="Comentario" cols="30" rows="10" placeholder="Ingrese su comentario"></textarea>
+                <div class="col-md-12" style="margin-bottom: 250px;">
+                    <button class="btn btn-success" onclick="chequearDatosComentario();">ENVIAR</button>
                 </div>
         </div>
         </form>
