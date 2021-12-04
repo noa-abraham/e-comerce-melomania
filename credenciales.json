@@ -1,15 +1,15 @@
 {
-    "usuario": [{
-            "idUsuario": 1,
-            "usuario": "melomania",
-            "contraseña": "e6d2c4b26dcc19712b43aad5e2c217236742c3bad8d5ef2d92dafb02f1a670b4",
+    "users": [{
+            "idUser": 1,
+            "user": "melomania",
+            "password": "e6d2c4b26dcc19712b43aad5e2c217236742c3bad8d5ef2d92dafb02f1a670b4",
             "perfil": "admin",
             "status": true
         },
         {
-            "idUsuario": 2,
-            "usuario": "taller1",
-            "contraseña": "1319a281216709d076896019a57d9f5eb07a99fdf4ec6fbed685879be8a6aa6d",
+            "idUser": 2,
+            "user": "taller1",
+            "password": "1319a281216709d076896019a57d9f5eb07a99fdf4ec6fbed685879be8a6aa6d",
             "perfil": "admin",
             "status": true
 

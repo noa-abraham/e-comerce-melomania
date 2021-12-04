@@ -1,14 +1,14 @@
 function checkUserLogin() {
-    let usuario = $('#usuario').val();
-    let contraseña = $('#contraseña').val();
+    let username = $('#username').val();
+    let password = $('#password').val();
 
-    if (usuario == '' || contraseña == '') {
+    if (username == '' || password == '') {
         alert('Debe ingresar Usuario y/o contraseña');
     } else {
         let url = "credenciales.json";
         $.getJSON(url, function(data) {
-                sha256(contraseña).then(function(respuestaHash) {
-                    checkUser(data, usuario, respuestaHash);
+                sha256(password).then(function(respuestaHash) {
+                    checkUser(data, username, respuestaHash);
                 });
 
             })
@@ -18,19 +18,19 @@ function checkUserLogin() {
     }
 }
 
-function checkUser(data, usuario, contraseña) {
+function checkUser(data, username, password) {
     var estadoUsuario = false;
-    $.each(data.usuario, function(key, val) {
+    $.each(data.users, function(key, val) {
 
         val = JSON.stringify(val); //lo convierto a Json
         val = JSON.parse(val);
 
-        if (usuario === val.usuario) {
+        if (username === val.user) {
             estadoUsuario = true;
 
-            if (contraseña == val.contraseña) {
+            if (password == val.password) {
                 console.log("Contraseña correcta");
-                $('#usuarioId').val(usuarioId);
+                $('#userId').val(val.idUser);
                 $('#login_form').submit();
                 return false;
 
