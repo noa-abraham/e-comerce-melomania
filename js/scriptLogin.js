@@ -30,7 +30,7 @@ function checkUser(data, usuario, contraseña) {
 
             if (contraseña == val.contraseña) {
                 console.log("Contraseña correcta");
-                $('#idUsuario').val(idUsuario);
+                $('#usuarioId').val(usuarioId);
                 $('#login_form').submit();
                 return false;
 
