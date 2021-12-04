@@ -1,17 +1,13 @@
 'use strict'
 
-
-
-
 const url = 'discos.json';
 const request = new XMLHttpRequest();
 request.open('GET', url); // setean el método, la url de api
 request.responseType = 'json'; //definen el tipo de dato que les devuelve
 request.send(); //envían la solicitud
 
-
 var discos = '';
-request.onload = function() {
+request.onload = function () {
     console.log(request.response);
     discos = request.response; //le asigno la respuesta a una variable global
     setTablaDestacados(); //para que aparezca determinada info de los destacados en las cards del home. 
@@ -31,25 +27,79 @@ request.onload = function() {
     setCategoriaTango();
 }
 
+function ordenarAsc(a_array_json, p_key) {
+    a_array_json.sort(function (a, b) {
+        return a[p_key] > b[p_key];
+    });
+}
 
+function ordenarDesc(z_array_json, p_key) {
+    ordenarAsc(z_array_json, p_key);
+    z_array_json.reverse();
+}
 
 function setCatalogo() {
     let catalogo = discos.catalogo;
-    catalogo.forEach(element => {
+    let ordenarCat = document.getElementById("ordenarCatalogo");
+    let seleccionCat = ordenarCat.options[ordenarCat.selectedIndex].value;
 
-        let elementCatalogo = '<div class="card  tarjeta-Listados" style="width: 15rem; border:2px solid #21d192;">';
-        elementCatalogo += '<a href="detalleProductos.html?prodId=' + element.id + '">';
-        elementCatalogo += '<img src="' + element.tapa + '" class="card-img-top" alt="...">';
-        elementCatalogo += '<div class="card-body">';
-        elementCatalogo += '<h5 class="card-text">' + element.titulo + ' </h5>';
-        elementCatalogo += '<h4 class="card-title">' + element.artista + '</h4>';
-        elementCatalogo += '<p>' + element.precio + '</p>';
-        elementCatalogo += '</div></a></div>';
-        let gallery = document.getElementById('catalogo');
-        $('#catalogo').append(elementCatalogo);
+    if (seleccionCat == 'AZordenar') {
+        /* Applesauce */
+        ordenarAsc(catalogo, 'artista');
+        console.log(catalogo);
 
-        console.log(element);
-    });
+        catalogo.forEach(element => {
+
+            let elementCatalogo = '<div class="card  tarjeta-Listados" style="width: 15rem; border:2px solid #21d192;">';
+            elementCatalogo += '<a href="detalleProductos.html?prodId=' + element.id + '">';
+            elementCatalogo += '<img src="' + element.tapa + '" class="card-img-top" alt="...">';
+            elementCatalogo += '<div class="card-body">';
+            elementCatalogo += '<h5 class="card-text">' + element.titulo + ' </h5>';
+            elementCatalogo += '<h4 class="card-title">' + element.artista + '</h4>';
+            elementCatalogo += '<p>' + element.precio + '</p>';
+            elementCatalogo += '</div></a></div>';
+            let gallery = document.getElementById('catalogo');
+            $('#catalogo').append(elementCatalogo);
+
+            console.log(element);
+        });
+    } else if (seleccionCat == 'ZAordenar') {
+        ordenarDesc(catalogo, 'artista');
+        catalogo.forEach(element => {
+
+            let elementCatalogo = '<div class="card  tarjeta-Listados" style="width: 15rem; border:2px solid #21d192;">';
+            elementCatalogo += '<a href="detalleProductos.html?prodId=' + element.id + '">';
+            elementCatalogo += '<img src="' + element.tapa + '" class="card-img-top" alt="...">';
+            elementCatalogo += '<div class="card-body">';
+            elementCatalogo += '<h5 class="card-text">' + element.titulo + ' </h5>';
+            elementCatalogo += '<h4 class="card-title">' + element.artista + '</h4>';
+            elementCatalogo += '<p>' + element.precio + '</p>';
+            elementCatalogo += '</div></a></div>';
+            let gallery = document.getElementById('catalogo');
+            $('#catalogo').append(elementCatalogo);
+
+            console.log(element);
+        });
+
+    } else {
+        catalogo.forEach(element => {
+
+            let elementCatalogo = '<div class="card  tarjeta-Listados" style="width: 15rem; border:2px solid #21d192;">';
+            elementCatalogo += '<a href="detalleProductos.html?prodId=' + element.id + '">';
+            elementCatalogo += '<img src="' + element.tapa + '" class="card-img-top" alt="...">';
+            elementCatalogo += '<div class="card-body">';
+            elementCatalogo += '<h5 class="card-text">' + element.titulo + ' </h5>';
+            elementCatalogo += '<h4 class="card-title">' + element.artista + '</h4>';
+            elementCatalogo += '<p>' + element.precio + '</p>';
+            elementCatalogo += '</div></a></div>';
+            let gallery = document.getElementById('catalogo');
+            $('#catalogo').append(elementCatalogo);
+
+            console.log(element);
+        });
+
+    }
+
 }
 
 

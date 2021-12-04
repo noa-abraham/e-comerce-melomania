@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Melomania</title>
     <!-- CSS only -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/listaProductos.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="shortcut icon" href="assets/img/Lp2.png" type="image/x-icon">
@@ -21,7 +22,9 @@
         <div class="site-header sticky-top py-1 encabezado">
             <nav class="container d-flex flex-column flex-md-row justify-content-between">
                 <a class="py-2" href="index.html" aria-label="Product">
-                    <svg xmlns="https://cdn-icons-png.flaticon.com/128/4497/4497587.png" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24">
+                    <svg xmlns="https://cdn-icons-png.flaticon.com/128/4497/4497587.png" width="24" height="24"
+                        fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24">
                         <title>Product</title>
                         <circle cx="12" cy="12" r="10"></circle>
                         <path
@@ -38,619 +41,191 @@
 
     </header>
 
-
     <div class="container-fluid lateal-deracho">
         <div class="row">
             <div class="col-2 collapse show d-md-flex bg-light pt-2 pl-0 d-flex" id="sidebar">
                 <ul class="nav flex-column flex-nowrap overflow-hidden">
-                    <!--
                     <li class="nav-item">
-                        <a class="nav-link text-truncate" href="#"><i class="fa fa-home"></i> <span
-                                class="d-none d-sm-inline">Inicio</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-truncate" href="#"><i class="fa fa-user"></i> <span
-                                class="d-none d-sm-inline">Ingresar</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <form class="d-flex " id="form-buscador">
-                            <input class="form-control me-2 input-buscador" type="search" placeholder="Buscar..." aria-label="Search">
-                            <button class="btn btn-outline-secondary btn-buscar" type="submit"><i
-                                    class="fas fa-search"></i></button>
-                        </form>
-                    </li>
-                   -->
-                    <li class="nav-item">
-                        <a class="nav-link collapsed text-truncate" href="#submenu1" data-toggle="collapse" data-target="#submenu1"><i class="fas fa-record-vinyl"></i> <span
-                                class=" d-sm-inline"  onclick="mostrarCatalogo()" >Catálogo</span></a>
+                        <a class="nav-link collapsed text-truncate" href="#submenu1" data-toggle="collapse"
+                            data-target="#submenu1"><i class="fas fa-record-vinyl"></i> <span class=" d-sm-inline"
+                                onclick="mostrarCatalogo()">Catálogo</span></a>
                         <div class="collapse" id="submenu1" aria-expanded="false">
                             <ul class="flex-column pl-2 nav">
-                                <li class="nav-item"><a class="nav-link py-0" onclick="mostrarSetBox()" href="#"><span>Set-box</span></a></li>
-                                <a class="nav-link  text-truncate collapsed py-1" href="#submenu1sub1" data-toggle="collapse" data-target="#submenu1sub1"><span>Categorias/Generos</span></a>
+                                <li class="nav-item"><a class="nav-link py-0" onclick="mostrarSetBox()"
+                                        href="#"><span>Set-box</span></a></li>
+                                <a class="nav-link  text-truncate collapsed py-1" href="#submenu1sub1"
+                                    data-toggle="collapse"
+                                    data-target="#submenu1sub1"><span>Categorias/Generos</span></a>
                                 <div class="collapse" id="submenu1sub1" aria-expanded="false">
                                     <ul class="flex-column nav pl-4">
                                         <li class="nav-item">
-                                            <a class="nav-link p-1 text-truncate" onclick="mostrarBandaSonora()" href="#">Bandas Sonora</a>
+                                            <a class="nav-link p-1 text-truncate" onclick="mostrarBandaSonora()"
+                                                href="#">Bandas Sonora</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link p-1 text-truncate" onclick="mostrarBlues()" href="#">Blues</a>
+                                            <a class="nav-link p-1 text-truncate" onclick="mostrarBlues()"
+                                                href="#">Blues</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link p-1 text-truncate" onclick="mostrarFunkySoul()" href="#">Funk & Soul</a>
+                                            <a class="nav-link p-1 text-truncate" onclick="mostrarFunkySoul()"
+                                                href="#">Funk & Soul</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link p-1 text-truncate" onclick="mostrarJazz()" href="#">Jazz</a>
+                                            <a class="nav-link p-1 text-truncate" onclick="mostrarJazz()"
+                                                href="#">Jazz</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link p-1 text-truncate" onclick="mostrarMetal()" href="#">Metal</a>
+                                            <a class="nav-link p-1 text-truncate" onclick="mostrarMetal()"
+                                                href="#">Metal</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link p-1 text-truncate" onclick="mostrarMusicWorld() " href="#">Music World</a>
+                                            <a class="nav-link p-1 text-truncate" onclick="mostrarMusicWorld() "
+                                                href="#">Music World</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link p-1 text-truncate" onclick="mostrarPunkyHardcore()" href="#">Punk & Hardcore</a>
+                                            <a class="nav-link p-1 text-truncate" onclick="mostrarPunkyHardcore()"
+                                                href="#">Punk & Hardcore</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link p-1 text-truncate" onclick="mostrarRapyHipHop()" href="#">Rap & Hip-Hop</a>
+                                            <a class="nav-link p-1 text-truncate" onclick="mostrarRapyHipHop()"
+                                                href="#">Rap & Hip-Hop</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link p-1 text-truncate" onclick="mostrarReggaeySka()" href="#">Reggae & Ska</a>
+                                            <a class="nav-link p-1 text-truncate" onclick="mostrarReggaeySka()"
+                                                href="#">Reggae & Ska</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link p-1 text-truncate" onclick="mostrarRockyPop()" href="#">Rock & Pop</a>
+                                            <a class="nav-link p-1 text-truncate" onclick="mostrarRockyPop()"
+                                                href="#">Rock & Pop</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link p-1 text-truncate" onclick="mostrarRockNacional()" href="#">Rock Nacional</a>
+                                            <a class="nav-link p-1 text-truncate" onclick="mostrarRockNacional()"
+                                                href="#">Rock Nacional</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link p-1 text-truncate" onclick="mostrarTango()" href="#">Tango</a>
+                                            <a class="nav-link p-1 text-truncate" onclick="mostrarTango()"
+                                                href="#">Tango</a>
                                     </ul>
                                 </div>
-                                </li>
-                            </ul>
-                        </div>
                     </li>
-                    <li class="nav-item"><a class="nav-link text-truncate" href="#"><i class="far fa-star"></i>
-                            <span class=" d-sm-inline" onclick="mostrarDestacados()" >Destacados</span></a></li>
-                    <!--
-                    <li class="nav-item"><a class="nav-link text-truncate" href="#"><i class="fa fa-download"></i> <span
-                                class="d-none d-sm-inline">Demo</span></a></li>
-
-                    <li class="nav-item">
-                        <a class="nav-link text-truncate">
-                            <div class="redesSociales ">
-                                <h3>Redes Sociales</h3>
-                                <div id="social-lateral" class="aside-box">
-                                    <div class="twitter">
-                                        <a href="" class="icon"><i class="fab fa-twitter-square"></i></a>
-                                        <P class="overlay">twitter</P>
-                                    </div>
-                                    <div class="youtube">
-                                        <a href="" class="icon"><i class="fab fa-youtube"></i></a>
-                                        <P class="overlay">YouTube</P>
-                                    </div>
-                                    <div class="facebook">
-                                        <a href="" class="icon"><i class="fab fa-facebook-square"></i></a>
-                                        <p class="overlay">facebook</p>
-                                    </div>
-                                </div>
-                    </li>
-                 -->
                 </ul>
             </div>
+            </li>
+            <li class="nav-item"><a class="nav-link text-truncate" href="#"><i class="far fa-star"></i>
+                    <span class=" d-sm-inline" onclick="mostrarDestacados()">Destacados</span></a></li>
+            </ul>
+        </div>
 
-
-
-
-
-            <div class="col pt-2">
-                <main>
-                    <div class="postion-relative overflow-hidden p-3 p-1 m-md-3 text center bg-light ">
-                        <div class="tituloCatalogo d-flex">
-                            <h2>CATÁLOGO</h2>
-                            <div class="ordenarPor">
-                                <div class="form-group col-md-10 d-flex">
-                                    <label for="inputState">Ordenar por</label>
-                                    <select id="inputState" class="form-control ">
-                                        <option selected>Destacados</option>
-                                        <option>Menor precio</option>
-                                        <option>Mayor precio</option>
-                                        <option>A->Z</option>
-                                        <option>Z->A</option>
-                                    </select>
-                                </div>
+        <div class="col pt-2">
+            <main>
+                <div class="postion-relative overflow-hidden p-3 p-1 m-md-3 text center bg-light ">
+                    <div class="tituloCatalogo d-flex">
+                        <h2>CATÁLOGO</h2>
+                        <div class="ordenarPor">
+                            <div class="form-group col-md-10 d-flex">
+                                <label for="inputState">Ordenar por</label>
+                                <select class="form-select" id="ordenarCatalogo" aria-label="Default select example"
+                                    style="font-size: 25px !important;">
+                                    <option onclick="location.reload()" selected>Catalogo</option>
+                                    <option value="AZordenar" onclick="location.reload()">Artistas A->Z</option>
+                                    <option value="ZAordenar" onclick="location.reload()">Artistas Z->A</option>
+                                </select>
                             </div>
                         </div>
-
-                        <div class="destacados container" id="mostrarOcultarDestacados">
-                            <h4><i class="far fa-star"></i> Destacados</h4>
-                            <div class="col-md-14 p-lg-14 mx-auto row " id="Destacados">
-                                <!--
-                                <div class="card  tarjeta-Listados" style="width: 15rem;">
-                                    <a href="detalleProductos.html">
-                                        <img src="assets/img/Box-Set/GeorgeHarrison.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">George Harrison – All Things Must Pass</h5>
-                                            <hr>
-                                            <p>$00.00</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card  tarjeta-Listados" style="width: 15rem;">
-                                    <a href="detalleProductos.html">
-                                        <img src="assets/img/Box-Set/GeorgeHarrison.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">George Harrison – All Things Must Pass</h5>
-                                            <hr>
-                                            <p>$00.00</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card  tarjeta-Listados" style="width: 15rem;">
-                                    <a href="detalleProductos.html">
-                                        <img src="assets/img/Box-Set/GeorgeHarrison.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">George Harrison – All Things Must Pass</h5>
-                                            <hr>
-                                            <p>$00.00</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card  tarjeta-Listados" style="width: 15rem;">
-                                    <a href="detalleProductos.html">
-                                        <img src="assets/img/Box-Set/GeorgeHarrison.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">George Harrison – All Things Must Pass</h5>
-                                            <hr>
-                                            <p>$00.00</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card  tarjeta-Listados" style="width: 15rem;">
-                                    <a href="detalleProductos.html">
-                                        <img src="assets/img/Box-Set/GeorgeHarrison.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">George Harrison – All Things Must Pass</h5>
-                                            <hr>
-                                            <p>$00.00</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                 -->
-                            </div>
-                        </div>
-
-                        <div class="Set-Box container" id="mostrarOcultarSetBox">
-                            <h4><i class="far fa-star"></i> Set-Box</h4>
-                            <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="SetBox">
-                            </div>
-                        </div>
-
-                        <div class="Banda-Sonora container" id="mostrarOcultarBandaSonora">
-                            <h4><i class="far fa-star"></i> Banda Sonora</h4>
-                            <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="BandaSonora">
-                            </div>
-                        </div>
-
-                        <div class="BLUES container" id="mostrarOcultarBlues">
-                            <h4><i class="far fa-star"></i> Blues</h4>
-                            <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="Blues">
-                            </div>
-                        </div>
-
-                        <div class="Funk-Soul container" id="mostrarOcultarFunkySoul">
-                            <h4><i class="far fa-star"></i> Funk & Soul</h4>
-                            <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="FunkySoul">
-                            </div>
-                        </div>
-
-                        <div class="Punk-Hardcore container" id="mostrarOcultarPunkyHardcore">
-                            <h4><i class="far fa-star"></i> Punk & Hardcore</h4>
-                            <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="PunkyHardcore">
-                            </div>
-                        </div>
-
-
-                        <div class="JAZZ container" id="mostrarOcultarJazz">
-                            <h4><i class="far fa-star"></i> Jazz</h4>
-                            <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="Jazz">
-                            </div>
-                        </div>
-
-
-                        <div class="METAL container" id="mostrarOcultarMetal">
-                            <h4><i class="far fa-star"></i> Metal</h4>
-                            <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="Metal">
-                            </div>
-                        </div>
-
-                        <div class="Music-World container" id="mostrarOcultarMusicWorld">
-                            <h4><i class="far fa-star"></i> Music World</h4>
-                            <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="MusicWorld">
-                            </div>
-                        </div>
-                        <div class="Rapy-HipHop container" id="mostrarOcultarRapyHipHop">
-                            <h4><i class="far fa-star"></i> Rap & Hip-Hop</h4>
-                            <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="RapyHipHop">
-                            </div>
-                        </div>
-                        <div class="Reggae-Ska container" id="mostrarOcultarReggaeySka">
-                            <h4><i class="far fa-star"></i> Reggae & Ska</h4>
-                            <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="ReggaeySka">
-                            </div>
-                        </div>
-                        <div class="Rock-Pop container" id="mostrarOcultarRockyPop">
-                            <h4><i class="far fa-star"></i> Rock & Pop</h4>
-                            <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="RockyPop">
-                            </div>
-                        </div>
-                        <div class="Rock-Nacional container" id="mostrarOcultarRockNacional">
-                            <h4><i class="far fa-star"></i> Rock Nacional</h4>
-                            <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="RockNacional">
-                            </div>
-                        </div>
-
-                        <div class="TANGO container" id="mostrarOcultarTango">
-                            <h4><i class="far fa-star"></i> Tango</h4>
-                            <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="Tango">
-                            </div>
-                        </div>
-
-                        <div class="catalogo">
-                            <h4><i class="fas fa-record-vinyl"></i>TODOS LOS DISCOS</h4>
-                            <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="catalogo">
-
-                                <!--
-                                <div class="card  tarjeta-Listados" style="width: 15rem;">
-                                    <a href="detalleProductos.html">
-                                        <img src="assets/img/Box-Set/GeorgeHarrison.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">George Harrison – All Things Must Pass</h5>
-                                            <hr>
-                                            <p>$00.00</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card  tarjeta-Listados" style="width: 15rem;">
-                                    <a href="detalleProductos.html">
-                                        <img src="assets/img/Box-Set/GeorgeHarrison.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">George Harrison – All Things Must Pass</h5>
-                                            <hr>
-                                            <p>$00.00</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card  tarjeta-Listados" style="width: 15rem;">
-                                    <a href="detalleProductos.html">
-                                        <img src="assets/img/Box-Set/GeorgeHarrison.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">George Harrison – All Things Must Pass</h5>
-                                            <hr>
-                                            <p>$00.00</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card  tarjeta-Listados" style="width: 15rem;">
-                                    <a href="">
-                                        <img src="assets/img/Box-Set/GeorgeHarrison.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">George Harrison – All Things Must Pass</h5>
-                                            <hr>
-                                            <p>$00.00</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card  tarjeta-Listados" style="width: 15rem;">
-                                    <a href="detalleProductos.html">
-                                        <img src="assets/img/Box-Set/GeorgeHarrison.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">George Harrison – All Things Must Pass</h5>
-                                            <hr>
-                                            <p>$00.00</p>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            -->
-                            </div>
-                        </div>
-
                     </div>
-                </main>
-            </div>
+                    <div class="destacados container" id="mostrarOcultarDestacados">
+                        <h4><i class="far fa-star"></i> Destacados</h4>
+                        <div class="col-md-14 p-lg-14 mx-auto row " id="Destacados">
+                        </div>
+                    </div>
+
+                    <div class="Set-Box container" id="mostrarOcultarSetBox">
+                        <h4><i class="far fa-star"></i> Set-Box</h4>
+                        <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="SetBox">
+                        </div>
+                    </div>
+
+                    <div class="Banda-Sonora container" id="mostrarOcultarBandaSonora">
+                        <h4><i class="far fa-star"></i> Banda Sonora</h4>
+                        <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="BandaSonora">
+                        </div>
+                    </div>
+
+                    <div class="BLUES container" id="mostrarOcultarBlues">
+                        <h4><i class="far fa-star"></i> Blues</h4>
+                        <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="Blues">
+                        </div>
+                    </div>
+
+                    <div class="Funk-Soul container" id="mostrarOcultarFunkySoul">
+                        <h4><i class="far fa-star"></i> Funk & Soul</h4>
+                        <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="FunkySoul">
+                        </div>
+                    </div>
+
+                    <div class="Punk-Hardcore container" id="mostrarOcultarPunkyHardcore">
+                        <h4><i class="far fa-star"></i> Punk & Hardcore</h4>
+                        <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="PunkyHardcore">
+                        </div>
+                    </div>
+
+
+                    <div class="JAZZ container" id="mostrarOcultarJazz">
+                        <h4><i class="far fa-star"></i> Jazz</h4>
+                        <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="Jazz">
+                        </div>
+                    </div>
+
+
+                    <div class="METAL container" id="mostrarOcultarMetal">
+                        <h4><i class="far fa-star"></i> Metal</h4>
+                        <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="Metal">
+                        </div>
+                    </div>
+
+                    <div class="Music-World container" id="mostrarOcultarMusicWorld">
+                        <h4><i class="far fa-star"></i> Music World</h4>
+                        <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="MusicWorld">
+                        </div>
+                    </div>
+                    <div class="Rapy-HipHop container" id="mostrarOcultarRapyHipHop">
+                        <h4><i class="far fa-star"></i> Rap & Hip-Hop</h4>
+                        <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="RapyHipHop">
+                        </div>
+                    </div>
+                    <div class="Reggae-Ska container" id="mostrarOcultarReggaeySka">
+                        <h4><i class="far fa-star"></i> Reggae & Ska</h4>
+                        <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="ReggaeySka">
+                        </div>
+                    </div>
+                    <div class="Rock-Pop container" id="mostrarOcultarRockyPop">
+                        <h4><i class="far fa-star"></i> Rock & Pop</h4>
+                        <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="RockyPop">
+                        </div>
+                    </div>
+                    <div class="Rock-Nacional container" id="mostrarOcultarRockNacional">
+                        <h4><i class="far fa-star"></i> Rock Nacional</h4>
+                        <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="RockNacional">
+                        </div>
+                    </div>
+
+                    <div class="TANGO container" id="mostrarOcultarTango">
+                        <h4><i class="far fa-star"></i> Tango</h4>
+                        <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="Tango">
+                        </div>
+                    </div>
+
+                    <div class="catalogo">
+                        <h4><i class="fas fa-record-vinyl"></i>TODOS LOS DISCOS</h4>
+                        <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="catalogo">
+                        </div>
+                    </div>
+
+                </div>
+            </main>
         </div>
     </div>
-
-    <!--
-    <section>
-        <main>
-            <div class="container-fluid">
-                <div class="postion-relative overflow-hidden p-3 p-md-5 m-md-3 text center bg-light ">
-                    <h2>Categorías</h2>
-                    <div class="col-md-14 p-lg-14 mx-auto row contenedor-carousel">
-
-                        <div id="carouselExampleControls-Categoria" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-
-                                    <div class="contenedor-tarjetas-carusel">
-                                        <div class="card tarjetas-carousel" style="width: 13rem;">
-                                            <img src="assets/img/Categoria/Rock-324x324.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Rock & Pop</h5>
-                                                <a href="#" onclick="mostrarRockyPop()"  class="btn border-secondary">Ver categoría</a>
-                                            </div>
-                                        </div>
-                                        <div class="card tarjetas-carousel" style="width: 15rem;">
-                                            <img src="assets/img/Categoria/Metal-324x324.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Metal</h5>
-                                                <a href="#" onclick="mostrarMetal()" class="btn border-secondary">Ver categoría</a>
-                                            </div>
-                                        </div>
-                                        <div class="card tarjetas-carousel" style="width: 15rem;">
-                                            <img src="assets/img/Categoria/Punk-324x324.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Punk & Hardcore</h5>
-                                                <a href="#" onclick="mostrarPunkyHardcore()" class="btn border-secondary">Ver categoría</a>
-                                            </div>
-                                        </div>
-                                        <div class="card tarjetas-carousel" style="width: 15rem;">
-                                            <img src="assets/img/Categoria/Reggae-324x324.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Reggae & Ska</h5>
-                                                <a href="#" onclick="mostrarReggaeySka()" class="btn border-secondary">Ver categoría</a>
-                                            </div>
-                                        </div>
-                                        <div class="card tarjetas-carousel" style="width: 15rem;">
-                                            <img src="assets/img/Categoria/Blues-324x324.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Blues</h5>
-                                                <a href="#" onclick="mostrarBlues()" class="btn border-secondary">Ver categoría</a>
-                                            </div>
-                                        </div>
-                                        <div class="card tarjetas-carousel" style="width: 15rem;">
-                                            <img src="assets/img/Categoria/Jazz-324x324.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Jazz</h5>
-                                                <a href="#" onclick="mostrarJazz()" class="btn border-secondary">Ver categoría</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="carousel-item">
-
-                                    <div class="contenedor-tarjetas-carusel">
-                                        <div class="card tarjetas-carousel" style="width: 13rem;">
-                                            <img src="assets/img/Categoria/Soul-324x324.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Funk & Soul</h5>
-                                                <a href="#" onclick="mostrarFunkySoul()" class="btn border-secondary">Ver categoría</a>
-                                            </div>
-                                        </div>
-                                        <div class="card tarjetas-carousel" style="width: 15rem;">
-                                            <img src="assets/img/Categoria/Rap-324x324.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Rap & Hip-Hop</h5>
-                                                <a href="#"  onclick="mostrarRapyHipHop()"  class="btn border-secondary">Ver categoría</a>
-                                            </div>
-                                        </div>
-                                        <div class="card tarjetas-carousel" style="width: 15rem;">
-                                            <img src="assets/img/Categoria/Rock-Nacional-324x324.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Rock Nacional</h5>
-                                                <a href="#" onclick="mostrarRockNacional()" class="btn border-secondary">Ver categoría</a>
-                                            </div>
-                                        </div>
-                                        <div class="card tarjetas-carousel" style="width: 15rem;">
-                                            <img src="assets/img/Categoria/TANGO1-324x324.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Tango</h5>
-                                                <a href="#" onclick="mostrarTango()" class="btn border-secondary">Ver categoría</a>
-                                            </div>
-                                        </div>
-                                        <div class="card tarjetas-carousel" style="width: 15rem;">
-                                            <img src="assets/img/Categoria/BSO-324x324.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Bandas Sonora</h5>
-                                                <a href="#" onclick="mostrarBandaSonora()" class="btn border-secondary">Ver categoría</a>
-                                            </div>
-                                        </div>
-                                        <div class="card tarjetas-carousel" style="width: 15rem;">
-                                            <img src="assets/img/Categoria/World-Music-324x324.jpg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Music World</h5>
-                                                <a href="#" onclick="MusicWorld()" class="btn border-secondary">Ver categoría</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            <a class="carousel-control-prev" href="#carouselExampleControls-Categoria" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" id="icono-carousel-izq" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExampleControls-Categoria" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" id="icono-carousel-der" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="container-fluid">
-                <div class="postion-relative overflow-hidden p-3 p-md-5 m-md-3 text center bg-light ">
-                    <h2>Set-Box</h2>
-                    <div class="col-md-14 p-lg-14 mx-auto row contenedor-carousel">
-
-                        <div id="carouselExampleControls-setBox" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-
-                                    <div class="contenedor-tarjetas-carusel">
-                                        <div class="card tarjetas-carousel-setbox" style="width: 13rem;">
-                                            <a href="" id="tarjetas-setbox">
-                                                <img src="assets/img/Box-Set/Who.jpg" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Who – The Studio Albums</h5>
-                                                    <hr>
-                                                    <p>$00.00</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="card tarjetas-carousel-setbox" style="width: 15rem;">
-                                            <a href="">
-                                                <img src="assets/img/Box-Set/JimiHendrix.jpg" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Jimi Hendrix – The Jimi Hendrix Experience
-                                                    </h5>
-                                                    <hr>
-                                                    <p>$00.00</p>
-
-                                                </div>
-                                            </a>
-
-                                        </div>
-                                        <div class="card tarjetas-carousel-setbox" style="width: 15rem;">
-                                            <a href="">
-                                                <img src="assets/img/Box-Set/Traffic.jpg" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Traffic – The Studio Albums • 1967-1974</h5>
-                                                    <hr>
-                                                    <p>$00.00</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="card tarjetas-carousel-setbox" style="width: 15rem;">
-                                            <a href="">
-                                                <img src="assets/img/Box-Set/RoxyMusic.jpg" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Roxy Music – The Studio Albums</h5>
-                                                    <hr>
-                                                    <p>$00.00</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="card tarjetas-carousel-setbox" style="width: 15rem;">
-                                            <a href="">
-                                                <img src="assets/img/Box-Set/Prince.jpg" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Prince – Sign “O” The Times (4LP, Deluxe Edition)
-                                                    </h5>
-                                                    <hr>
-                                                    <p>$00.00</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="card tarjetas-carousel-setbox" style="width: 15rem;">
-                                            <a href="">
-                                                <img src="assets/img/Box-Set/LeeMorgan.jpg" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Lee Morgan – The Complete Live At The Lighthouse
-                                                    </h5>
-                                                    <hr>
-                                                    <p>$00.00</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="carousel-item">
-
-                                    <div class="contenedor-tarjetas-carusel">
-                                        <div class="card tarjetas-carousel-setbox" style="width: 13rem;">
-                                            <a href="">
-                                                <img src="assets/img/Box-Set/Beatles.jpg" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Beatles – Original Studio Recordings (Stereo)
-                                                    </h5>
-                                                    <hr>
-                                                    <p>$00.00</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="card tarjetas-carousel-setbox" style="width: 15rem;">
-                                            <a href="">
-                                                <img src="assets/img/Box-Set/BobDylan.jpg" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Bob Dylan – The Original Mono Recordings</h5>
-                                                    <hr>
-                                                    <p>$00.00</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="card tarjetas-carousel-setbox" style="width: 15rem;">
-                                            <a href="">
-                                                <img src="assets/img/Box-Set/BobMarley.jpg" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Bob Dylan – The Original Mono Recordings</h5>
-                                                    <hr>
-                                                    <p>$00.00</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="card tarjetas-carousel-setbox" style="width: 15rem;">
-                                            <a href="">
-                                                <img src="assets/img/Box-Set/BonJovi.jpg" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Bon Jovi – The Albums</h5>
-                                                    <hr>
-                                                    <p>$00.00</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="card tarjetas-carousel-setbox" style="width: 15rem;">
-                                            <a href="">
-                                                <img src="assets/img/Box-Set/FrankZappa.jpg" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Frank Zappa – Zappa (Original Motion Picture Soundtrack)
-                                                    </h5>
-                                                    <hr>
-                                                    <p>$00.00</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="card tarjetas-carousel-setbox" style="width: 15rem;">
-                                            <a href="">
-                                                <img src="assets/img/Box-Set/GeorgeHarrison.jpg" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">George Harrison – All Things Must Pass</h5>
-                                                    <hr>
-                                                    <p>$00.00</p>
-                                                </div>
-                                            </a>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            <a class="carousel-control-prev" href="#carouselExampleControls-setBox" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" id="icono-carousel-izq" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExampleControls-setBox" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" id="icono-carousel-der" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </main>
-    </section>
--->
-
+    </div>
     <!-- Footer -->
     <footer class="page-footer font-small blue-grey lighten-5">
         <div class="styleBarraVerde">
@@ -672,7 +247,8 @@
                     <!-- Content -->
                     <h6 class="text-uppercase font-weight-bold">MELOMANÍA</h6>
                     <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p>Somos la disquería más grande de Buenos Aires. Desde hace 20 años rescatamos la mejor tradición con todo lo nuevo. La música que suena está en Melomanía, locxs por la música.</p>
+                    <p>Somos la disquería más grande de Buenos Aires. Desde hace 20 años rescatamos la mejor tradición
+                        con todo lo nuevo. La música que suena está en Melomanía, locxs por la música.</p>
 
                 </div>
                 <!-- Grid column -->
@@ -728,11 +304,14 @@
 
     <!-- Bootstrap Bundle with Popper -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script type="text/javascript" src="js/listadoProductos.js"></script>
 </body>
