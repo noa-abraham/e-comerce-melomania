@@ -26,9 +26,7 @@ function chequearDatosComentario() {
         telefonoCorrecto = true;
     }
     if (emailCorrecto && nombreCorrecto && comentarioConContenido && telefonoCorrecto) {
-        alert("¿Está seguro que quiere enviar el formulario?")
-        alert(datosObtenidos);
-        mostrarModal("Formulario confirmación", "¿Está seguro que quiere enviar el formulario?");
+        modalMostrar("Confirmar envío", "¿Está seguro que quiere enviar el formulario?");
     } else {
         mostrarError();
     }
@@ -37,15 +35,15 @@ function chequearDatosComentario() {
 function mostrarError() {
     let error = "Error al enviar comentario:";
     if (nombreCorrecto == false) {
-        //mostrarModal("Error al enviar comentario:", "El campo Nombre y Apellido no puede estar vacio")
+        modalMostrar("Error al enviar comentario:", "El campo Nombre y Apellido no puede estar vacio")
 
-        error += " \n- El campo Nombre y Apellido no puede estar vacio"
+        //error += " \n- El campo Nombre y Apellido no puede estar vacio"
     }
     if (emailCorrecto == false) {
         error += " \n- El email es inválido"
             //mostrarModal("Error al enviar comentario:", "El email es inválido")
-    }
-    if (telefonoCorrecto == false) {
+    }.
+    if(telefonoCorrecto == false) {
         // mostrarModal("Error al enviar comentario:", "No se ingresó ningún teléfono")
         error += " \n- No se ingresó ningún teléfono"
     }
@@ -71,14 +69,17 @@ function chequearMail(string) {
 }
 
 
-function mostrarModal(titulo, descripcion) {
-    let elementoTitulo = document.getElementById('tituloModal');
-    let elementoContenido = document.getElementById('contenidoModal');
+function modalMostrar(title, description) {
 
-    elementoTitulo.innerHTML = titulo;
-    elementoContenido, innerHTML = descripcion;
+    let elementTitle = document.getElementById('staticBackdropLabel');
+    let elementDescription = document.getElementById('textModal');
 
-    var myModal = new bootstrap.Modal(document.getElementById('modal'), {
+
+    elementTitle.innerHTML = title;
+    elementDescription.innerHTML = description;
+
+
+    var myModal = new bootstrap.Modal(document.getElementById('staticBackdrop'), {
         keyboard: false
     })
     myModal.show();
@@ -90,3 +91,7 @@ function getParameterByName(name) {
         results = regex.exec(location.search);
     return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
+
+
+let params = new URLSearchParams(location.search);
+var datosModal = params.get('email');

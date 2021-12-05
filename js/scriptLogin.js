@@ -41,7 +41,6 @@ function checkUser(data, username, password) {
             user = true; //existe el usuario
 
             if (password == val.password) {
-                console.log("contraseña Correcta");
                 $('#userId').val(val.idUser);
                 $('#loguin_form').submit();
                 return false;
