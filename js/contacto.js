@@ -1,5 +1,3 @@
-let testValue = '';
-
 let nombreCorrecto = false;
 let telefonoCorrecto = false;
 let emailCorrecto = false;
@@ -8,7 +6,7 @@ let nombre = document.getElementById("nombre");
 let email = document.getElementById("email");
 let telefono = document.getElementById("telefono");
 let comentario = document.getElementById("comentario");
-
+let datosObtenidos = window.location.href
 
 function chequearDatosComentario() {
     chequearMail(email.value);
@@ -29,7 +27,8 @@ function chequearDatosComentario() {
     }
     if (emailCorrecto && nombreCorrecto && comentarioConContenido && telefonoCorrecto) {
         alert("¿Está seguro que quiere enviar el formulario?")
-        mostrarDatos();
+        alert(datosObtenidos);
+        mostrarModal("Formulario confirmación", "¿Está seguro que quiere enviar el formulario?");
     } else {
         mostrarError();
     }
@@ -38,19 +37,25 @@ function chequearDatosComentario() {
 function mostrarError() {
     let error = "Error al enviar comentario:";
     if (nombreCorrecto == false) {
+        //mostrarModal("Error al enviar comentario:", "El campo Nombre y Apellido no puede estar vacio")
+
         error += " \n- El campo Nombre y Apellido no puede estar vacio"
     }
     if (emailCorrecto == false) {
         error += " \n- El email es inválido"
+            //mostrarModal("Error al enviar comentario:", "El email es inválido")
     }
     if (telefonoCorrecto == false) {
+        // mostrarModal("Error al enviar comentario:", "No se ingresó ningún teléfono")
         error += " \n- No se ingresó ningún teléfono"
     }
     if (comentarioConContenido == false) {
+        //mostrarModal("Error al enviar comentario:", "El campo del comentario no puede estar vacio")
         error += " \n- El campo del comentario no puede estar vacio"
     }
     alert(error);
 }
+
 
 
 
@@ -65,9 +70,23 @@ function chequearMail(string) {
     }
 }
 
-function mostrarDatos(dato) {
-    let element = document.createElement("div");
-    let text = document.createTextNode(dato);
-    element.appendChild(text);
-    document.getElementById("body_page").appendChild(element);
+
+function mostrarModal(titulo, descripcion) {
+    let elementoTitulo = document.getElementById('tituloModal');
+    let elementoContenido = document.getElementById('contenidoModal');
+
+    elementoTitulo.innerHTML = titulo;
+    elementoContenido, innerHTML = descripcion;
+
+    var myModal = new bootstrap.Modal(document.getElementById('modal'), {
+        keyboard: false
+    })
+    myModal.show();
+}
+
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 }

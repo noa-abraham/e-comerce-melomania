@@ -1,3 +1,14 @@
+async function sha256(message) {
+    const msgBuffer = new TextEncoder('utf-8').encode(message);
+    const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+    const hashArray = Array.from(new Uint8Array(hashBuffer));
+    const hashHex = hashArray.map(b => ('00' + b.toString(16)).slice(-2)).join('');
+    console.log(hashHex);
+    return hashHex;
+
+}
+
+
 function checkUserLogin() {
     let username = $('#username').val();
     let password = $('#password').val();
@@ -14,7 +25,7 @@ function checkUserLogin() {
 
             })
             .fail(function() {
-                alert("error página en mantenimiento ");
+                alert("Error página en mantenimiento ");
             })
     }
 }
@@ -28,6 +39,7 @@ function checkUser(data, username, password) {
 
         if (username === val.user) {
             user = true; //existe el usuario
+
             if (password == val.password) {
                 console.log("contraseña Correcta");
                 $('#userId').val(val.idUser);
