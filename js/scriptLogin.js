@@ -43,7 +43,7 @@ function checkUser(data, username, password) {
             if (password == val.password) {
                 console.log("contraseña Correcta");
                 $('#userId').val(val.idUser);
-                $('#login_form').submit();
+                $('#loguin_form').submit();
                 return false;
             } else {
                 alert("contraseña incorrecta");
@@ -60,3 +60,13 @@ function checkUser(data, username, password) {
 
 
 }
+
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
+let params = new URLSearchParams(location.search);
+var id = params.get('id');
