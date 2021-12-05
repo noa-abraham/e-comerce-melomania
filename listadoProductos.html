@@ -48,7 +48,7 @@
                     <li class="nav-item">
                         <a class="nav-link collapsed text-truncate" href="#submenu1" data-toggle="collapse"
                             data-target="#submenu1"><i class="fas fa-record-vinyl"></i> <span class=" d-sm-inline"
-                                onclick="mostrarCatalogo()">Catálogo</span></a>
+                                >Catálogo</span></a>
                         <div class="collapse" id="submenu1" aria-expanded="false">
                             <ul class="flex-column pl-2 nav">
                                 <li class="nav-item"><a class="nav-link py-0" onclick="mostrarSetBox()"
@@ -113,6 +113,10 @@
             </li>
             <li class="nav-item"><a class="nav-link text-truncate" href="#"><i class="far fa-star"></i>
                     <span class=" d-sm-inline" onclick="mostrarDestacados()">Destacados</span></a></li>
+                    <li class="nav-item"><a class="nav-link text-truncate" href="#"><i class="fas fa-sort-alpha-down" style="color: gold; text-shadow: 0 1px 2px black;"></i>
+                    <span class=" d-sm-inline" onclick="mostrarOrdenarAZ()">Ordenar de A->Z</span></a></li>
+                     <li class="nav-item"><a class="nav-link text-truncate" href="#"><i class="fas fa-sort-alpha-down-alt" style="color: gold; text-shadow: 0 1px 2px black;"></i>
+                    <span class=" d-sm-inline" onclick="mostrarOrdenarZA()">Ordenar de Z->A</span></a></li>
             </ul>
         </div>
 
@@ -121,17 +125,19 @@
                 <div class="postion-relative overflow-hidden p-3 p-1 m-md-3 text center bg-light ">
                     <div class="tituloCatalogo d-flex">
                         <h2>CATÁLOGO</h2>
+<!--
                         <div class="ordenarPor">
                             <div class="form-group col-md-10 d-flex">
                                 <label for="inputState">Ordenar por</label>
-                                <select class="form-select" id="ordenarCatalogo" aria-label="Default select example"
-                                    style="font-size: 25px !important;">
-                                    <option onclick="location.reload()" selected>Catalogo</option>
-                                    <option value="AZordenar" onclick="location.reload()">Artistas A->Z</option>
-                                    <option value="ZAordenar" onclick="location.reload()">Artistas Z->A</option>
+                                <select  on class="form-select" id="ordenarCatalogo" aria-label="Default select example"
+                                    style="font-size: 25px !important;" onchange="setCatalogo()">
+                                    <option  value= "0" >Catalogo</option>
+                                    <option    value="1">Artistas A->Z</option>
+                                    <option  value="2">Artistas Z->A</option>
                                 </select>
                             </div>
                         </div>
+-->
                     </div>
                     <div class="destacados container" id="mostrarOcultarDestacados">
                         <h4><i class="far fa-star"></i> Destacados</h4>
@@ -214,7 +220,16 @@
                         <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="Tango">
                         </div>
                     </div>
-
+                      <div class="ordenAZ container" id="mostrarOcultarOrdenarAZ">
+                        <h4><i class="fas fa-sort-alpha-down" style="color: gold; text-shadow: 0 1px 2px black;"></i> TODOS LOS DISCOS</h4>
+                        <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="ordenar_AZ">
+                        </div>
+                    </div>
+                    <div class="ordenZA container" id="mostrarOcultarOrdenarZA">
+                        <h4><i class="fas fa-sort-alpha-down-alt" style="color: gold; text-shadow: 0 1px 2px black;"></i> TODOS LOS DISCOS</h4>
+                        <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="ordenar_ZA">
+                        </div>
+                    </div>
                     <div class="catalogo">
                         <h4><i class="fas fa-record-vinyl"></i>TODOS LOS DISCOS</h4>
                         <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="catalogo">
