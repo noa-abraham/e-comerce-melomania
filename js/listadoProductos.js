@@ -25,30 +25,29 @@ request.onload = function () {
     setCategoriaRockyPop();
     setCategoriaRockNacional();
     setCategoriaTango();
+    setOrdenarAZ();
+    setOrdenarZA();
 }
 
-function ordenarAsc(a_array_json, p_key) {
-    a_array_json.sort(function (a, b) {
-        return a[p_key] > b[p_key];
+
+function sortJSON(data, key, orden) {
+    return data.sort(function (a, b) {
+        var x = a[key],
+        y = b[key];
+
+        if (orden === 'asc') {
+            return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+        }
+
+        if (orden === 'desc') {
+            return ((x > y) ? -1 : ((x < y) ? 1 : 0));
+        }
     });
 }
 
-function ordenarDesc(z_array_json, p_key) {
-    ordenarAsc(z_array_json, p_key);
-    z_array_json.reverse();
-}
-
-function setCatalogo() {
-    let catalogo = discos.catalogo;
-    let ordenarCat = document.getElementById("ordenarCatalogo");
-    let seleccionCat = ordenarCat.options[ordenarCat.selectedIndex].value;
-
-    if (seleccionCat == 'AZordenar') {
-        /* Applesauce */
-        ordenarAsc(catalogo, 'artista');
-        console.log(catalogo);
-
-        catalogo.forEach(element => {
+function setCatalogo(){
+  let catalogo = discos.catalogo;
+    catalogo.forEach(element => {
 
             let elementCatalogo = '<div class="card  tarjeta-Listados" style="width: 15rem; border:2px solid #21d192;">';
             elementCatalogo += '<a href="detalleProductos.html?prodId=' + element.id + '">';
@@ -63,82 +62,6 @@ function setCatalogo() {
 
             console.log(element);
         });
-    } else if (seleccionCat == 'ZAordenar') {
-        ordenarDesc(catalogo, 'artista');
-        catalogo.forEach(element => {
-
-            let elementCatalogo = '<div class="card  tarjeta-Listados" style="width: 15rem; border:2px solid #21d192;">';
-            elementCatalogo += '<a href="detalleProductos.html?prodId=' + element.id + '">';
-            elementCatalogo += '<img src="' + element.tapa + '" class="card-img-top" alt="...">';
-            elementCatalogo += '<div class="card-body">';
-            elementCatalogo += '<h5 class="card-text">' + element.titulo + ' </h5>';
-            elementCatalogo += '<h4 class="card-title">' + element.artista + '</h4>';
-            elementCatalogo += '<p>' + element.precio + '</p>';
-            elementCatalogo += '</div></a></div>';
-            let gallery = document.getElementById('catalogo');
-            $('#catalogo').append(elementCatalogo);
-
-            console.log(element);
-        });
-
-    } else {
-        catalogo.forEach(element => {
-
-            let elementCatalogo = '<div class="card  tarjeta-Listados" style="width: 15rem; border:2px solid #21d192;">';
-            elementCatalogo += '<a href="detalleProductos.html?prodId=' + element.id + '">';
-            elementCatalogo += '<img src="' + element.tapa + '" class="card-img-top" alt="...">';
-            elementCatalogo += '<div class="card-body">';
-            elementCatalogo += '<h5 class="card-text">' + element.titulo + ' </h5>';
-            elementCatalogo += '<h4 class="card-title">' + element.artista + '</h4>';
-            elementCatalogo += '<p>' + element.precio + '</p>';
-            elementCatalogo += '</div></a></div>';
-            let gallery = document.getElementById('catalogo');
-            $('#catalogo').append(elementCatalogo);
-
-            console.log(element);
-        });
-
-    }
-
-}
-
-
-function mostrarCatalogo() {
-    var x = document.getElementById("Catalogo");
-
-    if (x.style.display != "none") {
-        x.style.display = "none";
-        ocultarDestacados();
-        ocultarSetBox();
-        ocultarBlues();
-        ocultarBandaSonora();
-        ocultarFunkySoul();
-        ocultarPunkyHardcore();
-        ocultarJazz();
-        ocultarMetal();
-        ocultarMusicWorld();
-        ocultarRapyHipHop();
-        ocultarReggaeySka();
-        ocultarRockyPop();
-        ocultarRockNacional();
-        ocultarTango();
-    } else {
-        x.style.display = "block";
-        ocultarDestacados();
-        ocultarSetBox();
-        ocultarBlues();
-        ocultarPunkyHardcore();
-        ocultarBandaSonora();
-        ocultarFunkySoul();
-        ocultarJazz();
-        ocultarMetal();
-        ocultarMusicWorld();
-        ocultarRapyHipHop();
-        ocultarReggaeySka();
-        ocultarRockyPop();
-        ocultarRockNacional();
-        ocultarTango();
-    }
 }
 
 
@@ -192,6 +115,8 @@ function mostrarDestacados() {
         ocultarRockyPop();
         ocultarRockNacional();
         ocultarTango();
+         ocultarOrdenarAZ();
+        ocultarOrdenarZA();
     } else {
         x.style.display = "block";
         ocultarSetBox();
@@ -207,6 +132,8 @@ function mostrarDestacados() {
         ocultarRockyPop();
         ocultarRockNacional();
         ocultarTango();
+         ocultarOrdenarAZ();
+        ocultarOrdenarZA();
     }
 }
 
@@ -258,6 +185,8 @@ function mostrarBandaSonora() {
         ocultarRockyPop();
         ocultarRockNacional();
         ocultarTango();
+         ocultarOrdenarAZ();
+        ocultarOrdenarZA();
     } else {
         x.style.display = "block";
         ocultarDestacados();
@@ -273,6 +202,8 @@ function mostrarBandaSonora() {
         ocultarRockyPop();
         ocultarRockNacional();
         ocultarTango();
+         ocultarOrdenarAZ();
+        ocultarOrdenarZA();
     }
 }
 
@@ -324,6 +255,8 @@ function mostrarBlues() {
         ocultarRockNacional();
         ocultarTango();
         ocultarFunkySoul();
+         ocultarOrdenarAZ();
+        ocultarOrdenarZA();
     } else {
         x.style.display = "block";
         ocultarDestacados();
@@ -339,6 +272,8 @@ function mostrarBlues() {
         ocultarRockNacional();
         ocultarTango();
         ocultarFunkySoul();
+         ocultarOrdenarAZ();
+        ocultarOrdenarZA();
     }
 }
 
@@ -389,6 +324,8 @@ function mostrarFunkySoul() {
         ocultarRockyPop();
         ocultarRockNacional();
         ocultarTango();
+         ocultarOrdenarAZ();
+        ocultarOrdenarZA();
     } else {
         x.style.display = "block";
         ocultarDestacados();
@@ -404,6 +341,8 @@ function mostrarFunkySoul() {
         ocultarRockyPop();
         ocultarRockNacional();
         ocultarTango();
+         ocultarOrdenarAZ();
+        ocultarOrdenarZA();
     }
 }
 
@@ -454,6 +393,8 @@ function mostrarJazz() {
         ocultarRockNacional();
         ocultarTango();
         ocultarPunkyHardcore();
+         ocultarOrdenarAZ();
+        ocultarOrdenarZA();
     } else {
         x.style.display = "block";
         ocultarDestacados();
@@ -469,6 +410,8 @@ function mostrarJazz() {
         ocultarRockNacional();
         ocultarTango();
         ocultarPunkyHardcore();
+         ocultarOrdenarAZ();
+        ocultarOrdenarZA();
     }
 }
 
@@ -520,6 +463,8 @@ function mostrarMetal() {
         ocultarRockNacional();
         ocultarTango();
         ocultarPunkyHardcore();
+         ocultarOrdenarAZ();
+        ocultarOrdenarZA();
     } else {
         x.style.display = "block";
         ocultarDestacados();
@@ -535,6 +480,8 @@ function mostrarMetal() {
         ocultarRockNacional();
         ocultarTango();
         ocultarPunkyHardcore();
+         ocultarOrdenarAZ();
+        ocultarOrdenarZA();
     }
 }
 
@@ -585,6 +532,8 @@ function mostrarMusicWorld() {
         ocultarRockNacional();
         ocultarTango();
         ocultarPunkyHardcore();
+         ocultarOrdenarAZ();
+        ocultarOrdenarZA();
     } else {
         x.style.display = "block";
         ocultarDestacados();
@@ -600,6 +549,8 @@ function mostrarMusicWorld() {
         ocultarRockNacional();
         ocultarTango();
         ocultarPunkyHardcore();
+         ocultarOrdenarAZ();
+        ocultarOrdenarZA();
     }
 }
 
@@ -652,6 +603,8 @@ function mostrarRapyHipHop() {
         ocultarRockNacional();
         ocultarTango();
         ocultarPunkyHardcore();
+         ocultarOrdenarAZ();
+        ocultarOrdenarZA();
     } else {
         x.style.display = "block";
         ocultarDestacados();
@@ -667,6 +620,8 @@ function mostrarRapyHipHop() {
         ocultarRockNacional();
         ocultarTango();
         ocultarPunkyHardcore();
+         ocultarOrdenarAZ();
+        ocultarOrdenarZA();
     }
 }
 
@@ -718,6 +673,8 @@ function mostrarReggaeySka() {
         ocultarTango();
         ocultarPunkyHardcore();
         ocultarRapyHipHop();
+         ocultarOrdenarAZ();
+        ocultarOrdenarZA();
     } else {
         x.style.display = "block";
         ocultarDestacados();
@@ -733,6 +690,8 @@ function mostrarReggaeySka() {
         ocultarTango();
         ocultarPunkyHardcore();
         ocultarRapyHipHop();
+         ocultarOrdenarAZ();
+        ocultarOrdenarZA();
     }
 }
 
@@ -784,6 +743,8 @@ function mostrarRockyPop() {
         ocultarReggaeySka();
         ocultarRockNacional();
         ocultarTango();
+         ocultarOrdenarAZ();
+        ocultarOrdenarZA();
     } else {
         x.style.display = "block";
         ocultarDestacados();
@@ -799,6 +760,8 @@ function mostrarRockyPop() {
         ocultarReggaeySka();
         ocultarRockNacional();
         ocultarTango();
+         ocultarOrdenarAZ();
+        ocultarOrdenarZA();
 
     }
 }
@@ -851,6 +814,8 @@ function mostrarRockNacional() {
         ocultarRockyPop();
         ocultarTango();
         ocultarPunkyHardcore();
+         ocultarOrdenarAZ();
+        ocultarOrdenarZA();
     } else {
         x.style.display = "block";
         ocultarDestacados();
@@ -866,6 +831,8 @@ function mostrarRockNacional() {
         ocultarRockyPop();
         ocultarTango();
         ocultarPunkyHardcore();
+         ocultarOrdenarAZ();
+        ocultarOrdenarZA();
     }
 }
 
@@ -916,6 +883,8 @@ function mostrarTango() {
         ocultarRockyPop();
         ocultarRockNacional();
         ocultarPunkyHardcore();
+         ocultarOrdenarAZ();
+        ocultarOrdenarZA();
     } else {
         x.style.display = "block";
         ocultarDestacados();
@@ -931,6 +900,8 @@ function mostrarTango() {
         ocultarRockyPop();
         ocultarRockNacional();
         ocultarPunkyHardcore();
+         ocultarOrdenarAZ();
+        ocultarOrdenarZA();
     }
 }
 
@@ -980,6 +951,8 @@ function mostrarPunkyHardcore() {
         ocultarRockyPop();
         ocultarRockNacional();
         ocultarTango();
+         ocultarOrdenarAZ();
+        ocultarOrdenarZA();
     } else {
         x.style.display = "block";
         ocultarDestacados();
@@ -995,6 +968,8 @@ function mostrarPunkyHardcore() {
         ocultarRockyPop();
         ocultarRockNacional();
         ocultarTango();
+         ocultarOrdenarAZ();
+        ocultarOrdenarZA();
     }
 }
 
@@ -1044,6 +1019,8 @@ function mostrarSetBox() {
         ocultarRockyPop();
         ocultarRockNacional();
         ocultarTango();
+         ocultarOrdenarAZ();
+        ocultarOrdenarZA();
     } else {
         x.style.display = "block";
         ocultarDestacados();
@@ -1058,5 +1035,147 @@ function mostrarSetBox() {
         ocultarRockyPop();
         ocultarRockNacional();
         ocultarTango();
+        ocultarOrdenarAZ();
+        ocultarOrdenarZA();
     }
+}
+
+
+
+
+function ocultarOrdenarAZ() {
+    var OrdenarAZNone = document.getElementById("mostrarOcultarOrdenarAZ");
+    OrdenarAZNone.style.display = "none";
+
+}
+ocultarOrdenarAZ();
+
+function setOrdenarAZ() {
+
+    let productos = discos.catalogo;
+    var oJSON = sortJSON(productos, 'artista', 'asc');
+    oJSON.forEach(element => {
+      
+
+            let elementCard = '<div class="card  tarjeta-Listados" style="width: 15rem;  border:5px solid gold;">';
+            elementCard += '<a href="detalleProductos.html?prodId=' + element.id + '">';
+            elementCard += '<img src="' + element.tapa + '" class="card-img-top" alt="...">';
+            elementCard += '<div class="card-body">';
+            elementCard += '<h5 class="card-text">' + element.titulo + ' </h5>';
+            elementCard += '<h4 class="card-title">' + element.artista + '</h4>';
+            elementCard += '<p>' + element.precio + '</p>';
+            elementCard += '</div></a></div>';
+
+            let gallery = document.getElementById('ordenar_AZ');
+            $('#ordenar_AZ').append(elementCard);
+       
+        console.log(element);
+    });
+}
+
+function mostrarOrdenarAZ() {
+    var x = document.getElementById("mostrarOcultarOrdenarAZ");
+    if (x.style.display != "none") {
+        x.style.display = "none";
+        ocultarDestacados();
+        ocultarBandaSonora();
+        ocultarBlues();
+        ocultarFunkySoul();
+        ocultarJazz();
+        ocultarMetal();
+        ocultarMusicWorld();
+        ocultarRapyHipHop();
+        ocultarReggaeySka();
+        ocultarRockyPop();
+        ocultarRockNacional();
+        ocultarTango();
+        ocultarOrdenarZA();
+
+    } else {
+        x.style.display = "block";
+        ocultarDestacados();
+        ocultarBandaSonora();
+        ocultarBlues();
+        ocultarFunkySoul();
+        ocultarJazz();
+        ocultarMetal();
+        ocultarMusicWorld();
+        ocultarRapyHipHop();
+        ocultarReggaeySka();
+        ocultarRockyPop();
+        ocultarRockNacional();
+        ocultarTango();
+        ocultarOrdenarZA();
+    }
+}
+
+
+function ocultarOrdenarZA() {
+    var OrdenarZANone = document.getElementById("mostrarOcultarOrdenarZA");
+    OrdenarZANone.style.display = "none";
+
+}
+ocultarOrdenarZA();
+function setOrdenarZA() {
+
+    let productos = discos.catalogo;
+    var oJSON = sortJSON(productos, 'artista', 'desc');
+    oJSON.forEach(element => {
+      
+
+            let elementCard = '<div class="card  tarjeta-Listados" style="width: 15rem;  border:5px solid gold;">';
+            elementCard += '<a href="detalleProductos.html?prodId=' + element.id + '">';
+            elementCard += '<img src="' + element.tapa + '" class="card-img-top" alt="...">';
+            elementCard += '<div class="card-body">';
+            elementCard += '<h5 class="card-text">' + element.titulo + ' </h5>';
+            elementCard += '<h4 class="card-title">' + element.artista + '</h4>';
+            elementCard += '<p>' + element.precio + '</p>';
+            elementCard += '</div></a></div>';
+
+            let gallery = document.getElementById('ordenar_ZA');
+            $('#ordenar_ZA').append(elementCard);
+       
+        console.log(element);
+    });
+}
+
+function mostrarOrdenarZA() {
+    var x = document.getElementById("mostrarOcultarOrdenarZA");
+    if (x.style.display != "none") {
+        x.style.display = "none";
+        ocultarDestacados();
+        ocultarBandaSonora();
+        ocultarBlues();
+        ocultarFunkySoul();
+        ocultarJazz();
+        ocultarMetal();
+        ocultarMusicWorld();
+        ocultarRapyHipHop();
+        ocultarReggaeySka();
+        ocultarRockyPop();
+        ocultarRockNacional();
+        ocultarTango();
+        ocultarOrdenarAZ();
+    } else {
+        x.style.display = "block";
+        ocultarDestacados();
+        ocultarBandaSonora();
+        ocultarBlues();
+        ocultarFunkySoul();
+        ocultarJazz();
+        ocultarMetal();
+        ocultarMusicWorld();
+        ocultarRapyHipHop();
+        ocultarReggaeySka();
+        ocultarRockyPop();
+        ocultarRockNacional();
+        ocultarTango();
+        ocultarOrdenarAZ();
+    }
+}
+
+function ocultarCatalogo() {
+    var OrdenarAZNone = document.getElementById("catalogo");
+    OrdenarAZNone.style.display = "none";
+
 }
