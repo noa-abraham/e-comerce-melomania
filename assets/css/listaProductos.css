@@ -265,50 +265,11 @@ nav .btn-buscar {
 }
 
 
-/*
-.carousel-inner {
-    height: 360px;
-}*/
-
 .contenedor-tarjetas-carusel {
     display: flex;
     align-items: center;
 }
 
-
-/*
-.tarjetas-carousel {
-    width: 180px !important;
-    align-items: center;
-    margin: .4%;
-    max-width: 185px !important;
-    background-color: rgba(0, 0, 0, .85);
-    color: #8e8e8e;
-    transition: color .15s ease-in-out;
-    box-shadow: 0 1px 2px rgb(121, 121, 121), 0 1px 3px white, 1px 2px 4px grey;
-}*/
-
-
-/*
-.tarjetas-carousel {
-    width: 200px !important;
-    align-items: center;
-    margin: .4%;
-    max-width: 300px !important;
-    background-color: rgba(0, 0, 0, .85);
-    color: #8e8e8e;
-    transition: color .15s ease-in-out;
-    box-shadow: 0 1px 2px rgb(121, 121, 121), 0 1px 3px white, 1px 2px 4px grey;
-	.carousel-inner {
-    align-items: center;
-    height: 400px;
-    margin-left: 19%;
-}
-
-.carousel-control-next {
-    margin-right: -46%;
-}
-}*/
 
 .tarjetas-carousel {
     width: 180px !important;
@@ -456,6 +417,12 @@ nav .btn-buscar {
     background-color: #8e8e8e;
 }
 
+
+.ordenZA, .ordenAZ{
+    margin-left: 150px;
+    margin-bottom: 30px;
+}
+
 @media (max-width: 1724px) {
     .col-md-14 {
         width: 80%;
@@ -466,8 +433,9 @@ nav .btn-buscar {
 
 @media (max-width: 1204px) {
     #sidebar {
-        min-width: 369px!important;
+        min-width: 369px !important;
     }
+
     .col-md-14 {
         width: 80%;
         float: left;
@@ -477,8 +445,9 @@ nav .btn-buscar {
 
 @media (max-width: 1104px) {
     #sidebar {
-        min-width: 369px!important;
+        min-width: 369px !important;
     }
+
     .col-md-14 {
         width: 80%;
         float: left;
@@ -488,8 +457,9 @@ nav .btn-buscar {
 
 @media (max-width: 1030px) {
     #sidebar {
-        min-width: 1030px!important;
+        min-width: 1030px !important;
     }
+
     .col-md-14 {
         width: 80%;
         float: left;
@@ -499,8 +469,9 @@ nav .btn-buscar {
 
 @media (max-width: 990px) {
     #sidebar {
-        min-width: 990px!important;
+        min-width: 990px !important;
     }
+
     .col-md-14 {
         width: 50%;
         float: left;
@@ -510,8 +481,9 @@ nav .btn-buscar {
 
 @media (max-width: 660px) {
     #sidebar {
-        min-width: 660px!important;
+        min-width: 660px !important;
     }
+
     .col-md-14 {
         width: 50%;
         float: left;
@@ -521,8 +493,9 @@ nav .btn-buscar {
 
 @media (max-width: 550px) {
     #sidebar {
-        min-width: 550px!important;
+        min-width: 550px !important;
     }
+
     .col-md-14 {
         width: 50%;
         float: left;
@@ -532,8 +505,9 @@ nav .btn-buscar {
 
 @media (max-width: 500px) {
     #sidebar {
-        min-width: 500px!important;
+        min-width: 500px !important;
     }
+
     .col-md-14 {
         transform: scale(0.8);
         margin-top: -550px !important;
@@ -561,8 +535,9 @@ nav .btn-buscar {
 
 @media (max-width: 445px) {
     #sidebar {
-        min-width: 445px!important;
+        min-width: 445px !important;
     }
+
     /*
     .col-2{
         flex: 0 0 100% !important;
@@ -579,6 +554,7 @@ nav .btn-buscar {
 }
 
 @media (max-width: 369px) {
+
     /* #Destacados{
         transform: scale(0.7)!important;
         margin-top: -419px !important;
@@ -587,14 +563,16 @@ nav .btn-buscar {
         margin-left: -85px !important;
     }*/
     #sidebar {
-        min-width: 369px!important;
+        min-width: 369px !important;
     }
+
     .col-2 {
         /*
         flex: 0 0 100% !important;
         max-width: 101% !important;
         height: 30vh !important;*/
     }
+
     .col-md-14 {
         transform: scale(0.6);
         margin-top: -990px t;

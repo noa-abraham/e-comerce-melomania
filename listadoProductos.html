@@ -47,8 +47,8 @@
                 <ul class="nav flex-column flex-nowrap overflow-hidden">
                     <li class="nav-item">
                         <a class="nav-link collapsed text-truncate" href="#submenu1" data-toggle="collapse"
-                            data-target="#submenu1"><i class="fas fa-record-vinyl"></i> <span class=" d-sm-inline"
-                                >Catálogo</span></a>
+                            data-target="#submenu1"><i class="fas fa-record-vinyl"></i> <span
+                                class=" d-sm-inline">Catálogo</span></a>
                         <div class="collapse" id="submenu1" aria-expanded="false">
                             <ul class="flex-column pl-2 nav">
                                 <li class="nav-item"><a class="nav-link py-0" onclick="mostrarSetBox()"
@@ -113,9 +113,11 @@
             </li>
             <li class="nav-item"><a class="nav-link text-truncate" href="#"><i class="far fa-star"></i>
                     <span class=" d-sm-inline" onclick="mostrarDestacados()">Destacados</span></a></li>
-                    <li class="nav-item"><a class="nav-link text-truncate" href="#"><i class="fas fa-sort-alpha-down" style="color: gold; text-shadow: 0 1px 2px black;"></i>
+            <li class="nav-item"><a class="nav-link text-truncate" href="#"><i class="fas fa-sort-alpha-down"
+                        style="color: #21d192; text-shadow: 0 1px 2px black;"></i>
                     <span class=" d-sm-inline" onclick="mostrarOrdenarAZ()">Ordenar de A->Z</span></a></li>
-                     <li class="nav-item"><a class="nav-link text-truncate" href="#"><i class="fas fa-sort-alpha-down-alt" style="color: gold; text-shadow: 0 1px 2px black;"></i>
+            <li class="nav-item"><a class="nav-link text-truncate" href="#"><i class="fas fa-sort-alpha-down-alt"
+                        style="color: #21d192; text-shadow: 0 1px 2px black;"></i>
                     <span class=" d-sm-inline" onclick="mostrarOrdenarZA()">Ordenar de Z->A</span></a></li>
             </ul>
         </div>
@@ -125,19 +127,6 @@
                 <div class="postion-relative overflow-hidden p-3 p-1 m-md-3 text center bg-light ">
                     <div class="tituloCatalogo d-flex">
                         <h2>CATÁLOGO</h2>
-<!--
-                        <div class="ordenarPor">
-                            <div class="form-group col-md-10 d-flex">
-                                <label for="inputState">Ordenar por</label>
-                                <select  on class="form-select" id="ordenarCatalogo" aria-label="Default select example"
-                                    style="font-size: 25px !important;" onchange="setCatalogo()">
-                                    <option  value= "0" >Catalogo</option>
-                                    <option    value="1">Artistas A->Z</option>
-                                    <option  value="2">Artistas Z->A</option>
-                                </select>
-                            </div>
-                        </div>
--->
                     </div>
                     <div class="destacados container" id="mostrarOcultarDestacados">
                         <h4><i class="far fa-star"></i> Destacados</h4>
@@ -146,92 +135,94 @@
                     </div>
 
                     <div class="Set-Box container" id="mostrarOcultarSetBox">
-                        <h4><i class="far fa-star"></i> Set-Box</h4>
+                        <h4><i class="fas fa-box" style="color: #21d192; text-shadow: 0 1px 2px black;"></i> Set-Box</h4>
                         <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="SetBox">
                         </div>
                     </div>
 
                     <div class="Banda-Sonora container" id="mostrarOcultarBandaSonora">
-                        <h4><i class="far fa-star"></i> Banda Sonora</h4>
+                        <h4><i class="fas fa-compact-disc" style="color: #21d192; text-shadow: 0 1px 2px black;"></i> Banda Sonora</h4>
                         <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="BandaSonora">
                         </div>
                     </div>
 
                     <div class="BLUES container" id="mostrarOcultarBlues">
-                        <h4><i class="far fa-star"></i> Blues</h4>
+                        <h4><i class="fas fa-compact-disc" style="color: #21d192; text-shadow: 0 1px 2px black;"></i> Blues</h4>
                         <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="Blues">
                         </div>
                     </div>
 
                     <div class="Funk-Soul container" id="mostrarOcultarFunkySoul">
-                        <h4><i class="far fa-star"></i> Funk & Soul</h4>
+                        <h4><i class="fas fa-compact-disc" style="color: #21d192; text-shadow: 0 1px 2px black;"></i> Funk & Soul</h4>
                         <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="FunkySoul">
                         </div>
                     </div>
 
                     <div class="Punk-Hardcore container" id="mostrarOcultarPunkyHardcore">
-                        <h4><i class="far fa-star"></i> Punk & Hardcore</h4>
+                        <h4><i class="fas fa-compact-disc" style="color: #21d192; text-shadow: 0 1px 2px black;"></i> Punk & Hardcore</h4>
                         <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="PunkyHardcore">
                         </div>
                     </div>
 
 
                     <div class="JAZZ container" id="mostrarOcultarJazz">
-                        <h4><i class="far fa-star"></i> Jazz</h4>
+                        <h4><i class="fas fa-compact-disc" style="color: #21d192; text-shadow: 0 1px 2px black;"></i> Jazz</h4>
                         <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="Jazz">
                         </div>
                     </div>
 
 
                     <div class="METAL container" id="mostrarOcultarMetal">
-                        <h4><i class="far fa-star"></i> Metal</h4>
+                        <h4><i class="fas fa-compact-disc" style="color: #21d192; text-shadow: 0 1px 2px black;"></i> Metal</h4>
                         <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="Metal">
                         </div>
                     </div>
 
                     <div class="Music-World container" id="mostrarOcultarMusicWorld">
-                        <h4><i class="far fa-star"></i> Music World</h4>
+                        <h4><i class="fas fa-compact-disc"  style="color: #21d192; text-shadow: 0 1px 2px black;"></i> Music World</h4>
                         <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="MusicWorld">
                         </div>
                     </div>
                     <div class="Rapy-HipHop container" id="mostrarOcultarRapyHipHop">
-                        <h4><i class="far fa-star"></i> Rap & Hip-Hop</h4>
+                        <h4><i class="fas fa-compact-disc" style="color: #21d192; text-shadow: 0 1px 2px black;"></i> Rap & Hip-Hop</h4>
                         <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="RapyHipHop">
                         </div>
                     </div>
                     <div class="Reggae-Ska container" id="mostrarOcultarReggaeySka">
-                        <h4><i class="far fa-star"></i> Reggae & Ska</h4>
+                        <h4><i class="fas fa-compact-disc"  style="color: #21d192; text-shadow: 0 1px 2px black;"></i> Reggae & Ska</h4>
                         <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="ReggaeySka">
                         </div>
                     </div>
                     <div class="Rock-Pop container" id="mostrarOcultarRockyPop">
-                        <h4><i class="far fa-star"></i> Rock & Pop</h4>
+                        <h4><i class="fas fa-compact-disc" style="color: #21d192; text-shadow: 0 1px 2px black;"></i> Rock & Pop</h4>
                         <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="RockyPop">
                         </div>
                     </div>
                     <div class="Rock-Nacional container" id="mostrarOcultarRockNacional">
-                        <h4><i class="far fa-star"></i> Rock Nacional</h4>
+                        <h4><i class="fas fa-compact-disc" style="color: #21d192; text-shadow: 0 1px 2px black;"></i> Rock Nacional</h4>
                         <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="RockNacional">
                         </div>
                     </div>
 
                     <div class="TANGO container" id="mostrarOcultarTango">
-                        <h4><i class="far fa-star"></i> Tango</h4>
+                        <h4><i class="fas fa-compact-disc" style="color: #21d192; text-shadow: 0 1px 2px black;"></i> Tango</h4>
                         <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="Tango">
                         </div>
                     </div>
-                      <div class="ordenAZ container" id="mostrarOcultarOrdenarAZ">
-                        <h4><i class="fas fa-sort-alpha-down" style="color: gold; text-shadow: 0 1px 2px black;"></i> TODOS LOS DISCOS</h4>
+                    <div class="ordenAZ container" id="mostrarOcultarOrdenarAZ">
+                        <h4><i class="fas fa-sort-alpha-down" style="color: #21d192; text-shadow: 0 1px 2px black;"></i>
+                            TODOS LOS DISCOS</h4>
                         <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="ordenar_AZ">
                         </div>
                     </div>
                     <div class="ordenZA container" id="mostrarOcultarOrdenarZA">
-                        <h4><i class="fas fa-sort-alpha-down-alt" style="color: gold; text-shadow: 0 1px 2px black;"></i> TODOS LOS DISCOS</h4>
+                        <h4><i class="fas fa-sort-alpha-down-alt"
+                            style="color: #21d192; text-shadow: 0 1px 2px black;"></i> TODOS LOS DISCOS</h4>
                         <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="ordenar_ZA">
                         </div>
                     </div>
                     <div class="catalogo">
-                        <h4><i class="fas fa-record-vinyl"></i>TODOS LOS DISCOS</h4>
+                        <h4><i class="fas fa-record-vinyl"></i> TODOS LOS DISCOS</h4>
                         <div class="col-md-14 p-lg-14 mx-auto row contenedor-catalogo" id="catalogo">
                         </div>
                     </div>

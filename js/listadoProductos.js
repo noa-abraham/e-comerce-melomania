@@ -33,7 +33,7 @@ request.onload = function () {
 function sortJSON(data, key, orden) {
     return data.sort(function (a, b) {
         var x = a[key],
-        y = b[key];
+            y = b[key];
 
         if (orden === 'asc') {
             return ((x < y) ? -1 : ((x > y) ? 1 : 0));
@@ -45,23 +45,23 @@ function sortJSON(data, key, orden) {
     });
 }
 
-function setCatalogo(){
-  let catalogo = discos.catalogo;
+function setCatalogo() {
+    let catalogo = discos.catalogo;
     catalogo.forEach(element => {
 
-            let elementCatalogo = '<div class="card  tarjeta-Listados" style="width: 15rem; border:2px solid #21d192;">';
-            elementCatalogo += '<a href="detalleProductos.html?prodId=' + element.id + '">';
-            elementCatalogo += '<img src="' + element.tapa + '" class="card-img-top" alt="...">';
-            elementCatalogo += '<div class="card-body">';
-            elementCatalogo += '<h5 class="card-text">' + element.titulo + ' </h5>';
-            elementCatalogo += '<h4 class="card-title">' + element.artista + '</h4>';
-            elementCatalogo += '<p>' + element.precio + '</p>';
-            elementCatalogo += '</div></a></div>';
-            let gallery = document.getElementById('catalogo');
-            $('#catalogo').append(elementCatalogo);
+        let elementCatalogo = '<div class="card  tarjeta-Listados" style="width: 15rem; border:2px solid #21d192;">';
+        elementCatalogo += '<a href="detalleProductos.html?prodId=' + element.id + '">';
+        elementCatalogo += '<img src="' + element.tapa + '" class="card-img-top" alt="...">';
+        elementCatalogo += '<div class="card-body">';
+        elementCatalogo += '<h5 class="card-text">' + element.titulo + ' </h5>';
+        elementCatalogo += '<h4 class="card-title">' + element.artista + '</h4>';
+        elementCatalogo += '<p>' + element.precio + '</p>';
+        elementCatalogo += '</div></a></div>';
+        let gallery = document.getElementById('catalogo');
+        $('#catalogo').append(elementCatalogo);
 
-            console.log(element);
-        });
+        console.log(element);
+    });
 }
 
 
@@ -115,7 +115,7 @@ function mostrarDestacados() {
         ocultarRockyPop();
         ocultarRockNacional();
         ocultarTango();
-         ocultarOrdenarAZ();
+        ocultarOrdenarAZ();
         ocultarOrdenarZA();
     } else {
         x.style.display = "block";
@@ -132,7 +132,7 @@ function mostrarDestacados() {
         ocultarRockyPop();
         ocultarRockNacional();
         ocultarTango();
-         ocultarOrdenarAZ();
+        ocultarOrdenarAZ();
         ocultarOrdenarZA();
     }
 }
@@ -185,7 +185,7 @@ function mostrarBandaSonora() {
         ocultarRockyPop();
         ocultarRockNacional();
         ocultarTango();
-         ocultarOrdenarAZ();
+        ocultarOrdenarAZ();
         ocultarOrdenarZA();
     } else {
         x.style.display = "block";
@@ -202,7 +202,7 @@ function mostrarBandaSonora() {
         ocultarRockyPop();
         ocultarRockNacional();
         ocultarTango();
-         ocultarOrdenarAZ();
+        ocultarOrdenarAZ();
         ocultarOrdenarZA();
     }
 }
@@ -255,7 +255,7 @@ function mostrarBlues() {
         ocultarRockNacional();
         ocultarTango();
         ocultarFunkySoul();
-         ocultarOrdenarAZ();
+        ocultarOrdenarAZ();
         ocultarOrdenarZA();
     } else {
         x.style.display = "block";
@@ -272,7 +272,7 @@ function mostrarBlues() {
         ocultarRockNacional();
         ocultarTango();
         ocultarFunkySoul();
-         ocultarOrdenarAZ();
+        ocultarOrdenarAZ();
         ocultarOrdenarZA();
     }
 }
@@ -324,7 +324,7 @@ function mostrarFunkySoul() {
         ocultarRockyPop();
         ocultarRockNacional();
         ocultarTango();
-         ocultarOrdenarAZ();
+        ocultarOrdenarAZ();
         ocultarOrdenarZA();
     } else {
         x.style.display = "block";
@@ -341,7 +341,7 @@ function mostrarFunkySoul() {
         ocultarRockyPop();
         ocultarRockNacional();
         ocultarTango();
-         ocultarOrdenarAZ();
+        ocultarOrdenarAZ();
         ocultarOrdenarZA();
     }
 }
@@ -393,7 +393,7 @@ function mostrarJazz() {
         ocultarRockNacional();
         ocultarTango();
         ocultarPunkyHardcore();
-         ocultarOrdenarAZ();
+        ocultarOrdenarAZ();
         ocultarOrdenarZA();
     } else {
         x.style.display = "block";
@@ -410,7 +410,7 @@ function mostrarJazz() {
         ocultarRockNacional();
         ocultarTango();
         ocultarPunkyHardcore();
-         ocultarOrdenarAZ();
+        ocultarOrdenarAZ();
         ocultarOrdenarZA();
     }
 }
@@ -463,7 +463,7 @@ function mostrarMetal() {
         ocultarRockNacional();
         ocultarTango();
         ocultarPunkyHardcore();
-         ocultarOrdenarAZ();
+        ocultarOrdenarAZ();
         ocultarOrdenarZA();
     } else {
         x.style.display = "block";
@@ -480,7 +480,7 @@ function mostrarMetal() {
         ocultarRockNacional();
         ocultarTango();
         ocultarPunkyHardcore();
-         ocultarOrdenarAZ();
+        ocultarOrdenarAZ();
         ocultarOrdenarZA();
     }
 }
@@ -532,7 +532,7 @@ function mostrarMusicWorld() {
         ocultarRockNacional();
         ocultarTango();
         ocultarPunkyHardcore();
-         ocultarOrdenarAZ();
+        ocultarOrdenarAZ();
         ocultarOrdenarZA();
     } else {
         x.style.display = "block";
@@ -549,7 +549,7 @@ function mostrarMusicWorld() {
         ocultarRockNacional();
         ocultarTango();
         ocultarPunkyHardcore();
-         ocultarOrdenarAZ();
+        ocultarOrdenarAZ();
         ocultarOrdenarZA();
     }
 }
@@ -603,7 +603,7 @@ function mostrarRapyHipHop() {
         ocultarRockNacional();
         ocultarTango();
         ocultarPunkyHardcore();
-         ocultarOrdenarAZ();
+        ocultarOrdenarAZ();
         ocultarOrdenarZA();
     } else {
         x.style.display = "block";
@@ -620,7 +620,7 @@ function mostrarRapyHipHop() {
         ocultarRockNacional();
         ocultarTango();
         ocultarPunkyHardcore();
-         ocultarOrdenarAZ();
+        ocultarOrdenarAZ();
         ocultarOrdenarZA();
     }
 }
@@ -673,7 +673,7 @@ function mostrarReggaeySka() {
         ocultarTango();
         ocultarPunkyHardcore();
         ocultarRapyHipHop();
-         ocultarOrdenarAZ();
+        ocultarOrdenarAZ();
         ocultarOrdenarZA();
     } else {
         x.style.display = "block";
@@ -690,7 +690,7 @@ function mostrarReggaeySka() {
         ocultarTango();
         ocultarPunkyHardcore();
         ocultarRapyHipHop();
-         ocultarOrdenarAZ();
+        ocultarOrdenarAZ();
         ocultarOrdenarZA();
     }
 }
@@ -743,7 +743,7 @@ function mostrarRockyPop() {
         ocultarReggaeySka();
         ocultarRockNacional();
         ocultarTango();
-         ocultarOrdenarAZ();
+        ocultarOrdenarAZ();
         ocultarOrdenarZA();
     } else {
         x.style.display = "block";
@@ -760,7 +760,7 @@ function mostrarRockyPop() {
         ocultarReggaeySka();
         ocultarRockNacional();
         ocultarTango();
-         ocultarOrdenarAZ();
+        ocultarOrdenarAZ();
         ocultarOrdenarZA();
 
     }
@@ -814,7 +814,7 @@ function mostrarRockNacional() {
         ocultarRockyPop();
         ocultarTango();
         ocultarPunkyHardcore();
-         ocultarOrdenarAZ();
+        ocultarOrdenarAZ();
         ocultarOrdenarZA();
     } else {
         x.style.display = "block";
@@ -831,7 +831,7 @@ function mostrarRockNacional() {
         ocultarRockyPop();
         ocultarTango();
         ocultarPunkyHardcore();
-         ocultarOrdenarAZ();
+        ocultarOrdenarAZ();
         ocultarOrdenarZA();
     }
 }
@@ -883,7 +883,7 @@ function mostrarTango() {
         ocultarRockyPop();
         ocultarRockNacional();
         ocultarPunkyHardcore();
-         ocultarOrdenarAZ();
+        ocultarOrdenarAZ();
         ocultarOrdenarZA();
     } else {
         x.style.display = "block";
@@ -900,7 +900,7 @@ function mostrarTango() {
         ocultarRockyPop();
         ocultarRockNacional();
         ocultarPunkyHardcore();
-         ocultarOrdenarAZ();
+        ocultarOrdenarAZ();
         ocultarOrdenarZA();
     }
 }
@@ -951,7 +951,7 @@ function mostrarPunkyHardcore() {
         ocultarRockyPop();
         ocultarRockNacional();
         ocultarTango();
-         ocultarOrdenarAZ();
+        ocultarOrdenarAZ();
         ocultarOrdenarZA();
     } else {
         x.style.display = "block";
@@ -968,7 +968,7 @@ function mostrarPunkyHardcore() {
         ocultarRockyPop();
         ocultarRockNacional();
         ocultarTango();
-         ocultarOrdenarAZ();
+        ocultarOrdenarAZ();
         ocultarOrdenarZA();
     }
 }
@@ -1019,7 +1019,7 @@ function mostrarSetBox() {
         ocultarRockyPop();
         ocultarRockNacional();
         ocultarTango();
-         ocultarOrdenarAZ();
+        ocultarOrdenarAZ();
         ocultarOrdenarZA();
     } else {
         x.style.display = "block";
@@ -1055,20 +1055,20 @@ function setOrdenarAZ() {
     let productos = discos.catalogo;
     var oJSON = sortJSON(productos, 'artista', 'asc');
     oJSON.forEach(element => {
-      
 
-            let elementCard = '<div class="card  tarjeta-Listados" style="width: 15rem;  border:5px solid gold;">';
-            elementCard += '<a href="detalleProductos.html?prodId=' + element.id + '">';
-            elementCard += '<img src="' + element.tapa + '" class="card-img-top" alt="...">';
-            elementCard += '<div class="card-body">';
-            elementCard += '<h5 class="card-text">' + element.titulo + ' </h5>';
-            elementCard += '<h4 class="card-title">' + element.artista + '</h4>';
-            elementCard += '<p>' + element.precio + '</p>';
-            elementCard += '</div></a></div>';
 
-            let gallery = document.getElementById('ordenar_AZ');
-            $('#ordenar_AZ').append(elementCard);
-       
+        let elementCard = '<div class="card  tarjeta-Listados" style="width: 15rem;  border:5px solid gold;">';
+        elementCard += '<a href="detalleProductos.html?prodId=' + element.id + '">';
+        elementCard += '<img src="' + element.tapa + '" class="card-img-top" alt="...">';
+        elementCard += '<div class="card-body">';
+        elementCard += '<h5 class="card-text">' + element.titulo + ' </h5>';
+        elementCard += '<h4 class="card-title">' + element.artista + '</h4>';
+        elementCard += '<p>' + element.precio + '</p>';
+        elementCard += '</div></a></div>';
+
+        let gallery = document.getElementById('ordenar_AZ');
+        $('#ordenar_AZ').append(elementCard);
+
         console.log(element);
     });
 }
@@ -1121,20 +1121,20 @@ function setOrdenarZA() {
     let productos = discos.catalogo;
     var oJSON = sortJSON(productos, 'artista', 'desc');
     oJSON.forEach(element => {
-      
 
-            let elementCard = '<div class="card  tarjeta-Listados" style="width: 15rem;  border:5px solid gold;">';
-            elementCard += '<a href="detalleProductos.html?prodId=' + element.id + '">';
-            elementCard += '<img src="' + element.tapa + '" class="card-img-top" alt="...">';
-            elementCard += '<div class="card-body">';
-            elementCard += '<h5 class="card-text">' + element.titulo + ' </h5>';
-            elementCard += '<h4 class="card-title">' + element.artista + '</h4>';
-            elementCard += '<p>' + element.precio + '</p>';
-            elementCard += '</div></a></div>';
 
-            let gallery = document.getElementById('ordenar_ZA');
-            $('#ordenar_ZA').append(elementCard);
-       
+        let elementCard = '<div class="card  tarjeta-Listados" style="width: 15rem;  border:5px solid gold;">';
+        elementCard += '<a href="detalleProductos.html?prodId=' + element.id + '">';
+        elementCard += '<img src="' + element.tapa + '" class="card-img-top" alt="...">';
+        elementCard += '<div class="card-body">';
+        elementCard += '<h5 class="card-text">' + element.titulo + ' </h5>';
+        elementCard += '<h4 class="card-title">' + element.artista + '</h4>';
+        elementCard += '<p>' + element.precio + '</p>';
+        elementCard += '</div></a></div>';
+
+        let gallery = document.getElementById('ordenar_ZA');
+        $('#ordenar_ZA').append(elementCard);
+
         console.log(element);
     });
 }
