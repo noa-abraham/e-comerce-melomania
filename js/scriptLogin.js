@@ -15,7 +15,7 @@ function checkUserLogin() {
     if (username == '' || password == '') {
         alert('Debe ingresar el usario y la contraseña para continuar');
     } else {
-        let url = "credenciales.json";
+        let url = "../Servicios/credenciales.json";
         $.getJSON(url, function(data) {
                 // console.log(data);
                 sha256(password).then(function(respuestaHash) {
