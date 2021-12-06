@@ -26,7 +26,7 @@ function chequearDatosComentario() {
         telefonoCorrecto = true;
     }
     if (emailCorrecto && nombreCorrecto && comentarioConContenido && telefonoCorrecto) {
-        modalMostrar("Confirmar envío", "¿Está seguro que quiere enviar el formulario?");
+        mostrarModal("Confirmar envío", "¿Está seguro que quiere enviar el formulario?");
 
     } else {
         mostrarError();
@@ -69,10 +69,7 @@ function chequearMail(string) {
 }
 
 
-function modalMostrar(title, description) {
 
-    let elementTitle = document.getElementById('staticBackdropLabel');
-    let elementDescription = document.getElementById('textModal');
 
 
     function mostrarModal(titulo, descripcion) {
@@ -83,15 +80,9 @@ function modalMostrar(title, description) {
         elementoContenido.innerHTML = descripcion;
         agregarDatosAlModal()
 
-
-        elementTitle.innerHTML = title;
-        elementDescription.innerHTML = description;
-
-
-
         var myModal = new bootstrap.Modal(document.getElementById('staticBackdrop'), {
             keyboard: false
-        })
+        });
         myModal.show();
     }
 
@@ -111,4 +102,3 @@ function modalMostrar(title, description) {
             results = regex.exec(location.search);
         return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
     }
-}
