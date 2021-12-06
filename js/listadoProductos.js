@@ -67,9 +67,9 @@ function setCatalogo() {
 
 
 function setTablaDestacados() {
-    let productos = discos.productos;
+    let productos = discos.catalogo;
     productos.forEach(element => {
-
+        if (element.destacado == true) {
 
         let elementCard = '<div class="card  tarjeta-Listados" style="width: 15rem;  border:5px solid gold;">';
         elementCard += '<a href="detalleProductos.html?prodId=' + element.id + '">';
@@ -86,6 +86,7 @@ function setTablaDestacados() {
         $('#Destacados').append(elementCard);
 
         console.log(element);
+        }
     });
 }
 
