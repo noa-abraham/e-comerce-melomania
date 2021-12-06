@@ -74,9 +74,9 @@ function chequearMail(string) {
 function mostrarModal(titulo, descripcion) {
     let elementoTitulo = document.getElementById('tituloModal');
     let elementoContenido = document.getElementById('contenidoModal');
-
+    
     elementoTitulo.innerHTML = titulo;
-    elementoContenido, innerHTML = descripcion;
+    elementoContenido.innerHTML = descripcion;
 
     var myModal = new bootstrap.Modal(document.getElementById('modal'), {
         keyboard: false
