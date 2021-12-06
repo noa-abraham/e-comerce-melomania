@@ -14,24 +14,26 @@ request.onload = function() {
 
 
 function setTablaDestacados() {
-    let productos = discos.productos;
+    let productos = discos.catalogo;
     productos.forEach(element => {
+        if (element.destacado == true) {
 
-        let elementGalery = '<div class="col">';
-        elementGalery += '<div class="card shadow-sm" id="card' + element.id + '">';
-        elementGalery += '<title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect>';
-        elementGalery += '<img src="' + element.tapa + '" class="card-img-top" alt="...">';
-        elementGalery += '<div class="card-body">';
-        elementGalery += '<p class="card-text"><b> ARTISTA: </b>' + element.artista + ' </p>';
-        elementGalery += '<p class="card-text"><b> GÉNERO: </b>' + element.genero + ' </p>';
-        elementGalery += '<div class="d-flex justify-content-between align-items-center">';
-        elementGalery += '<div class="btn-group">';
-        elementGalery += '<button type="button" class="btn btn-sm btn-dark colorVerdeBoton"> <a href="detalleProductos.html?prodId=' + element.id + '"> Detalle</a></button>';
-        elementGalery += '</div><small class="text-muted">9 mins</small></div></div></div></div>';
+            let elementGalery = '<div class="col">';
+            elementGalery += '<div class="card shadow-sm" id="card' + element.id + '">';
+            elementGalery += '<title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect>';
+            elementGalery += '<img src="' + element.tapa + '" class="card-img-top" alt="...">';
+            elementGalery += '<div class="card-body">';
+            elementGalery += '<p class="card-text"><b> ARTISTA: </b>' + element.artista + ' </p>';
+            elementGalery += '<p class="card-text"><b> GÉNERO: </b>' + element.genero + ' </p>';
+            elementGalery += '<div class="d-flex justify-content-between align-items-center">';
+            elementGalery += '<div class="btn-group">';
+            elementGalery += '<button type="button" class="btn btn-sm btn-dark colorVerdeBoton"> <a href="detalleProductos.html?prodId=' + element.id + '"> Detalle</a></button>';
+            elementGalery += '</div><small class="text-muted">9 mins</small></div></div></div></div>';
 
-        let gallery = document.getElementById('gallery_view');
-        $('#gallery_view').append(elementGalery);
+            let gallery = document.getElementById('gallery_view');
+            $('#gallery_view').append(elementGalery);
 
-        console.log(element);
+            console.log(element);
+        }
     });
 }
