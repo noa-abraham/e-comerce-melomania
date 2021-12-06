@@ -27,7 +27,7 @@ function chequearDatosComentario() {
     }
     if (emailCorrecto && nombreCorrecto && comentarioConContenido && telefonoCorrecto) {
         modalMostrar("Confirmar envío", "¿Está seguro que quiere enviar el formulario?");
-        alert(datosObtenidos);
+
     } else {
         mostrarError();
     }
