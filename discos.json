@@ -1,6 +1,5 @@
 {
-    "productos": [
-        {
+    "productos": [{
             "id": 1,
             "destacado": true,
             "titulo": "Revolver",
@@ -88,8 +87,7 @@
             "contratapa": "assets/img/sexpis_contratapa.jpg"
         }
     ],
-    "catalogo": [
-        {
+    "catalogo": [{
             "id": 1,
             "destacado": true,
             "titulo": "Revolver",
@@ -104,7 +102,7 @@
             "condicion": "Nuevo/Sellado",
             "tapa": "assets/img/Revolver.jpg",
             "contratapa": "assets/img/revolver_contratapa.jpg",
-            "descripcion": "LIMITED EDITION 180-GRAM, AUDIOPHILE VINYL LP PRESSING OF THIS ALBUM FROM THE FAB FOUR COMES HOUSED IN REPLICATED ARTWORK. THE 1966 MASTERPIECE FEATURES THE BEATLES AT THEIR MOST INDIVIDUALLY CREATIVE PEAKS. JOHN IS DELVING INTO THE DRUG SCENE AND SOUND. PAUL IS ORCHESTRATING SOPHISTICATED, LAYERED POP. GEORGE IS EXPLORING THE DARKER SIDE OF HIS SONGWRITING, AND RINGO TAKES US ON A HALLUCINATORY TRIP IN A YELLOW SUBMARINE. 'REVOLVER' TOPPED THE CHARTS IN 1966, WHILE ALSO WINNING A GRAMMY FOR THE SONG 'ELEANOR RIGBY.' THIS VINYL PRESSING CONTAINS THE 2009 DIGITAL REMASTER OF THE ALBUM, MAKING IT SOUND MORE VIBRANT AND ELECTRIFYING THAN EVER BEFORE. ",
+            "descripcion": "Revolver es el séptimo álbum de estudio de la banda británica de rock The Beatles lanzado el 5 de agosto de 1966 por EMI. Fue el último álbum lanzado antes de que la banda decidiera abandonar los escenarios y las giras, a favor de la experimentación en los estudios de grabación y mejoramiento de su estilo.El álbum estuvo acompañado por el sencillo doble Eleanor Rigby/Yellow Submarine, ambas canciones convirtiéndose en número uno en Reino Unido, mientras que en los Estados Unidos ocuparon el primer y segundo lugar respectivamente. También se lanzó previamente por el sencillo de Paperback Writer/Rain. ",
             "canciones": [
                 " TAXMAN",
                 " ELEANOR RIGBY",
@@ -134,7 +132,7 @@
             "origen": "Nacional",
             "tapa": "assets/img/ceratti.jpg",
             "contratapa": "assets/img/ceratti_contratapa.jpg",
-            "descripcion": " Esta es una descripcion del producto",
+            "descripcion": " Bocanada es el segundo álbum de estudio solista del músico de rock argentino Gustavo Cerati, el primero luego de la disolución de Soda Stereo. Recibió excelentes críticas, tanto de los especialistas como de los fanáticos. Fue certificado como disco de platino por vender más de 60 mil copias en los primeros meses",
             "canciones": [
                 " Tabú",
                 " Engaña",
@@ -168,7 +166,7 @@
             "condicion": "Nuevo/Sellado",
             "tapa": "assets/img/billevans.jpg",
             "contratapa": "assets/img/billevans_contratapa.jpg",
-            "descripcion": " Esta es una descripcion del producto",
+            "descripcion": "Sunday at the Village Vanguard es el testimonio imperecedero de un trío excepcional en el que todos sus integrantes tenían voz, voto y un lugar para expresarse; la piedra angular del trío de jazz moderno y una fuente de inspiración constante para generaciones de pianistas. Sin duda es uno de los discos más grandes de Jazz que vieron a luz.",
             "canciones": [
                 " Gloria's Step (take 2)",
                 " Gloria's Step (take 3)",
