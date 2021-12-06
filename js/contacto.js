@@ -76,8 +76,8 @@ function modalMostrar(title, description) {
 
 
     function mostrarModal(titulo, descripcion) {
-        let elementoTitulo = document.getElementById('tituloModal');
-        let elementoContenido = document.getElementById('contenidoModal');
+        let elementoTitulo = document.getElementById('staticBackdropLabel');
+        let elementoContenido = document.getElementById('textModal');
 
         elementoTitulo.innerHTML = titulo;
         elementoContenido.innerHTML = descripcion;
@@ -102,7 +102,7 @@ function modalMostrar(title, description) {
         listaDeDatos += '<li>telefono:' + telefono.value + '</li>';
         listaDeDatos += '<li>comentario: ' + comentario.value + '</li>';
         listaDeDatos += '</ol>';
-        $('#contenidoModal').append(listaDeDatos);
+        $('#textModal').append(listaDeDatos);
     }
 
     function getParameterByName(name) {
