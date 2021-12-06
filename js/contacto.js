@@ -50,7 +50,7 @@ function mostrarError() {
     }
     if (comentarioConContenido == false) {
         error += " \n- El campo del comentario no puede estar vacio"
-        mostrarModal("Error al enviar comentario:", "El campo del comentario no puede estar vacio")
+            // mostrarModal("Error al enviar comentario:", "El campo del comentario no puede estar vacio")
 
     }
     alert(error);
