@@ -10,6 +10,7 @@ let comentario = document.getElementById("comentario");
 
 function chequearDatosComentario() {
     chequearMail(email.value);
+
     if (nombre.value === "") {
         nombreCorrecto = false;
     } else {
@@ -27,6 +28,7 @@ function chequearDatosComentario() {
     }
     if (emailCorrecto && nombreCorrecto && comentarioConContenido && telefonoCorrecto) {
         mostrarModal("Confirmar envío", "¿Está seguro que quiere enviar el formulario?");
+        agregarDatosAlModal();
 
     } else {
         mostrarError();
@@ -34,26 +36,25 @@ function chequearDatosComentario() {
 }
 
 function mostrarError() {
-    let error = "Error al enviar comentario:";
+
     if (nombreCorrecto == false) {
-        //modalMostrar("Error al enviar comentario:", "El campo Nombre y Apellido no puede estar vacio")
-        error += " \n- El campo Nombre y Apellido no puede estar vacio"
+        mostrarModal("Error al enviar comentario", "El campo Nombre y Apellido no puede estar vacio")
+
     }
     if (emailCorrecto == false) {
-        // modalMostrar("Error al enviar comentario:", "El email es inválido")
-        error += " \n- El email es inválido"
+        mostrarModal("Error al enviar comentario", "El email es inválido")
+
     }
     if (telefonoCorrecto == false) {
-        //modalMostrar("Error al enviar comentario:", "No se ingresó ningún teléfono")
-        error += " \n- No se ingresó ningún teléfono"
+        mostrarModal("Error al enviar comentario", "No se ingresó ningún teléfono")
+
 
     }
     if (comentarioConContenido == false) {
-        error += " \n- El campo del comentario no puede estar vacio"
-            // mostrarModal("Error al enviar comentario:", "El campo del comentario no puede estar vacio")
+        mostrarModal("Error al enviar comentario", "El campo del comentario no puede estar vacio")
 
     }
-    alert(error);
+
 }
 
 
@@ -68,13 +69,14 @@ function chequearMail(string) {
     }
 }
 
+
 function mostrarModal(titulo, descripcion) {
     let elementoTitulo = document.getElementById('staticBackdropLabel');
     let elementoContenido = document.getElementById('textModal');
 
     elementoTitulo.innerHTML = titulo;
     elementoContenido.innerHTML = descripcion;
-    agregarDatosAlModal()
+
 
     var myModal = new bootstrap.Modal(document.getElementById('staticBackdrop'), {
         keyboard: false
