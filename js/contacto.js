@@ -6,7 +6,7 @@ let nombre = document.getElementById("nombre");
 let email = document.getElementById("email");
 let telefono = document.getElementById("telefono");
 let comentario = document.getElementById("comentario");
-let datosObtenidos = window.location.href
+
 
 function chequearDatosComentario() {
     chequearMail(email.value);
@@ -50,7 +50,7 @@ function mostrarError() {
     }
     if (comentarioConContenido == false) {
         error += " \n- El campo del comentario no puede estar vacio"
-            //modalMostrar("Error al enviar comentario:", "El campo del comentario no puede estar vacio")
+        mostrarModal("Error al enviar comentario:", "El campo del comentario no puede estar vacio")
 
     }
     alert(error);
@@ -68,37 +68,26 @@ function chequearMail(string) {
     }
 }
 
+function mostrarModal(titulo, descripcion) {
+    let elementoTitulo = document.getElementById('staticBackdropLabel');
+    let elementoContenido = document.getElementById('textModal');
 
+    elementoTitulo.innerHTML = titulo;
+    elementoContenido.innerHTML = descripcion;
+    agregarDatosAlModal()
 
+    var myModal = new bootstrap.Modal(document.getElementById('staticBackdrop'), {
+        keyboard: false
+    });
+    myModal.show();
+}
 
-
-    function mostrarModal(titulo, descripcion) {
-        let elementoTitulo = document.getElementById('staticBackdropLabel');
-        let elementoContenido = document.getElementById('textModal');
-
-        elementoTitulo.innerHTML = titulo;
-        elementoContenido.innerHTML = descripcion;
-        agregarDatosAlModal()
-
-        var myModal = new bootstrap.Modal(document.getElementById('staticBackdrop'), {
-            keyboard: false
-        });
-        myModal.show();
-    }
-
-    function agregarDatosAlModal() {
-        let listaDeDatos = '<ul>';
-        listaDeDatos += '<li>nombre: ' + nombre.value + '</li>';
-        listaDeDatos += '<li>email: ' + email.value + '</li>';
-        listaDeDatos += '<li>telefono:' + telefono.value + '</li>';
-        listaDeDatos += '<li>comentario: ' + comentario.value + '</li>';
-        listaDeDatos += '</ol>';
-        $('#textModal').append(listaDeDatos);
-    }
-
-    function getParameterByName(name) {
-        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-            results = regex.exec(location.search);
-        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-    }
+function agregarDatosAlModal() {
+    let listaDeDatos = '<ul>';
+    listaDeDatos += '<li>Nombre: ' + nombre.value + '</li>';
+    listaDeDatos += '<li>Email: ' + email.value + '</li>';
+    listaDeDatos += '<li>Teléfono:' + telefono.value + '</li>';
+    listaDeDatos += '<li>Comentario: ' + comentario.value + '</li>';
+    listaDeDatos += '</ol>';
+    $('#textModal').append(listaDeDatos);
+}
