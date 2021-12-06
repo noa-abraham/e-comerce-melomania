@@ -1,6 +1,18 @@
 # e-comerce-melomania
 IFTS16-Práctica Profesional 1
 
+CONTRASEÑAS MELOMANÍA:
+
+Usuario 1: 
+
+-melomania
+-contraseña: vinilos.
+
+Usuario 2: 
+
+-taller1
+-contraseña: ifts16
+
 Objetivo:
 
 Se debe realizar un sitio de productos que se administre por el momento con variables estáticas.
