@@ -77,11 +77,22 @@ function mostrarModal(titulo, descripcion) {
     
     elementoTitulo.innerHTML = titulo;
     elementoContenido.innerHTML = descripcion;
+    agregarDatosAlModal()
 
     var myModal = new bootstrap.Modal(document.getElementById('modal'), {
         keyboard: false
     })
     myModal.show();
+}
+
+function agregarDatosAlModal(){
+    let listaDeDatos = '<ul>';
+    listaDeDatos += '<li>nombre: ' + nombre.value + '</li>';
+    listaDeDatos += '<li>email: ' + email.value + '</li>';
+    listaDeDatos += '<li>telefono:' + telefono.value + '</li>';
+    listaDeDatos += '<li>comentario: ' + comentario.value + '</li>';
+    listaDeDatos += '</ol>';
+    $('#contenidoModal').append(listaDeDatos);
 }
 
 function getParameterByName(name) {
