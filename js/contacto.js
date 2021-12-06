@@ -75,23 +75,40 @@ function modalMostrar(title, description) {
     let elementDescription = document.getElementById('textModal');
 
 
-    elementTitle.innerHTML = title;
-    elementDescription.innerHTML = description;
+    function mostrarModal(titulo, descripcion) {
+        let elementoTitulo = document.getElementById('tituloModal');
+        let elementoContenido = document.getElementById('contenidoModal');
+
+        elementoTitulo.innerHTML = titulo;
+        elementoContenido.innerHTML = descripcion;
+        agregarDatosAlModal()
 
 
-    var myModal = new bootstrap.Modal(document.getElementById('staticBackdrop'), {
-        keyboard: false
-    })
-    myModal.show();
+        elementTitle.innerHTML = title;
+        elementDescription.innerHTML = description;
+
+
+
+        var myModal = new bootstrap.Modal(document.getElementById('staticBackdrop'), {
+            keyboard: false
+        })
+        myModal.show();
+    }
+
+    function agregarDatosAlModal() {
+        let listaDeDatos = '<ul>';
+        listaDeDatos += '<li>nombre: ' + nombre.value + '</li>';
+        listaDeDatos += '<li>email: ' + email.value + '</li>';
+        listaDeDatos += '<li>telefono:' + telefono.value + '</li>';
+        listaDeDatos += '<li>comentario: ' + comentario.value + '</li>';
+        listaDeDatos += '</ol>';
+        $('#contenidoModal').append(listaDeDatos);
+    }
+
+    function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+            results = regex.exec(location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
 }
-
-function getParameterByName(name) {
-    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-        results = regex.exec(location.search);
-    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-}
-
-
-//let params = new URLSearchParams(location.search);
-//var datosModal = params.get('email');
