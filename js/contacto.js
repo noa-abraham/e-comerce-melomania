@@ -26,9 +26,7 @@ function chequearDatosComentario() {
         telefonoCorrecto = true;
     }
     if (emailCorrecto && nombreCorrecto && comentarioConContenido && telefonoCorrecto) {
-        alert("¿Está seguro que quiere enviar el formulario?")
-        alert(datosObtenidos);
-        mostrarModal("Formulario confirmación", "¿Está seguro que quiere enviar el formulario?");
+        modalMostrar("Confirmar envío", "¿Está seguro que quiere enviar el formulario?");
     } else {
         mostrarError();
     }
@@ -37,26 +35,25 @@ function chequearDatosComentario() {
 function mostrarError() {
     let error = "Error al enviar comentario:";
     if (nombreCorrecto == false) {
-        //mostrarModal("Error al enviar comentario:", "El campo Nombre y Apellido no puede estar vacio")
-
+        //modalMostrar("Error al enviar comentario:", "El campo Nombre y Apellido no puede estar vacio")
         error += " \n- El campo Nombre y Apellido no puede estar vacio"
     }
     if (emailCorrecto == false) {
+        // modalMostrar("Error al enviar comentario:", "El email es inválido")
         error += " \n- El email es inválido"
-            //mostrarModal("Error al enviar comentario:", "El email es inválido")
     }
     if (telefonoCorrecto == false) {
-        // mostrarModal("Error al enviar comentario:", "No se ingresó ningún teléfono")
+        //modalMostrar("Error al enviar comentario:", "No se ingresó ningún teléfono")
         error += " \n- No se ingresó ningún teléfono"
+
     }
     if (comentarioConContenido == false) {
-        //mostrarModal("Error al enviar comentario:", "El campo del comentario no puede estar vacio")
         error += " \n- El campo del comentario no puede estar vacio"
+            //modalMostrar("Error al enviar comentario:", "El campo del comentario no puede estar vacio")
+
     }
     alert(error);
 }
-
-
 
 
 function chequearMail(string) {
@@ -71,15 +68,30 @@ function chequearMail(string) {
 }
 
 
+<<<<<<< HEAD
+function modalMostrar(title, description) {
+
+    let elementTitle = document.getElementById('staticBackdropLabel');
+    let elementDescription = document.getElementById('textModal');
+
+=======
 function mostrarModal(titulo, descripcion) {
     let elementoTitulo = document.getElementById('tituloModal');
     let elementoContenido = document.getElementById('contenidoModal');
     
     elementoTitulo.innerHTML = titulo;
     elementoContenido.innerHTML = descripcion;
+<<<<<<< HEAD
     agregarDatosAlModal()
+=======
+>>>>>>> ae942d5f29672861d1f5ffd506a77e7a5d240ef0
 
-    var myModal = new bootstrap.Modal(document.getElementById('modal'), {
+    elementTitle.innerHTML = title;
+    elementDescription.innerHTML = description;
+
+>>>>>>> 83e4576135e5fab0495386308c3b4302667abf05
+
+    var myModal = new bootstrap.Modal(document.getElementById('staticBackdrop'), {
         keyboard: false
     })
     myModal.show();
@@ -101,3 +113,7 @@ function getParameterByName(name) {
         results = regex.exec(location.search);
     return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
+
+
+let params = new URLSearchParams(location.search);
+var datosModal = params.get('email');
