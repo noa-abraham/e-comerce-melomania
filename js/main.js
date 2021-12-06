@@ -1,4 +1,4 @@
-const url = 'discos.json';
+const url = '../Servicios/discos.json';
 const request = new XMLHttpRequest();
 request.open('GET', url); // setean el método, la url de api
 request.responseType = 'json'; //definen el tipo de dato que les devuelve
