@@ -1090,6 +1090,7 @@ function mostrarOrdenarAZ() {
         ocultarRockNacional();
         ocultarTango();
         ocultarOrdenarZA();
+        ocultarSetBox
 
     } else {
         x.style.display = "block";
@@ -1106,6 +1107,7 @@ function mostrarOrdenarAZ() {
         ocultarRockNacional();
         ocultarTango();
         ocultarOrdenarZA();
+        ocultarSetBox
     }
 }
 
@@ -1156,6 +1158,7 @@ function mostrarOrdenarZA() {
         ocultarRockNacional();
         ocultarTango();
         ocultarOrdenarAZ();
+        ocultarSetBox
     } else {
         x.style.display = "block";
         ocultarDestacados();
@@ -1171,6 +1174,7 @@ function mostrarOrdenarZA() {
         ocultarRockNacional();
         ocultarTango();
         ocultarOrdenarAZ();
+        ocultarSetBox
     }
 }
 
