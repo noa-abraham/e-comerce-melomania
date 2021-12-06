@@ -28,7 +28,7 @@ function setTablaDestacados() {
             elementGalery += '<div class="d-flex justify-content-between align-items-center">';
             elementGalery += '<div class="btn-group">';
             elementGalery += '<button type="button" class="btn btn-sm btn-dark colorVerdeBoton"> <a href="detalleProductos.html?prodId=' + element.id + '"> Detalle</a></button>';
-            elementGalery += '</div><small class="text-muted">9 mins</small></div></div></div></div>';
+            elementGalery += '</div></div></div></div></div>';
 
             let gallery = document.getElementById('gallery_view');
             $('#gallery_view').append(elementGalery);
