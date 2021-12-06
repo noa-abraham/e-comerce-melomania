@@ -35,26 +35,25 @@ function chequearDatosComentario() {
 function mostrarError() {
     let error = "Error al enviar comentario:";
     if (nombreCorrecto == false) {
-        modalMostrar("Error al enviar comentario:", "El campo Nombre y Apellido no puede estar vacio")
-
-        //error += " \n- El campo Nombre y Apellido no puede estar vacio"
+        //modalMostrar("Error al enviar comentario:", "El campo Nombre y Apellido no puede estar vacio")
+        error += " \n- El campo Nombre y Apellido no puede estar vacio"
     }
     if (emailCorrecto == false) {
+        // modalMostrar("Error al enviar comentario:", "El email es inválido")
         error += " \n- El email es inválido"
-            //mostrarModal("Error al enviar comentario:", "El email es inválido")
-    }.
-    if(telefonoCorrecto == false) {
-        // mostrarModal("Error al enviar comentario:", "No se ingresó ningún teléfono")
+    }
+    if (telefonoCorrecto == false) {
+        //modalMostrar("Error al enviar comentario:", "No se ingresó ningún teléfono")
         error += " \n- No se ingresó ningún teléfono"
+
     }
     if (comentarioConContenido == false) {
-        //mostrarModal("Error al enviar comentario:", "El campo del comentario no puede estar vacio")
         error += " \n- El campo del comentario no puede estar vacio"
+            //modalMostrar("Error al enviar comentario:", "El campo del comentario no puede estar vacio")
+
     }
     alert(error);
 }
-
-
 
 
 function chequearMail(string) {
