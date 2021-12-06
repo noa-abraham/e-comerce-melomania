@@ -1090,7 +1090,7 @@ function mostrarOrdenarAZ() {
         ocultarRockNacional();
         ocultarTango();
         ocultarOrdenarZA();
-        ocultarSetBox
+        ocultarSetBox();
 
     } else {
         x.style.display = "block";
@@ -1107,7 +1107,7 @@ function mostrarOrdenarAZ() {
         ocultarRockNacional();
         ocultarTango();
         ocultarOrdenarZA();
-        ocultarSetBox
+        ocultarSetBox();
     }
 }
 
@@ -1158,7 +1158,7 @@ function mostrarOrdenarZA() {
         ocultarRockNacional();
         ocultarTango();
         ocultarOrdenarAZ();
-        ocultarSetBox
+        ocultarSetBox();
     } else {
         x.style.display = "block";
         ocultarDestacados();
@@ -1174,7 +1174,7 @@ function mostrarOrdenarZA() {
         ocultarRockNacional();
         ocultarTango();
         ocultarOrdenarAZ();
-        ocultarSetBox
+        ocultarSetBox();
     }
 }
 
