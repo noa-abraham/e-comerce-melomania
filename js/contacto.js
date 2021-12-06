@@ -68,11 +68,20 @@ function chequearMail(string) {
 }
 
 
+<<<<<<< HEAD
 function modalMostrar(title, description) {
 
     let elementTitle = document.getElementById('staticBackdropLabel');
     let elementDescription = document.getElementById('textModal');
 
+=======
+function mostrarModal(titulo, descripcion) {
+    let elementoTitulo = document.getElementById('tituloModal');
+    let elementoContenido = document.getElementById('contenidoModal');
+    
+    elementoTitulo.innerHTML = titulo;
+    elementoContenido.innerHTML = descripcion;
+>>>>>>> ae942d5f29672861d1f5ffd506a77e7a5d240ef0
 
     elementTitle.innerHTML = title;
     elementDescription.innerHTML = description;
