@@ -1,6 +1,6 @@
 # e-comerce-melomania
 # IFTS16-Práctica Profesional 1
-# Prof. Andrea Abrudsky
+# Prof. Andrea Abrudsky 
 
 
 # Información importante
@@ -23,7 +23,7 @@ password: ifts16
 
 # TP-CONSIGNAS
 
-# -Objetivo-------------------------
+# -Objetivo-
 
 Se debe realizar un sitio de productos que se administre por el momento con variables estáticas.
 Observaciones:
@@ -35,7 +35,7 @@ El grupo deberá presentar un video donde explique la idea de la página y sus f
 Para Diciembre, todos los productos deben obtenerse de un json.
 
 
-# -Descripción del Sitio----------------------
+# -Descripción del Sitio-
 
 
 # A) Características Frontend 
