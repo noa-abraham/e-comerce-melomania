@@ -4,7 +4,7 @@ IFTS16-Práctica Profesional 1
 
 Información importante:
 
-*Link al sitio:* e-comerce-melomania.vercel.app
+*Link al sitio:* https://e-comerce-melomania.vercel.app/
 
 *Para acceder al logeo por usuario ingresar /login.html:* https://e-comerce-melomania.vercel.app/login.html
 
