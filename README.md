@@ -1,19 +1,28 @@
 # e-comerce-melomania
 IFTS16-Práctica Profesional 1
 
-CONTRASEÑAS MELOMANÍA:
+
+Información importante:
+
+*Link al sitio:* e-comerce-melomania.vercel.app
+
+*Para acceder al logeo por usuario ingresar /login.html:* https://e-comerce-melomania.vercel.app/login.html
+
+*CONTRASEÑAS:*
 
 Usuario 1: 
 
--melomania
--contraseña: vinilos.
+user name: melomania
+password: vinilos.
 
 Usuario 2: 
 
--taller1
--contraseña: ifts16
+user name: taller1
+password: ifts16
 
-Objetivo:
+*TP-CONSIGNAS*
+
+-Objetivo-------------------------
 
 Se debe realizar un sitio de productos que se administre por el momento con variables estáticas.
 Observaciones:
@@ -25,13 +34,11 @@ El grupo deberá presentar un video donde explique la idea de la página y sus f
 Para Diciembre, todos los productos deben obtenerse de un json.
 
 
-Descripción del Sitio
+-Descripción del Sitio----------------------
 
 
-Características Frontend 
-
+A) Características Frontend 
 El sitio web debe tener las siguientes funcionalidades
-
 
 *Home
 
@@ -72,15 +79,14 @@ Al presionar enviar debe validar los datos ingresados y  levantará un modal (po
 
 
 
-Características Backend 
+B) -Características Backend-
 
-El backend debe tener las siguientes funcionalidades
+El backend debe tener las siguientes funcionalidades:
 
 *Logueo por usuario
 
 Los usuarios deben poder loguearse al sistemas por medio de un email y contraseña. En éste proyecto el usuario y contraseña serán estáticos y fijos.
-Sistema de perfil de usuarios
-El sistema debe tener dos usuarios con permisos de visualización diferentes.
+Sistema de perfil de usuarios. El sistema debe tener dos usuarios con permisos de visualización diferentes.
 
 
 *Sección de servicios
