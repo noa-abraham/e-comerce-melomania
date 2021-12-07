@@ -26,6 +26,7 @@ function chequearDatosComentario() {
         console.log(telefono.checkValidity())
     } else {
         telefonoCorrecto = false;
+        console.log(telefono.checkValidity())
     }
     if (emailCorrecto && nombreCorrecto && comentarioConContenido && telefonoCorrecto) {
         mostrarModal("Confirmar envío", "¿Está seguro que quiere enviar el formulario?");
