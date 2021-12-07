@@ -1,7 +1,7 @@
 var urlEnString = window.location.href;
 var urlDireccion = new URL(urlEnString);
 var productId = urlDireccion.searchParams.get("prodId");
-console.log("productID: " + productId);
+
 
 'use strict'
 const url = '../Servicios/discos.json';
@@ -13,7 +13,6 @@ request.send(); //envían la solicitud
 
 var discos = '';
 request.onload = function() {
-    console.log(request.response);
     discos = request.response; //le asigno la respuesta a una variable global
     buscarElDisco();
 }
@@ -23,7 +22,6 @@ function buscarElDisco() {
     productos.forEach(element => {
 
         if (element.id == productId) {
-            console.log(element);
             setDataDisc(element);
         }
 
@@ -31,7 +29,6 @@ function buscarElDisco() {
 }
 
 function setDataDisc(discinfo) {
-    console.log("se ejecuto el setDataDisc");
     let titulo = document.getElementById("disc-name");
     let banda = document.getElementById("band");
     let foto = document.getElementById("foto-principal");
