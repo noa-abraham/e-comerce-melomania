@@ -1,8 +1,9 @@
 # e-comerce-melomania
-IFTS16-Práctica Profesional 1
+# IFTS16-Práctica Profesional 1
+# Prof. Andrea Abrudsky
 
 
-Información importante:
+# Información importante:
 
 *Link al sitio:* https://e-comerce-melomania.vercel.app/
 
@@ -20,9 +21,9 @@ Usuario 2:
 user name: taller1
 password: ifts16
 
-*TP-CONSIGNAS*
+# TP-CONSIGNAS
 
--Objetivo-------------------------
+# -Objetivo-------------------------
 
 Se debe realizar un sitio de productos que se administre por el momento con variables estáticas.
 Observaciones:
@@ -34,10 +35,10 @@ El grupo deberá presentar un video donde explique la idea de la página y sus f
 Para Diciembre, todos los productos deben obtenerse de un json.
 
 
--Descripción del Sitio----------------------
+# -Descripción del Sitio----------------------
 
 
-A) Características Frontend 
+# A) Características Frontend 
 El sitio web debe tener las siguientes funcionalidades
 
 *Home
@@ -79,7 +80,7 @@ Al presionar enviar debe validar los datos ingresados y  levantará un modal (po
 
 
 
-B) -Características Backend-
+# B) -Características Backend-
 
 El backend debe tener las siguientes funcionalidades:
 
