@@ -21,10 +21,10 @@ function chequearDatosComentario() {
     } else {
         comentarioConContenido = true;
     }
-    if (telefono.value === "") {
-        telefonoCorrecto = false;
-    } else {
+    if (telefono.checkValidity()) {
         telefonoCorrecto = true;
+    } else {
+        telefonoCorrecto = false;
     }
     if (emailCorrecto && nombreCorrecto && comentarioConContenido && telefonoCorrecto) {
         mostrarModal("Confirmar envío", "¿Está seguro que quiere enviar el formulario?");
@@ -56,7 +56,6 @@ function mostrarError() {
     }
 
 }
-
 
 function chequearMail(string) {
     let posicionDelPrimerArroba = string.indexOf("@");
