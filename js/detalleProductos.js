@@ -72,7 +72,7 @@ function crearComentario() {
     myDivCommentText.classList.add("card-body");
     let myPText = document.createElement('p');
     myPText.classList.add("card-text");
-    myPText.textContent = comentario.value + cantidadEstrellas;
+    myPText.textContent = comentario.value;
     myDivCommentText.appendChild(myPText);
     myDivComment.appendChild(myDivCommentText);
     divisionComment.appendChild(myDivComment);
