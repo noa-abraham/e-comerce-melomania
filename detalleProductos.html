@@ -42,21 +42,19 @@
     </header>
     <!--Imagen y descripcion-->
     <div class="conteiner-imagen-descripcion">
-        <h1 class="nombre-del-disco" id="disc-name">Revolver</h1>
-        <h2 class="banda" id="band">The beatles</h2>
+        <h1 class="nombre-del-disco" id="disc-name"></h1>
+        <h2 class="banda" id="band"></h2>
         <div class="imagen">
             <img src="./assets/img/Revolver.jpg" class="img-fluid rounded-start" id="foto-principal" alt="Tapa del disco">
         </div>
         <div class="col-md-4 descripcion">
             <div class="card-body">
                 <h5 class="card-title">Descripción</h5>
-                <p class="card-text">DETALLES <br> Género: <span id="genero">ROCK & POP</span> <br> Presentación: <span id="formato-presentacion">GATEFOLD</span> <br> Código: <span id="codigo">094638241713</span><br> Formato: <span id="formato"> VINILO </span><br> Origen:
-                    <span id="origen">PRODUCTO IMPORTADO</span></p>
+                <p class="card-text">DETALLES <br> Género: <span id="genero"></span> <br> Presentación: <span id="formato-presentacion"></span> <br> Código: <span id="codigo"></span><br> Formato: <span id="formato"></span><br> Origen:
+                    <span id="origen"></span></p>
                 <b class="card-title1">Precio</b>
-                <b class="Precio" id="precio">$3000</b>
-                <!--
-                <button href="#" type="button" class="btn btn-secondary btn-comprar">Comprar</button>
-                -->
+                <b class="Precio" id="precio"></b>
+
             </div>
         </div>
         <div class="tapa-contratapa">
@@ -83,13 +81,10 @@
             </li>
         </ul>
         <div class="tab-content text-masdetalles" id="myTabContent">
-            <div class="tab-pane fade show active" id="descripciondisco" role="tabpanel" aria-labelledby="descripciondisco-tab">LIMITED EDITION 180-GRAM, AUDIOPHILE VINYL LP PRESSING OF THIS ALBUM FROM THE FAB FOUR COMES HOUSED IN REPLICATED ARTWORK. THE 1966 MASTERPIECE FEATURES THE BEATLES AT THEIR MOST INDIVIDUALLY CREATIVE PEAKS. JOHN IS DELVING INTO THE DRUG SCENE
-                AND SOUND. PAUL IS ORCHESTRATING SOPHISTICATED, LAYERED POP. GEORGE IS EXPLORING THE DARKER SIDE OF HIS SONGWRITING, AND RINGO TAKES US ON A HALLUCINATORY TRIP IN A YELLOW SUBMARINE. 'REVOLVER' TOPPED THE CHARTS IN 1966, WHILE ALSO WINNING
-                A GRAMMY FOR THE SONG 'ELEANOR RIGBY.' THIS VINYL PRESSING CONTAINS THE 2009 DIGITAL REMASTER OF THE ALBUM, MAKING IT SOUND MORE VIBRANT AND ELECTRIFYING THAN EVER BEFORE. </div>
-            <div class="tab-pane fade" id="author" role="tabpanel" aria-labelledby="author-tab">THE BEATLES </div>
+            <div class="tab-pane fade show active" id="descripciondisco" role="tabpanel" aria-labelledby="descripciondisco-tab"> </div>
+            <div class="tab-pane fade" id="author" role="tabpanel" aria-labelledby="author-tab"> </div>
             <div class="tab-pane fade" id="songs" role="tabpanel" aria-labelledby="songs-tab">
-                <!--1 TAXMAN <br> 2 ELEANOR RIGBY <br> 3 IM ONLY SLEEPING <br> 4 LOVE YOU TO/HERE, THERE AND EVERYWHERE <br> 5 YELLOW SUBMARINE <br> 6 SHE SAID SHE SAID <br> 7 GOOD DAY SUNSHINE <br> 8 AND YOUR BIRD CAN SING <br> 9 FOR NO ONE <br> 10 DOCTOR ROBERT
-                <br> 11 I WANT TO TELL YOU <br> 12 GOT TO GET YOU INTO MY LIFE <br> 13 TOMORROW NEVER KNOWS --></div>
+            </div>
         </div>
     </div>
     <!--Comentarios-->
@@ -169,122 +164,7 @@
             <button type="button" class="btn btn-light" onclick="chequearDatosComentario()">ENVIAR</button>
         </div>
     </div>
-    <!--Categorias
-    <div class="postion-relative overflow-hidden p-3 p-md-5 m-md-3 text center bg-light ">
-        <h2>Categorías</h2>
-        <div class="col-md-14 p-lg-14 mx-auto row contenedor-carousel">
 
-            <div id="carouselExampleControls-Categoria" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-
-                        <div class="contenedor-tarjetas-carusel">
-                            <div class="card tarjetas-carousel" style="width: 13rem;">
-                                <img src="assets/img/Categoria/Rock-324x324.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Rock & Pop</h5>
-                                    <a href="#" class="btn border-secondary">Ver categoría</a>
-                                </div>
-                            </div>
-                            <div class="card tarjetas-carousel" style="width: 15rem;">
-                                <img src="assets/img/Categoria/Metal-324x324.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Metal</h5>
-                                    <a href="#" class="btn border-secondary">Ver categoría</a>
-                                </div>
-                            </div>
-                            <div class="card tarjetas-carousel" style="width: 15rem;">
-                                <img src="assets/img/Categoria/Punk-324x324.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Punk & Hardcore</h5>
-                                    <a href="#" class="btn border-secondary">Ver categoría</a>
-                                </div>
-                            </div>
-                            <div class="card tarjetas-carousel" style="width: 15rem;">
-                                <img src="assets/img/Categoria/Reggae-324x324.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Reggae & Ska</h5>
-                                    <a href="#" class="btn border-secondary">Ver categoría</a>
-                                </div>
-                            </div>
-                            <div class="card tarjetas-carousel" style="width: 15rem;">
-                                <img src="assets/img/Categoria/Blues-324x324.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Blues</h5>
-                                    <a href="#" class="btn border-secondary">Ver categoría</a>
-                                </div>
-                            </div>
-                            <div class="card tarjetas-carousel" style="width: 15rem;">
-                                <img src="assets/img/Categoria/Jazz-324x324.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Jazz</h5>
-                                    <a href="#" class="btn border-secondary">Ver categoría</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-
-                        <div class="contenedor-tarjetas-carusel">
-                            <div class="card tarjetas-carousel" style="width: 13rem;">
-                                <img src="assets/img/Categoria/Soul-324x324.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Funk & Soul</h5>
-                                    <a href="#" class="btn border-secondary">Ver categoría</a>
-                                </div>
-                            </div>
-                            <div class="card tarjetas-carousel" style="width: 15rem;">
-                                <img src="assets/img/Categoria/Rap-324x324.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Rap & Hip-Hop</h5>
-                                    <a href="#" class="btn border-secondary">Ver categoría</a>
-                                </div>
-                            </div>
-                            <div class="card tarjetas-carousel" style="width: 15rem;">
-                                <img src="assets/img/Categoria/Rock-Nacional-324x324.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Rock Nacional</h5>
-                                    <a href="#" class="btn border-secondary">Ver categoría</a>
-                                </div>
-                            </div>
-                            <div class="card tarjetas-carousel" style="width: 15rem;">
-                                <img src="assets/img/Categoria/TANGO1-324x324.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Tango</h5>
-                                    <a href="#" class="btn border-secondary">Ver categoría</a>
-                                </div>
-                            </div>
-                            <div class="card tarjetas-carousel" style="width: 15rem;">
-                                <img src="assets/img/Categoria/BSO-324x324.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Bandas Sonora</h5>
-                                    <a href="#" class="btn border-secondary">Ver categoría</a>
-                                </div>
-                            </div>
-                            <div class="card tarjetas-carousel" style="width: 15rem;">
-                                <img src="assets/img/Categoria/World-Music-324x324.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Music World</h5>
-                                    <a href="#" class="btn border-secondary">Ver categoría</a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls-Categoria" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" id="icono-carousel-izq" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls-Categoria" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" id="icono-carousel-der" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-    </div>-->
 
 
 
