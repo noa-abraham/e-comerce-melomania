@@ -57,7 +57,6 @@ function mostrarError() {
 
 }
 
-
 function chequearMail(string) {
     let posicionDelPrimerArroba = string.indexOf("@");
     let posicionDelUltimoArroba = string.lastIndexOf("@");
