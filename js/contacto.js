@@ -22,9 +22,9 @@ function chequearDatosComentario() {
         comentarioConContenido = true;
     }
     if (telefono.checkValidity()) {
-        telefonoCorrecto = false;
-    } else {
         telefonoCorrecto = true;
+    } else {
+        telefonoCorrecto = false;
     }
     if (emailCorrecto && nombreCorrecto && comentarioConContenido && telefonoCorrecto) {
         mostrarModal("Confirmar envío", "¿Está seguro que quiere enviar el formulario?");
