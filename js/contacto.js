@@ -23,10 +23,8 @@ function chequearDatosComentario() {
     }
     if (telefono.checkValidity()) {
         telefonoCorrecto = true;
-        console.log("el numero de telefono esta correcto: " + telefono.checkValidity())
     } else {
         telefonoCorrecto = false;
-        console.log("el numero de telefono esta correcto: " + telefono.checkValidity())
     }
     if (emailCorrecto && nombreCorrecto && comentarioConContenido && telefonoCorrecto) {
         mostrarModal("Confirmar envío", "¿Está seguro que quiere enviar el formulario?");
@@ -48,7 +46,7 @@ function mostrarError() {
 
     }
     if (telefonoCorrecto == false) {
-        mostrarModal("Error al enviar comentario", "No se ingresó ningún teléfono")
+        mostrarModal("Error al enviar comentario", "El teléfono debe contener 10 digitos")
 
 
     }
