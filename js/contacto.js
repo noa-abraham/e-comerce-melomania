@@ -23,6 +23,7 @@ function chequearDatosComentario() {
     }
     if (telefono.checkValidity()) {
         telefonoCorrecto = true;
+        console.log(telefono.checkValidity())
     } else {
         telefonoCorrecto = false;
     }
