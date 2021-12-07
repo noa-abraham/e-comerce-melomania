@@ -67,6 +67,5 @@ function imprimirCanciones(canciones) {
         elementList += '<li>' + element + '</li>';
     });
     elementList += '</ol>'
-        //let listaDeCanciones = document.getElementById('songs');
     $('#songs').append(elementList);
 }
