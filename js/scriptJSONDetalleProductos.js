@@ -63,7 +63,6 @@ function imprimirCanciones(canciones) {
 
     let elementList = '<ol>';
     canciones.forEach(element => {
-        console.log(element);
         elementList += '<li>' + element + '</li>';
     });
     elementList += '</ol>'
