@@ -21,7 +21,7 @@ function chequearDatosComentario() {
     } else {
         comentarioConContenido = true;
     }
-    if (telefono.value === "") {
+    if (telefono.checkValidity()) {
         telefonoCorrecto = false;
     } else {
         telefonoCorrecto = true;
