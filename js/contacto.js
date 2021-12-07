@@ -10,7 +10,7 @@ let comentario = document.getElementById("comentario");
 
 function chequearDatosComentario() {
     chequearMail(email.value);
-    console.log(telefono.checkValidity())
+    console.log("el numero de telefono esta correcto: " + telefono.checkValidity())
     if (nombre.value === "") {
         nombreCorrecto = false;
     } else {
@@ -23,10 +23,10 @@ function chequearDatosComentario() {
     }
     if (telefono.checkValidity()) {
         telefonoCorrecto = true;
-        console.log(telefono.checkValidity())
+        console.log("el numero de telefono esta correcto: " + telefono.checkValidity())
     } else {
         telefonoCorrecto = false;
-        console.log(telefono.checkValidity())
+        console.log("el numero de telefono esta correcto: " + telefono.checkValidity())
     }
     if (emailCorrecto && nombreCorrecto && comentarioConContenido && telefonoCorrecto) {
         mostrarModal("Confirmar envío", "¿Está seguro que quiere enviar el formulario?");
