@@ -10,7 +10,7 @@ let comentario = document.getElementById("comentario");
 
 function chequearDatosComentario() {
     chequearMail(email.value);
-
+    console.log(telefono.checkValidity())
     if (nombre.value === "") {
         nombreCorrecto = false;
     } else {
