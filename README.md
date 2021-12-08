@@ -3,7 +3,7 @@
 # Prof. Andrea Abrudsky 
 
 
-# Información importante
+# Información importante--
 
 *Link al sitio:* https://e-comerce-melomania.vercel.app/
 
