@@ -3,39 +3,7 @@
 # Prof. Andrea Abrudsky 
 
 
-# Información importante--
-
 *Link al sitio:* https://e-comerce-melomania.vercel.app/
-
-*Link al Video-Presentación:* https://drive.google.com/file/d/1eV5MHpaQVzUZLtYkj0I4bxJst5-3Q9i3/view?usp=sharing
-
-*Para acceder al logeo por usuario ingresar /login.html:* https://e-comerce-melomania.vercel.app/login.html
-
-*CONTRASEÑAS:*
-
-Usuario 1: 
-
-user name: melomania
-password: vinilos.
-
-Usuario 2: 
-
-user name: taller1
-password: ifts16
-
-# TP-CONSIGNAS
-
-# -Objetivo-
-
-Se debe realizar un sitio de productos que se administre por el momento con variables estáticas.
-Observaciones:
-
-Las entregas se realizan por medio de GitHub, por lo tanto deben tener un proyecto para el grupo y que los miembros del grupo este asociados al proyecto.
-
-Las direcciones de los links, archivos deben ser relativas, permitiendo que no importa donde descargue el proyecto debe adaptarse a la nueva ruta.
-El grupo deberá presentar un video donde explique la idea de la página y sus funcionalidades.
-Para Diciembre, todos los productos deben obtenerse de un json.
-
 
 # -Descripción del Sitio-
 
