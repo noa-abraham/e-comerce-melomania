@@ -1,14 +1,14 @@
-# E-comerce / Sitio web
-# Práctica Profesional I
-# Prof. Andrea Abrudsky 
+# E-comerce / Sitio web :desktop_computer:
+### Práctica Profesional I
+#### Prof. Andrea Abrudsky 
 
 
 *Link al sitio:* https://e-comerce-melomania.vercel.app/
 
-# -Descripción del Sitio-
+## Descripción del Sitio
 
 
-# A) Características Frontend 
+### A) Características Frontend 
 El sitio web debe tener las siguientes funcionalidades
 
 *Home
@@ -50,7 +50,7 @@ Al presionar enviar debe validar los datos ingresados y  levantará un modal (po
 
 
 
-# B) -Características Backend-
+### B) -Características Backend-
 
 El backend debe tener las siguientes funcionalidades:
 
