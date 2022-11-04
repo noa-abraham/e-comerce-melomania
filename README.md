@@ -1,5 +1,5 @@
-# e-comerce-melomania
-# IFTS16-Práctica Profesional 1
+# E-comerce / Sitio web
+# Práctica Profesional I
 # Prof. Andrea Abrudsky 
 
 
